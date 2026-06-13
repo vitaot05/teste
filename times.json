@@ -1,0 +1,5554 @@
+{
+  "estados": [
+    {
+      "sigla": "SP",
+      "nome": "São Paulo",
+      "divisoes": 4,
+      "nomes_divisoes": [
+        "A1",
+        "A2",
+        "B1",
+        "B2"
+      ],
+      "equipes": [
+        "São Paulo",
+        "Campinas",
+        "Guarulhos",
+        "São Bernardo do Campo",
+        "Santo André",
+        "Osasco",
+        "Sorocaba",
+        "Ribeirão Preto",
+        "São José dos Campos",
+        "Mogi das Cruzes",
+        "Santos",
+        "Diadema",
+        "Carapicuíba",
+        "Jundiaí",
+        "Mauá",
+        "Itaquaquecetuba",
+        "Suzano",
+        "Taboão da Serra",
+        "São Vicente",
+        "Praia Grande",
+        "Barueri",
+        "Piracicaba",
+        "Bauru",
+        "Franca",
+        "São José do Rio Preto",
+        "Limeira",
+        "Taubaté",
+        "Presidente Prudente",
+        "Araçatuba",
+        "Araraquara",
+        "Marília",
+        "Americana",
+        "Hortolândia",
+        "Indaiatuba",
+        "Sumaré",
+        "Cotia",
+        "Itapevi",
+        "Embu das Artes",
+        "Ferraz de Vasconcelos",
+        "Francisco Morato"
+      ],
+      "jogadores": {
+        "São Paulo": [
+          {
+            "nome": "Murilo",
+            "sobrenome": "Monteiro",
+            "apelido": "Índio",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Cardoso",
+            "apelido": "Espanhol",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Pinto",
+            "apelido": "Fantasma",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Ribeiro",
+            "apelido": "Baiano",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Pinto",
+            "apelido": "Coruja",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Campos",
+            "apelido": "Fumaça",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Ferreira",
+            "apelido": "Japonês",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Pinto",
+            "apelido": "Magrão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Moreira",
+            "apelido": "Craque",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Fernandes",
+            "apelido": "Bolinha",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Correia",
+            "apelido": "Urubu",
+            "posicao": "CAM"
+          }
+        ],
+        "Campinas": [
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Cunha",
+            "apelido": "Xerife",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Borges",
+            "apelido": "Índio",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Teixeira",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Andrade",
+            "apelido": "Leão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Campos",
+            "apelido": "Magrão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Santos",
+            "apelido": "Pantera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Dias",
+            "apelido": "Lobo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Carvalho",
+            "apelido": "Buldogue",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Barbosa",
+            "apelido": "Paulista",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Ribeiro",
+            "apelido": "Macaco",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Cardoso",
+            "apelido": "Coruja",
+            "posicao": "CAM"
+          }
+        ],
+        "Guarulhos": [
+          {
+            "nome": "Murilo",
+            "sobrenome": "Martins",
+            "apelido": "Baiano",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Freitas",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Rocha",
+            "apelido": "Tigrão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Pinto",
+            "apelido": "Tigre",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Lima",
+            "apelido": "Pintado",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Xavier",
+            "apelido": "Bolinha",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Andrade",
+            "apelido": "Buldogue",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Costa",
+            "apelido": "Trovão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Silva",
+            "apelido": "Zica",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Ramos",
+            "apelido": "Touro",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Borges",
+            "apelido": "Gordão",
+            "posicao": "CAM"
+          }
+        ],
+        "São Bernardo do Campo": [
+          {
+            "nome": "Mateus",
+            "sobrenome": "Vieira",
+            "apelido": "Fantasma",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Ribeiro",
+            "apelido": "Craque",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Santos",
+            "apelido": "Pombo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Martins",
+            "apelido": "Alemão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Lima",
+            "apelido": "Tigrão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Fernandes",
+            "apelido": "Baiano",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Nascimento",
+            "apelido": "Japonês",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Souza",
+            "apelido": "Tigre",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Batista",
+            "apelido": "Buldogue",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Azevedo",
+            "apelido": "Magrão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Araújo",
+            "apelido": "Espanhol",
+            "posicao": "CAM"
+          }
+        ],
+        "Santo André": [
+          {
+            "nome": "Fábio",
+            "sobrenome": "Carvalho",
+            "apelido": "Espanhol",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Nunes",
+            "apelido": "Baiano",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Barbosa",
+            "apelido": "Galinha",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Dias",
+            "apelido": "Alemão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Dias",
+            "apelido": "Lobo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Moreira",
+            "apelido": "Japonês",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Andrade",
+            "apelido": "Pipoca",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Monteiro",
+            "apelido": "Canhoto",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Borges",
+            "apelido": "Touro",
+            "posicao": "PD"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Pinto",
+            "apelido": "Pombo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Costa",
+            "apelido": "Trovão",
+            "posicao": "CAM"
+          }
+        ],
+        "Osasco": [
+          {
+            "nome": "Everton",
+            "sobrenome": "Cunha",
+            "apelido": "Peixe",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Gomes",
+            "apelido": "Pintado",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Martins",
+            "apelido": "Russo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Ramos",
+            "apelido": "Xerife",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Pinto",
+            "apelido": "Paulista",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Gomes",
+            "apelido": "Pivete",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Cardoso",
+            "apelido": "Viking",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Cavalcante",
+            "apelido": "Trovão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Gomes",
+            "apelido": "Relâmpago",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Souza",
+            "apelido": "Tigre",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Rodrigues",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ],
+        "Sorocaba": [
+          {
+            "nome": "Pedro",
+            "sobrenome": "Campos",
+            "apelido": "Bolinha",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Rocha",
+            "apelido": "Relâmpago",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Xavier",
+            "apelido": "Tigre",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Xavier",
+            "apelido": "Galinha",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Nascimento",
+            "apelido": "Pivete",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Cardoso",
+            "apelido": "Coruja",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Carvalho",
+            "apelido": "Falcão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Ferreira",
+            "apelido": "Espanhol",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Barbosa",
+            "apelido": "Trovão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Nunes",
+            "apelido": "Pipoca",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Vieira",
+            "apelido": "Voador",
+            "posicao": "CAM"
+          }
+        ],
+        "Ribeirão Preto": [
+          {
+            "nome": "Leandro",
+            "sobrenome": "Souza",
+            "apelido": "Toquinho",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Oliveira",
+            "apelido": "Macaco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Cavalcante",
+            "apelido": "Bolinha",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Campos",
+            "apelido": "Gavião",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Nascimento",
+            "apelido": "Galinha",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Pereira",
+            "apelido": "Espanhol",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Lima",
+            "apelido": "Fera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Pinto",
+            "apelido": "Barba",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Vieira",
+            "apelido": "Paulista",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Freitas",
+            "apelido": "Pintado",
+            "posicao": "PE"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Nascimento",
+            "apelido": "Canhoto",
+            "posicao": "CAM"
+          }
+        ],
+        "São José dos Campos": [
+          {
+            "nome": "Pedro",
+            "sobrenome": "Azevedo",
+            "apelido": "Gaúcho",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Gomes",
+            "apelido": "Paulista",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Lima",
+            "apelido": "Japonês",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Souza",
+            "apelido": "Urubu",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Cavalcante",
+            "apelido": "Pintado",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Borges",
+            "apelido": "Gladiador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Rocha",
+            "apelido": "Baiano",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Ribeiro",
+            "apelido": "Fantasma",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Andrade",
+            "apelido": "Craque",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Pinto",
+            "apelido": "Voador",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Ramos",
+            "apelido": "Fera",
+            "posicao": "CAM"
+          }
+        ],
+        "Mogi das Cruzes": [
+          {
+            "nome": "João",
+            "sobrenome": "Carvalho",
+            "apelido": "Buldogue",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Fernandes",
+            "apelido": "Paulista",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Teixeira",
+            "apelido": "Fera",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Carvalho",
+            "apelido": "Gaúcho",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Gomes",
+            "apelido": "Pintado",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Moreira",
+            "apelido": "Lobo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Freitas",
+            "apelido": "Pipoca",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Monteiro",
+            "apelido": "Cobra",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Gomes",
+            "apelido": "Magrão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Mendes",
+            "apelido": "Carioca",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Rodrigues",
+            "apelido": "Tigre",
+            "posicao": "CAM"
+          }
+        ],
+        "Santos": [
+          {
+            "nome": "Caio",
+            "sobrenome": "Batista",
+            "apelido": "Fera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Freitas",
+            "apelido": "Peixe",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Cardoso",
+            "apelido": "Gordão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Azevedo",
+            "apelido": "Gladiador",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Fernandes",
+            "apelido": "Pivete",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Santos",
+            "apelido": "Japonês",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Cavalcante",
+            "apelido": "Magrão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Andrade",
+            "apelido": "Macaco",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Nunes",
+            "apelido": "Índio",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Rodrigues",
+            "apelido": "Espanhol",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Costa",
+            "apelido": "Bolinha",
+            "posicao": "CAM"
+          }
+        ],
+        "Diadema": [
+          {
+            "nome": "Rafael",
+            "sobrenome": "Campos",
+            "apelido": "Fera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Moreira",
+            "apelido": "Baiano",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Pinto",
+            "apelido": "Canhoto",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Almeida",
+            "apelido": "Tigrão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Silva",
+            "apelido": "Gordão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Almeida",
+            "apelido": "Xerife",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Fernandes",
+            "apelido": "Lobo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Pinto",
+            "apelido": "Cobra",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Nascimento",
+            "apelido": "Fantasma",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Rocha",
+            "apelido": "Pipoca",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Ferreira",
+            "apelido": "Touro",
+            "posicao": "CAM"
+          }
+        ],
+        "Carapicuíba": [
+          {
+            "nome": "Diego",
+            "sobrenome": "Borges",
+            "apelido": "Paulista",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Cardoso",
+            "apelido": "Pintado",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Ribeiro",
+            "apelido": "Russo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Silva",
+            "apelido": "Condor",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Andrade",
+            "apelido": "Touro",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Rodrigues",
+            "apelido": "Coruja",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Campos",
+            "apelido": "Fantasma",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Barbosa",
+            "apelido": "Bolinha",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Monteiro",
+            "apelido": "Ratão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Ribeiro",
+            "apelido": "Pipoca",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Azevedo",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ],
+        "Jundiaí": [
+          {
+            "nome": "Kleber",
+            "sobrenome": "Cavalcante",
+            "apelido": "Espanhol",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Andrade",
+            "apelido": "Condor",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Souza",
+            "apelido": "Pipoca",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Silva",
+            "apelido": "Pivete",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Almeida",
+            "apelido": "Alemão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Azevedo",
+            "apelido": "Pintado",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Xavier",
+            "apelido": "Pantera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Oliveira",
+            "apelido": "Barba",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Nunes",
+            "apelido": "Gavião",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Costa",
+            "apelido": "Japonês",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Vieira",
+            "apelido": "Pombo",
+            "posicao": "CAM"
+          }
+        ],
+        "Mauá": [
+          {
+            "nome": "Igor",
+            "sobrenome": "Pereira",
+            "apelido": "Alemão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Ferreira",
+            "apelido": "Fumaça",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Buldogue",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Moraes",
+            "apelido": "Barba",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Andrade",
+            "apelido": "Russo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Oliveira",
+            "apelido": "Lobo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Santos",
+            "apelido": "Espanhol",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Vieira",
+            "apelido": "Gaúcho",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Silva",
+            "apelido": "Trovão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Lima",
+            "apelido": "Touro",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Monteiro",
+            "apelido": "Raposa",
+            "posicao": "CAM"
+          }
+        ],
+        "Itaquaquecetuba": [
+          {
+            "nome": "Henrique",
+            "sobrenome": "Moreira",
+            "apelido": "Leão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Fernandes",
+            "apelido": "Tigrão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Xavier",
+            "apelido": "Barba",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Martins",
+            "apelido": "Galinha",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Xavier",
+            "apelido": "Russo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Vieira",
+            "apelido": "Espanhol",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Pereira",
+            "apelido": "Xerife",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Vieira",
+            "apelido": "Condor",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Teixeira",
+            "apelido": "Urubu",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Cardoso",
+            "apelido": "Bolinha",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Cardoso",
+            "apelido": "Raposa",
+            "posicao": "CAM"
+          }
+        ],
+        "Suzano": [
+          {
+            "nome": "Márcio",
+            "sobrenome": "Correia",
+            "apelido": "Gaúcho",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Gomes",
+            "apelido": "Mineiro",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Ramos",
+            "apelido": "Gladiador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Borges",
+            "apelido": "Galinha",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Andrade",
+            "apelido": "Pintado",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Ferreira",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Rocha",
+            "apelido": "Leão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Pereira",
+            "apelido": "Toquinho",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Dias",
+            "apelido": "Barba",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Dias",
+            "apelido": "Buldogue",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Souza",
+            "apelido": "Trovão",
+            "posicao": "CAM"
+          }
+        ],
+        "Taboão da Serra": [
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Freitas",
+            "apelido": "Canhoto",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Mendes",
+            "apelido": "Pipoca",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Borges",
+            "apelido": "Pombo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Vieira",
+            "apelido": "Gordão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Costa",
+            "apelido": "Pivete",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Dias",
+            "apelido": "Zica",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Ribeiro",
+            "apelido": "Lobo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Rocha",
+            "apelido": "Paulista",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Santos",
+            "apelido": "Relâmpago",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Gomes",
+            "apelido": "Russo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Nunes",
+            "apelido": "Tigrão",
+            "posicao": "CAM"
+          }
+        ],
+        "São Vicente": [
+          {
+            "nome": "Adriano",
+            "sobrenome": "Nunes",
+            "apelido": "Cobra",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Monteiro",
+            "apelido": "Gaúcho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Souza",
+            "apelido": "Tigre",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Costa",
+            "apelido": "Pipoca",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Martins",
+            "apelido": "Galinha",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Oliveira",
+            "apelido": "Peixe",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Borges",
+            "apelido": "Fumaça",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Mendes",
+            "apelido": "Bolinha",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Almeida",
+            "apelido": "Toquinho",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Almeida",
+            "apelido": "Barba",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Cunha",
+            "apelido": "Viking",
+            "posicao": "CAM"
+          }
+        ],
+        "Praia Grande": [
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Gomes",
+            "apelido": "Tigrão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Vieira",
+            "apelido": "Gavião",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Lima",
+            "apelido": "Toquinho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Oliveira",
+            "apelido": "Galinha",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Gomes",
+            "apelido": "Pivete",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Oliveira",
+            "apelido": "Condor",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Gomes",
+            "apelido": "Relâmpago",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Fernandes",
+            "apelido": "Touro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Nunes",
+            "apelido": "Gaúcho",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Moreira",
+            "apelido": "Falcão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Nunes",
+            "apelido": "Xerife",
+            "posicao": "CAM"
+          }
+        ],
+        "Barueri": [
+          {
+            "nome": "Igor",
+            "sobrenome": "Gomes",
+            "apelido": "Espanhol",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Santos",
+            "apelido": "Pivete",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Dias",
+            "apelido": "Xerife",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Cunha",
+            "apelido": "Lobo",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Monteiro",
+            "apelido": "Pipoca",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Monteiro",
+            "apelido": "Zica",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Batista",
+            "apelido": "Relâmpago",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Azevedo",
+            "apelido": "Mineiro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Martins",
+            "apelido": "Ratão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Batista",
+            "apelido": "Turco",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Borges",
+            "apelido": "Japonês",
+            "posicao": "CAM"
+          }
+        ],
+        "Piracicaba": [
+          {
+            "nome": "Vítor",
+            "sobrenome": "Ribeiro",
+            "apelido": "Fantasma",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Araújo",
+            "apelido": "Canhoto",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Fernandes",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Souza",
+            "apelido": "Touro",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Silva",
+            "apelido": "Condor",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Teixeira",
+            "apelido": "Espanhol",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Barbosa",
+            "apelido": "Índio",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Teixeira",
+            "apelido": "Xerife",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Moreira",
+            "apelido": "Gavião",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Oliveira",
+            "apelido": "Barba",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Andrade",
+            "apelido": "Trovão",
+            "posicao": "CAM"
+          }
+        ],
+        "Bauru": [
+          {
+            "nome": "Caio",
+            "sobrenome": "Xavier",
+            "apelido": "Fera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Barbosa",
+            "apelido": "Lobo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Freitas",
+            "apelido": "Galinha",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Moreira",
+            "apelido": "Gaúcho",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Azevedo",
+            "apelido": "Bolinha",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Nascimento",
+            "apelido": "Baiano",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Fernandes",
+            "apelido": "Mineiro",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Campos",
+            "apelido": "Índio",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Cavalcante",
+            "apelido": "Pintado",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Souza",
+            "apelido": "Macaco",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Batista",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ],
+        "Franca": [
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Teixeira",
+            "apelido": "Viking",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Almeida",
+            "apelido": "Urubu",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Mendes",
+            "apelido": "Peixe",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Batista",
+            "apelido": "Coruja",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Dias",
+            "apelido": "Barba",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Silva",
+            "apelido": "Baiano",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Moreira",
+            "apelido": "Gordão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Moreira",
+            "apelido": "Pombo",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Lima",
+            "apelido": "Macaco",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Teixeira",
+            "apelido": "Lobo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Teixeira",
+            "apelido": "Alemão",
+            "posicao": "CAM"
+          }
+        ],
+        "São José do Rio Preto": [
+          {
+            "nome": "Wilian",
+            "sobrenome": "Souza",
+            "apelido": "Baiano",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Nunes",
+            "apelido": "Fumaça",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Batista",
+            "apelido": "Paulista",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Vieira",
+            "apelido": "Gaúcho",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Freitas",
+            "apelido": "Barba",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Batista",
+            "apelido": "Tigre",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Carvalho",
+            "apelido": "Zica",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Barbosa",
+            "apelido": "Gladiador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Fernandes",
+            "apelido": "Gavião",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Dias",
+            "apelido": "Buldogue",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Mendes",
+            "apelido": "Fera",
+            "posicao": "CAM"
+          }
+        ],
+        "Limeira": [
+          {
+            "nome": "Wesley",
+            "sobrenome": "Andrade",
+            "apelido": "Fera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Pereira",
+            "apelido": "Pantera",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Costa",
+            "apelido": "Barba",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Barbosa",
+            "apelido": "Trovão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Nascimento",
+            "apelido": "Peixe",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Ribeiro",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Souza",
+            "apelido": "Voador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Moraes",
+            "apelido": "Mineiro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Rodrigues",
+            "apelido": "Condor",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Almeida",
+            "apelido": "Ratão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Cunha",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ],
+        "Taubaté": [
+          {
+            "nome": "André",
+            "sobrenome": "Ribeiro",
+            "apelido": "Galinha",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Rodrigues",
+            "apelido": "Bolinha",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Campos",
+            "apelido": "Paulista",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Pinto",
+            "apelido": "Xerife",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Andrade",
+            "apelido": "Touro",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Campos",
+            "apelido": "Condor",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Correia",
+            "apelido": "Toquinho",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Freitas",
+            "apelido": "Mineiro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Teixeira",
+            "apelido": "Pantera",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Santos",
+            "apelido": "Ratão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Freitas",
+            "apelido": "Turco",
+            "posicao": "CAM"
+          }
+        ],
+        "Presidente Prudente": [
+          {
+            "nome": "Alan",
+            "sobrenome": "Ramos",
+            "apelido": "Viking",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Batista",
+            "apelido": "Pivete",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Ramos",
+            "apelido": "Ratão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Vieira",
+            "apelido": "Bolinha",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Campos",
+            "apelido": "Macaco",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Rodrigues",
+            "apelido": "Tigre",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Barbosa",
+            "apelido": "Voador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Costa",
+            "apelido": "Peixe",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Cavalcante",
+            "apelido": "Pipoca",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Mendes",
+            "apelido": "Coruja",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Barbosa",
+            "apelido": "Urubu",
+            "posicao": "CAM"
+          }
+        ],
+        "Araçatuba": [
+          {
+            "nome": "Fábio",
+            "sobrenome": "Lima",
+            "apelido": "Gladiador",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Souza",
+            "apelido": "Pintado",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Almeida",
+            "apelido": "Pantera",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Almeida",
+            "apelido": "Tigre",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Ferreira",
+            "apelido": "Magrão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Rodrigues",
+            "apelido": "Carioca",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Xavier",
+            "apelido": "Canhoto",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Gomes",
+            "apelido": "Paulista",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Gomes",
+            "apelido": "Craque",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Martins",
+            "apelido": "Bolinha",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Rodrigues",
+            "apelido": "Gaúcho",
+            "posicao": "CAM"
+          }
+        ],
+        "Araraquara": [
+          {
+            "nome": "Caio",
+            "sobrenome": "Santos",
+            "apelido": "Relâmpago",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Azevedo",
+            "apelido": "Raposa",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Azevedo",
+            "apelido": "Pivete",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Araújo",
+            "apelido": "Barba",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Oliveira",
+            "apelido": "Buldogue",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Oliveira",
+            "apelido": "Magrão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Campos",
+            "apelido": "Viking",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Silva",
+            "apelido": "Leão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Nascimento",
+            "apelido": "Pantera",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Ferreira",
+            "apelido": "Pintado",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Rocha",
+            "apelido": "Tigrão",
+            "posicao": "CAM"
+          }
+        ],
+        "Marília": [
+          {
+            "nome": "Thiago",
+            "sobrenome": "Rocha",
+            "apelido": "Urubu",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Vieira",
+            "apelido": "Touro",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Cunha",
+            "apelido": "Carioca",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Gomes",
+            "apelido": "Buldogue",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Costa",
+            "apelido": "Pintado",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Ramos",
+            "apelido": "Índio",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Rodrigues",
+            "apelido": "Xerife",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Batista",
+            "apelido": "Zica",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Martins",
+            "apelido": "Baiano",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Xavier",
+            "apelido": "Tigre",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Oliveira",
+            "apelido": "Condor",
+            "posicao": "CAM"
+          }
+        ],
+        "Americana": [
+          {
+            "nome": "Kleber",
+            "sobrenome": "Moreira",
+            "apelido": "Viking",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Almeida",
+            "apelido": "Falcão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Vieira",
+            "apelido": "Leão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Freitas",
+            "apelido": "Voador",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Correia",
+            "apelido": "Gaúcho",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Andrade",
+            "apelido": "Urubu",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Moraes",
+            "apelido": "Pintado",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Ribeiro",
+            "apelido": "Zica",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Andrade",
+            "apelido": "Xerife",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Freitas",
+            "apelido": "Toquinho",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Pinto",
+            "apelido": "Japonês",
+            "posicao": "CAM"
+          }
+        ],
+        "Hortolândia": [
+          {
+            "nome": "Felipe",
+            "sobrenome": "Borges",
+            "apelido": "Viking",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Moraes",
+            "apelido": "Voador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Teixeira",
+            "apelido": "Urubu",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Vieira",
+            "apelido": "Raposa",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Ramos",
+            "apelido": "Coruja",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Ramos",
+            "apelido": "Pipoca",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Dias",
+            "apelido": "Relâmpago",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Mendes",
+            "apelido": "Russo",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Souza",
+            "apelido": "Pombo",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Monteiro",
+            "apelido": "Índio",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Pereira",
+            "apelido": "Magrão",
+            "posicao": "CAM"
+          }
+        ],
+        "Indaiatuba": [
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Souza",
+            "apelido": "Bolinha",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Borges",
+            "apelido": "Toquinho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Fernandes",
+            "apelido": "Mineiro",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Cavalcante",
+            "apelido": "Paulista",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Andrade",
+            "apelido": "Viking",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Moreira",
+            "apelido": "Fera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Borges",
+            "apelido": "Turco",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Azevedo",
+            "apelido": "Cobra",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Dias",
+            "apelido": "Pipoca",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Martins",
+            "apelido": "Condor",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Azevedo",
+            "apelido": "Pantera",
+            "posicao": "CAM"
+          }
+        ],
+        "Sumaré": [
+          {
+            "nome": "Márcio",
+            "sobrenome": "Cardoso",
+            "apelido": "Canhoto",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Nascimento",
+            "apelido": "Índio",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Freitas",
+            "apelido": "Peixe",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Batista",
+            "apelido": "Pintado",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Carvalho",
+            "apelido": "Pantera",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Vieira",
+            "apelido": "Touro",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Monteiro",
+            "apelido": "Coruja",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Mendes",
+            "apelido": "Alemão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Campos",
+            "apelido": "Bolinha",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Oliveira",
+            "apelido": "Zica",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Xavier",
+            "apelido": "Fantasma",
+            "posicao": "CAM"
+          }
+        ],
+        "Cotia": [
+          {
+            "nome": "Caio",
+            "sobrenome": "Rodrigues",
+            "apelido": "Peixe",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Souza",
+            "apelido": "Fera",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Almeida",
+            "apelido": "Urubu",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Martins",
+            "apelido": "Bolinha",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Nascimento",
+            "apelido": "Pombo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Souza",
+            "apelido": "Espanhol",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Gomes",
+            "apelido": "Turco",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Souza",
+            "apelido": "Pintado",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Santos",
+            "apelido": "Galinha",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Barbosa",
+            "apelido": "Macaco",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Ferreira",
+            "apelido": "Canhoto",
+            "posicao": "CAM"
+          }
+        ],
+        "Itapevi": [
+          {
+            "nome": "Felipe",
+            "sobrenome": "Borges",
+            "apelido": "Alemão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Cunha",
+            "apelido": "Macaco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Pereira",
+            "apelido": "Barba",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Correia",
+            "apelido": "Pantera",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Ferreira",
+            "apelido": "Índio",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Nunes",
+            "apelido": "Magrão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Rocha",
+            "apelido": "Peixe",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Rocha",
+            "apelido": "Fera",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Rocha",
+            "apelido": "Xerife",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Cardoso",
+            "apelido": "Baiano",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Barbosa",
+            "apelido": "Leão",
+            "posicao": "CAM"
+          }
+        ],
+        "Embu das Artes": [
+          {
+            "nome": "Everton",
+            "sobrenome": "Ribeiro",
+            "apelido": "Fera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Lima",
+            "apelido": "Japonês",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Correia",
+            "apelido": "Cobra",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Gomes",
+            "apelido": "Barba",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Barbosa",
+            "apelido": "Peixe",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Teixeira",
+            "apelido": "Urubu",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Campos",
+            "apelido": "Tigre",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Santos",
+            "apelido": "Voador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Cardoso",
+            "apelido": "Pantera",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Moraes",
+            "apelido": "Carioca",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Andrade",
+            "apelido": "Gavião",
+            "posicao": "CAM"
+          }
+        ],
+        "Ferraz de Vasconcelos": [
+          {
+            "nome": "Kleber",
+            "sobrenome": "Ferreira",
+            "apelido": "Lobo",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Borges",
+            "apelido": "Pombo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Barbosa",
+            "apelido": "Baiano",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Pereira",
+            "apelido": "Touro",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Borges",
+            "apelido": "Relâmpago",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Souza",
+            "apelido": "Russo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Pinto",
+            "apelido": "Alemão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Correia",
+            "apelido": "Paulista",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Freitas",
+            "apelido": "Trovão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Fernandes",
+            "apelido": "Coruja",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Pereira",
+            "apelido": "Cobra",
+            "posicao": "CAM"
+          }
+        ],
+        "Francisco Morato": [
+          {
+            "nome": "Danilo",
+            "sobrenome": "Rocha",
+            "apelido": "Galinha",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Santos",
+            "apelido": "Pombo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Cardoso",
+            "apelido": "Turco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Ramos",
+            "apelido": "Magrão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Correia",
+            "apelido": "Touro",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Souza",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Xavier",
+            "apelido": "Gladiador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Russo",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Freitas",
+            "apelido": "Barba",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Ferreira",
+            "apelido": "Bolinha",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Borges",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ]
+      }
+    },
+    {
+      "sigla": "RJ",
+      "nome": "Rio de Janeiro",
+      "divisoes": 4,
+      "nomes_divisoes": [
+        "A1",
+        "A2",
+        "B1",
+        "B2"
+      ],
+      "equipes": [
+        "Rio de Janeiro",
+        "São Gonçalo",
+        "Duque de Caxias",
+        "Nova Iguaçu",
+        "Niterói",
+        "Belford Roxo",
+        "São João de Meriti",
+        "Campos dos Goytacazes",
+        "Petrópolis",
+        "Volta Redonda",
+        "Macaé",
+        "Magé",
+        "Itaboraí",
+        "Mesquita",
+        "Nilópolis",
+        "Nova Friburgo",
+        "Barra Mansa",
+        "Maricá",
+        "Queimados",
+        "Cabo Frio",
+        "Teresópolis",
+        "Angra dos Reis",
+        "Japeri",
+        "Resende",
+        "Seropédica",
+        "Rio das Ostras",
+        "Itaguaí",
+        "Cachoeiras de Macacu",
+        "Paracambi",
+        "Guapimirim",
+        "Três Rios",
+        "Barra do Piraí",
+        "Vassouras",
+        "Valença",
+        "Paraíba do Sul",
+        "Bom Jesus do Itabapoana",
+        "Santo Antônio de Pádua",
+        "Itaperuna",
+        "Miracema",
+        "Aperibé"
+      ],
+      "jogadores": {
+        "Rio de Janeiro": [
+          {
+            "nome": "Mateus",
+            "sobrenome": "Batista",
+            "apelido": "Mineiro",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Lima",
+            "apelido": "Barba",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Silva",
+            "apelido": "Pivete",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Costa",
+            "apelido": "Fantasma",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Freitas",
+            "apelido": "Russo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Barbosa",
+            "apelido": "Fumaça",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Campos",
+            "apelido": "Peixe",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Ramos",
+            "apelido": "Touro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Dias",
+            "apelido": "Galinha",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Ferreira",
+            "apelido": "Urubu",
+            "posicao": "PE"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Cunha",
+            "apelido": "Índio",
+            "posicao": "CAM"
+          }
+        ],
+        "São Gonçalo": [
+          {
+            "nome": "Bruno",
+            "sobrenome": "Lima",
+            "apelido": "Espanhol",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Araújo",
+            "apelido": "Gladiador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Lima",
+            "apelido": "Relâmpago",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Araújo",
+            "apelido": "Fumaça",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Fernandes",
+            "apelido": "Baiano",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Xavier",
+            "apelido": "Barba",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Correia",
+            "apelido": "Leão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Ribeiro",
+            "apelido": "Cobra",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Andrade",
+            "apelido": "Galinha",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Barbosa",
+            "apelido": "Xerife",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Andrade",
+            "apelido": "Raposa",
+            "posicao": "CAM"
+          }
+        ],
+        "Duque de Caxias": [
+          {
+            "nome": "Igor",
+            "sobrenome": "Silva",
+            "apelido": "Turco",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Dias",
+            "apelido": "Magrão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Santos",
+            "apelido": "Falcão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Costa",
+            "apelido": "Fantasma",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Teixeira",
+            "apelido": "Canhoto",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Moraes",
+            "apelido": "Fera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Gomes",
+            "apelido": "Viking",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Ribeiro",
+            "apelido": "Tigre",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Pinto",
+            "apelido": "Mineiro",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Xavier",
+            "apelido": "Fumaça",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Silva",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ],
+        "Nova Iguaçu": [
+          {
+            "nome": "Lucas",
+            "sobrenome": "Costa",
+            "apelido": "Craque",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Vieira",
+            "apelido": "Tigrão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Pereira",
+            "apelido": "Cobra",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Ribeiro",
+            "apelido": "Viking",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Silva",
+            "apelido": "Bolinha",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Batista",
+            "apelido": "Raposa",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Cunha",
+            "apelido": "Zica",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Carvalho",
+            "apelido": "Urubu",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Monteiro",
+            "apelido": "Gordão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Cunha",
+            "apelido": "Canhoto",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Almeida",
+            "apelido": "Macaco",
+            "posicao": "CAM"
+          }
+        ],
+        "Niterói": [
+          {
+            "nome": "Paulo",
+            "sobrenome": "Pinto",
+            "apelido": "Trovão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Mendes",
+            "apelido": "Buldogue",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Araújo",
+            "apelido": "Carioca",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Nascimento",
+            "apelido": "Falcão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Silva",
+            "apelido": "Lobo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Ferreira",
+            "apelido": "Fumaça",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Gomes",
+            "apelido": "Voador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Borges",
+            "apelido": "Xerife",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Teixeira",
+            "apelido": "Macaco",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Andrade",
+            "apelido": "Peixe",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Rocha",
+            "apelido": "Índio",
+            "posicao": "CAM"
+          }
+        ],
+        "Belford Roxo": [
+          {
+            "nome": "Carlos",
+            "sobrenome": "Oliveira",
+            "apelido": "Relâmpago",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Pereira",
+            "apelido": "Lobo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Moreira",
+            "apelido": "Fumaça",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Lima",
+            "apelido": "Viking",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Nunes",
+            "apelido": "Canhoto",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Souza",
+            "apelido": "Mineiro",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Ferreira",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Araújo",
+            "apelido": "Urubu",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Silva",
+            "apelido": "Peixe",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Batista",
+            "apelido": "Falcão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Monteiro",
+            "apelido": "Barba",
+            "posicao": "CAM"
+          }
+        ],
+        "São João de Meriti": [
+          {
+            "nome": "Vítor",
+            "sobrenome": "Batista",
+            "apelido": "Xerife",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Dias",
+            "apelido": "Relâmpago",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Silva",
+            "apelido": "Trovão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Teixeira",
+            "apelido": "Barba",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Moreira",
+            "apelido": "Tigre",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Nascimento",
+            "apelido": "Gordão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Ferreira",
+            "apelido": "Condor",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Azevedo",
+            "apelido": "Lobo",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Correia",
+            "apelido": "Voador",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Cardoso",
+            "apelido": "Zica",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Moraes",
+            "apelido": "Pantera",
+            "posicao": "CAM"
+          }
+        ],
+        "Campos dos Goytacazes": [
+          {
+            "nome": "Márcio",
+            "sobrenome": "Dias",
+            "apelido": "Pantera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Andrade",
+            "apelido": "Coruja",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Rocha",
+            "apelido": "Toquinho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Lima",
+            "apelido": "Gordão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Correia",
+            "apelido": "Gladiador",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Lima",
+            "apelido": "Pintado",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Rodrigues",
+            "apelido": "Ratão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Vieira",
+            "apelido": "Japonês",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Fernandes",
+            "apelido": "Magrão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Gomes",
+            "apelido": "Fera",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Mendes",
+            "apelido": "Bolinha",
+            "posicao": "CAM"
+          }
+        ],
+        "Petrópolis": [
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Araújo",
+            "apelido": "Xerife",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Trovão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Souza",
+            "apelido": "Mineiro",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Cunha",
+            "apelido": "Canhoto",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Correia",
+            "apelido": "Fumaça",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Araújo",
+            "apelido": "Turco",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Rodrigues",
+            "apelido": "Zica",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Cavalcante",
+            "apelido": "Craque",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Teixeira",
+            "apelido": "Condor",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Silva",
+            "apelido": "Pombo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Ribeiro",
+            "apelido": "Gordão",
+            "posicao": "CAM"
+          }
+        ],
+        "Volta Redonda": [
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Freitas",
+            "apelido": "Raposa",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Vieira",
+            "apelido": "Tigrão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Voador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Santos",
+            "apelido": "Falcão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Rocha",
+            "apelido": "Cobra",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Ramos",
+            "apelido": "Urubu",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Batista",
+            "apelido": "Pivete",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Oliveira",
+            "apelido": "Buldogue",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Fernandes",
+            "apelido": "Craque",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Rodrigues",
+            "apelido": "Baiano",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Rocha",
+            "apelido": "Canhoto",
+            "posicao": "CAM"
+          }
+        ],
+        "Macaé": [
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Batista",
+            "apelido": "Barba",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Gomes",
+            "apelido": "Coruja",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Batista",
+            "apelido": "Urubu",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Cardoso",
+            "apelido": "Craque",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Santos",
+            "apelido": "Condor",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Nunes",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Pereira",
+            "apelido": "Ratão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Nascimento",
+            "apelido": "Xerife",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Martins",
+            "apelido": "Leão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Teixeira",
+            "apelido": "Alemão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Rodrigues",
+            "apelido": "Pombo",
+            "posicao": "CAM"
+          }
+        ],
+        "Magé": [
+          {
+            "nome": "Renato",
+            "sobrenome": "Correia",
+            "apelido": "Paulista",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Fernandes",
+            "apelido": "Gaúcho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Freitas",
+            "apelido": "Buldogue",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Pereira",
+            "apelido": "Alemão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Oliveira",
+            "apelido": "Raposa",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Rodrigues",
+            "apelido": "Gordão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Costa",
+            "apelido": "Barba",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Pinto",
+            "apelido": "Pantera",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Rodrigues",
+            "apelido": "Pivete",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Araújo",
+            "apelido": "Leão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Martins",
+            "apelido": "Trovão",
+            "posicao": "CAM"
+          }
+        ],
+        "Itaboraí": [
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Cunha",
+            "apelido": "Leão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Batista",
+            "apelido": "Barba",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Souza",
+            "apelido": "Paulista",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Rodrigues",
+            "apelido": "Craque",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Monteiro",
+            "apelido": "Coruja",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Andrade",
+            "apelido": "Pivete",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Carvalho",
+            "apelido": "Urubu",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Mendes",
+            "apelido": "Gaúcho",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Nascimento",
+            "apelido": "Japonês",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Correia",
+            "apelido": "Magrão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Pinto",
+            "apelido": "Peixe",
+            "posicao": "CAM"
+          }
+        ],
+        "Mesquita": [
+          {
+            "nome": "Caio",
+            "sobrenome": "Santos",
+            "apelido": "Pintado",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Gomes",
+            "apelido": "Gavião",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Nunes",
+            "apelido": "Fumaça",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Fernandes",
+            "apelido": "Macaco",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Costa",
+            "apelido": "Pombo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Gomes",
+            "apelido": "Russo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Martins",
+            "apelido": "Coruja",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Souza",
+            "apelido": "Craque",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Correia",
+            "apelido": "Alemão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Souza",
+            "apelido": "Japonês",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Dias",
+            "apelido": "Bolinha",
+            "posicao": "CAM"
+          }
+        ],
+        "Nilópolis": [
+          {
+            "nome": "Thiago",
+            "sobrenome": "Azevedo",
+            "apelido": "Buldogue",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Moreira",
+            "apelido": "Japonês",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Campos",
+            "apelido": "Barba",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Oliveira",
+            "apelido": "Touro",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Pereira",
+            "apelido": "Fantasma",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Santos",
+            "apelido": "Falcão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Batista",
+            "apelido": "Fera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Teixeira",
+            "apelido": "Mineiro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Araújo",
+            "apelido": "Pintado",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Cardoso",
+            "apelido": "Cobra",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Moreira",
+            "apelido": "Turco",
+            "posicao": "CAM"
+          }
+        ],
+        "Nova Friburgo": [
+          {
+            "nome": "Alan",
+            "sobrenome": "Ramos",
+            "apelido": "Espanhol",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Pereira",
+            "apelido": "Gladiador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Lima",
+            "apelido": "Russo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Ribeiro",
+            "apelido": "Xerife",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Almeida",
+            "apelido": "Fumaça",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Carvalho",
+            "apelido": "Turco",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Ramos",
+            "apelido": "Macaco",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Correia",
+            "apelido": "Voador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Barbosa",
+            "apelido": "Gaúcho",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Azevedo",
+            "apelido": "Ratão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Martins",
+            "apelido": "Tigrão",
+            "posicao": "CAM"
+          }
+        ],
+        "Barra Mansa": [
+          {
+            "nome": "Wilian",
+            "sobrenome": "Almeida",
+            "apelido": "Bolinha",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Barbosa",
+            "apelido": "Canhoto",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Pereira",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Silva",
+            "apelido": "Gavião",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Teixeira",
+            "apelido": "Pintado",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Xavier",
+            "apelido": "Relâmpago",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Santos",
+            "apelido": "Barba",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Andrade",
+            "apelido": "Pantera",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Nascimento",
+            "apelido": "Condor",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Ribeiro",
+            "apelido": "Lobo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Pinto",
+            "apelido": "Craque",
+            "posicao": "CAM"
+          }
+        ],
+        "Maricá": [
+          {
+            "nome": "Felipe",
+            "sobrenome": "Martins",
+            "apelido": "Tigrão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Moraes",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Freitas",
+            "apelido": "Trovão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Barbosa",
+            "apelido": "Baiano",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Carvalho",
+            "apelido": "Pantera",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Rodrigues",
+            "apelido": "Macaco",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Rocha",
+            "apelido": "Xerife",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Ramos",
+            "apelido": "Tigre",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Freitas",
+            "apelido": "Craque",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Freitas",
+            "apelido": "Russo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Moreira",
+            "apelido": "Gladiador",
+            "posicao": "CAM"
+          }
+        ],
+        "Queimados": [
+          {
+            "nome": "Leandro",
+            "sobrenome": "Lima",
+            "apelido": "Fantasma",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Silva",
+            "apelido": "Voador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Martins",
+            "apelido": "Espanhol",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Azevedo",
+            "apelido": "Pivete",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Andrade",
+            "apelido": "Canhoto",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Cavalcante",
+            "apelido": "Toquinho",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Ramos",
+            "apelido": "Magrão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Moreira",
+            "apelido": "Gavião",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Carvalho",
+            "apelido": "Bolinha",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Ramos",
+            "apelido": "Tigrão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Vieira",
+            "apelido": "Pantera",
+            "posicao": "CAM"
+          }
+        ],
+        "Cabo Frio": [
+          {
+            "nome": "Igor",
+            "sobrenome": "Azevedo",
+            "apelido": "Raposa",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Oliveira",
+            "apelido": "Voador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Fernandes",
+            "apelido": "Zica",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Nunes",
+            "apelido": "Fantasma",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Rodrigues",
+            "apelido": "Relâmpago",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Ramos",
+            "apelido": "Alemão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Correia",
+            "apelido": "Pivete",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Freitas",
+            "apelido": "Espanhol",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Almeida",
+            "apelido": "Touro",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Martins",
+            "apelido": "Pintado",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Rocha",
+            "apelido": "Galinha",
+            "posicao": "CAM"
+          }
+        ],
+        "Teresópolis": [
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Ramos",
+            "apelido": "Gladiador",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Azevedo",
+            "apelido": "Alemão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Azevedo",
+            "apelido": "Russo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Borges",
+            "apelido": "Toquinho",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Monteiro",
+            "apelido": "Falcão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Carvalho",
+            "apelido": "Voador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Silva",
+            "apelido": "Gaúcho",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Rodrigues",
+            "apelido": "Tigre",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Barbosa",
+            "apelido": "Mineiro",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Freitas",
+            "apelido": "Relâmpago",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Rodrigues",
+            "apelido": "Pipoca",
+            "posicao": "CAM"
+          }
+        ],
+        "Angra dos Reis": [
+          {
+            "nome": "Vítor",
+            "sobrenome": "Cavalcante",
+            "apelido": "Toquinho",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Xavier",
+            "apelido": "Japonês",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Lima",
+            "apelido": "Mineiro",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Martins",
+            "apelido": "Pintado",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Costa",
+            "apelido": "Coruja",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Araújo",
+            "apelido": "Urubu",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Silva",
+            "apelido": "Buldogue",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Fernandes",
+            "apelido": "Trovão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Vieira",
+            "apelido": "Gavião",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Campos",
+            "apelido": "Índio",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Pereira",
+            "apelido": "Tigrão",
+            "posicao": "CAM"
+          }
+        ],
+        "Japeri": [
+          {
+            "nome": "Murilo",
+            "sobrenome": "Souza",
+            "apelido": "Mineiro",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Vieira",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Ferreira",
+            "apelido": "Voador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Vieira",
+            "apelido": "Tigrão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Mendes",
+            "apelido": "Touro",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Ramos",
+            "apelido": "Leão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Carvalho",
+            "apelido": "Alemão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Freitas",
+            "apelido": "Cobra",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Correia",
+            "apelido": "Craque",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Carvalho",
+            "apelido": "Canhoto",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Ferreira",
+            "apelido": "Toquinho",
+            "posicao": "CAM"
+          }
+        ],
+        "Resende": [
+          {
+            "nome": "Bruno",
+            "sobrenome": "Nascimento",
+            "apelido": "Falcão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Azevedo",
+            "apelido": "Russo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Costa",
+            "apelido": "Pombo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Xavier",
+            "apelido": "Pivete",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Cunha",
+            "apelido": "Macaco",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Urubu",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Costa",
+            "apelido": "Espanhol",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Teixeira",
+            "apelido": "Gladiador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Vieira",
+            "apelido": "Coruja",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Pereira",
+            "apelido": "Magrão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Oliveira",
+            "apelido": "Lobo",
+            "posicao": "CAM"
+          }
+        ],
+        "Seropédica": [
+          {
+            "nome": "Vítor",
+            "sobrenome": "Correia",
+            "apelido": "Pipoca",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Barbosa",
+            "apelido": "Macaco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Cardoso",
+            "apelido": "Zica",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Santos",
+            "apelido": "Xerife",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Cardoso",
+            "apelido": "Alemão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Costa",
+            "apelido": "Russo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Teixeira",
+            "apelido": "Viking",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Pereira",
+            "apelido": "Craque",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Araújo",
+            "apelido": "Cobra",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Martins",
+            "apelido": "Lobo",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Carvalho",
+            "apelido": "Trovão",
+            "posicao": "CAM"
+          }
+        ],
+        "Rio das Ostras": [
+          {
+            "nome": "Vítor",
+            "sobrenome": "Almeida",
+            "apelido": "Lobo",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Lima",
+            "apelido": "Magrão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Campos",
+            "apelido": "Macaco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Fernandes",
+            "apelido": "Craque",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Mendes",
+            "apelido": "Mineiro",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Moraes",
+            "apelido": "Galinha",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Vieira",
+            "apelido": "Índio",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Gomes",
+            "apelido": "Voador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Almeida",
+            "apelido": "Viking",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Borges",
+            "apelido": "Ratão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Borges",
+            "apelido": "Relâmpago",
+            "posicao": "CAM"
+          }
+        ],
+        "Itaguaí": [
+          {
+            "nome": "Alan",
+            "sobrenome": "Fernandes",
+            "apelido": "Viking",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Dias",
+            "apelido": "Espanhol",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Rodrigues",
+            "apelido": "Turco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Mendes",
+            "apelido": "Pipoca",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Pinto",
+            "apelido": "Japonês",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Souza",
+            "apelido": "Trovão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Correia",
+            "apelido": "Índio",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Thiago",
+            "sobrenome": "Campos",
+            "apelido": "Gordão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Xavier",
+            "apelido": "Pivete",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Azevedo",
+            "apelido": "Craque",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Batista",
+            "apelido": "Pintado",
+            "posicao": "CAM"
+          }
+        ],
+        "Cachoeiras de Macacu": [
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Ferreira",
+            "apelido": "Mineiro",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Xavier",
+            "apelido": "Macaco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Pinto",
+            "apelido": "Craque",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Cavalcante",
+            "apelido": "Fantasma",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Teixeira",
+            "apelido": "Fumaça",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Silva",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Xavier",
+            "apelido": "Ratão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Ribeiro",
+            "apelido": "Voador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Silva",
+            "apelido": "Barba",
+            "posicao": "PD"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Azevedo",
+            "apelido": "Condor",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Cardoso",
+            "apelido": "Lobo",
+            "posicao": "CAM"
+          }
+        ],
+        "Paracambi": [
+          {
+            "nome": "Murilo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Mineiro",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Fernandes",
+            "apelido": "Condor",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Dias",
+            "apelido": "Touro",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Pereira",
+            "apelido": "Índio",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Ramos",
+            "apelido": "Galinha",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Campos",
+            "apelido": "Leão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Cunha",
+            "apelido": "Pipoca",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Ramos",
+            "apelido": "Tigre",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Ferreira",
+            "apelido": "Zica",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Pereira",
+            "apelido": "Pantera",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Pinto",
+            "apelido": "Paulista",
+            "posicao": "CAM"
+          }
+        ],
+        "Guapimirim": [
+          {
+            "nome": "Fábio",
+            "sobrenome": "Campos",
+            "apelido": "Galinha",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Dias",
+            "apelido": "Leão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Freitas",
+            "apelido": "Russo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Carvalho",
+            "apelido": "Japonês",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Campos",
+            "apelido": "Magrão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Rocha",
+            "apelido": "Craque",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Cunha",
+            "apelido": "Relâmpago",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Teixeira",
+            "apelido": "Voador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Paulo",
+            "sobrenome": "Batista",
+            "apelido": "Gaúcho",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Souza",
+            "apelido": "Turco",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Carvalho",
+            "apelido": "Pombo",
+            "posicao": "CAM"
+          }
+        ],
+        "Três Rios": [
+          {
+            "nome": "Lucas",
+            "sobrenome": "Ferreira",
+            "apelido": "Pantera",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Batista",
+            "apelido": "Craque",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Cavalcante",
+            "apelido": "Falcão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Teixeira",
+            "apelido": "Paulista",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Gilberto",
+            "sobrenome": "Andrade",
+            "apelido": "Fera",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Correia",
+            "apelido": "Alemão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Rodrigues",
+            "apelido": "Pombo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Xavier",
+            "apelido": "Baiano",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Batista",
+            "apelido": "Barba",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Alexandre",
+            "sobrenome": "Moreira",
+            "apelido": "Leão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Costa",
+            "apelido": "Bolinha",
+            "posicao": "CAM"
+          }
+        ],
+        "Barra do Piraí": [
+          {
+            "nome": "João",
+            "sobrenome": "Moraes",
+            "apelido": "Ratão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Gomes",
+            "apelido": "Voador",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Freitas",
+            "apelido": "Falcão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Santos",
+            "apelido": "Pantera",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Azevedo",
+            "apelido": "Fumaça",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Nunes",
+            "apelido": "Gaúcho",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Martins",
+            "apelido": "Paulista",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Mendes",
+            "apelido": "Magrão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Araújo",
+            "apelido": "Urubu",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Silva",
+            "apelido": "Xerife",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Batista",
+            "apelido": "Pivete",
+            "posicao": "CAM"
+          }
+        ],
+        "Vassouras": [
+          {
+            "nome": "Adriano",
+            "sobrenome": "Silva",
+            "apelido": "Toquinho",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Cardoso",
+            "apelido": "Viking",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Cunha",
+            "apelido": "Pivete",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Ramos",
+            "apelido": "Buldogue",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Ribeiro",
+            "apelido": "Raposa",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Pinto",
+            "apelido": "Xerife",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Martins",
+            "apelido": "Pantera",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Rocha",
+            "apelido": "Coruja",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Pinto",
+            "apelido": "Trovão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Rocha",
+            "apelido": "Alemão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Rodrigues",
+            "apelido": "Relâmpago",
+            "posicao": "CAM"
+          }
+        ],
+        "Valença": [
+          {
+            "nome": "Carlos",
+            "sobrenome": "Mendes",
+            "apelido": "Pipoca",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Cardoso",
+            "apelido": "Leão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Freitas",
+            "apelido": "Xerife",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Kleber",
+            "sobrenome": "Vieira",
+            "apelido": "Ratão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Nascimento",
+            "apelido": "Gaúcho",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Vieira",
+            "apelido": "Gladiador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Andrade",
+            "apelido": "Russo",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Ramos",
+            "apelido": "Magrão",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Freitas",
+            "apelido": "Tigre",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Azevedo",
+            "apelido": "Índio",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Pedro",
+            "sobrenome": "Borges",
+            "apelido": "Relâmpago",
+            "posicao": "CAM"
+          }
+        ],
+        "Paraíba do Sul": [
+          {
+            "nome": "Diego",
+            "sobrenome": "Teixeira",
+            "apelido": "Coruja",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Moraes",
+            "apelido": "Falcão",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Marcelo",
+            "sobrenome": "Mendes",
+            "apelido": "Peixe",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Moreira",
+            "apelido": "Fera",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Vítor",
+            "sobrenome": "Borges",
+            "apelido": "Craque",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Barbosa",
+            "apelido": "Alemão",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Ferreira",
+            "apelido": "Buldogue",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Nascimento",
+            "apelido": "Xerife",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Souza",
+            "apelido": "Gordão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Dias",
+            "apelido": "Urubu",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Everton",
+            "sobrenome": "Moraes",
+            "apelido": "Tigre",
+            "posicao": "CAM"
+          }
+        ],
+        "Bom Jesus do Itabapoana": [
+          {
+            "nome": "Kleber",
+            "sobrenome": "Nunes",
+            "apelido": "Pintado",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Moraes",
+            "apelido": "Tigre",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Mendes",
+            "apelido": "Lobo",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Sérgio",
+            "sobrenome": "Teixeira",
+            "apelido": "Fantasma",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Souza",
+            "apelido": "Cobra",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Correia",
+            "apelido": "Gladiador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Caio",
+            "sobrenome": "Gomes",
+            "apelido": "Xerife",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Monteiro",
+            "apelido": "Relâmpago",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Rafael",
+            "sobrenome": "Araújo",
+            "apelido": "Trovão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Pinto",
+            "apelido": "Espanhol",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Barbosa",
+            "apelido": "Buldogue",
+            "posicao": "CAM"
+          }
+        ],
+        "Santo Antônio de Pádua": [
+          {
+            "nome": "Alan",
+            "sobrenome": "Monteiro",
+            "apelido": "Falcão",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Cardoso",
+            "apelido": "Pivete",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Lima",
+            "apelido": "Turco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Leandro",
+            "sobrenome": "Batista",
+            "apelido": "Gordão",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Márcio",
+            "sobrenome": "Martins",
+            "apelido": "Pombo",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Fábio",
+            "sobrenome": "Andrade",
+            "apelido": "Fantasma",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Mendes",
+            "apelido": "Craque",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Cavalcante",
+            "apelido": "Touro",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Carvalho",
+            "apelido": "Lobo",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Ribeiro",
+            "apelido": "Magrão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "João",
+            "sobrenome": "Moraes",
+            "apelido": "Barba",
+            "posicao": "CAM"
+          }
+        ],
+        "Itaperuna": [
+          {
+            "nome": "Leonardo",
+            "sobrenome": "Dias",
+            "apelido": "Relâmpago",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Diego",
+            "sobrenome": "Pinto",
+            "apelido": "Macaco",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Danilo",
+            "sobrenome": "Barbosa",
+            "apelido": "Japonês",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Eduardo",
+            "sobrenome": "Batista",
+            "apelido": "Carioca",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Carvalho",
+            "apelido": "Ratão",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Rodrigues",
+            "apelido": "Coruja",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Carlos",
+            "sobrenome": "Fernandes",
+            "apelido": "Tigre",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Fernandes",
+            "apelido": "Toquinho",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Fernando",
+            "sobrenome": "Andrade",
+            "apelido": "Cobra",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Costa",
+            "apelido": "Falcão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Carvalho",
+            "apelido": "Urubu",
+            "posicao": "CAM"
+          }
+        ],
+        "Miracema": [
+          {
+            "nome": "Wesley",
+            "sobrenome": "Cardoso",
+            "apelido": "Condor",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Murilo",
+            "sobrenome": "Nascimento",
+            "apelido": "Pantera",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Douglas",
+            "sobrenome": "Vieira",
+            "apelido": "Toquinho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Gabriel",
+            "sobrenome": "Azevedo",
+            "apelido": "Carioca",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "André",
+            "sobrenome": "Ferreira",
+            "apelido": "Touro",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Igor",
+            "sobrenome": "Nascimento",
+            "apelido": "Buldogue",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Gustavo",
+            "sobrenome": "Monteiro",
+            "apelido": "Peixe",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Costa",
+            "apelido": "Voador",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Rodrigo",
+            "sobrenome": "Pereira",
+            "apelido": "Tigre",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Henrique",
+            "sobrenome": "Nascimento",
+            "apelido": "Trovão",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Emerson",
+            "sobrenome": "Borges",
+            "apelido": "Bolinha",
+            "posicao": "CAM"
+          }
+        ],
+        "Aperibé": [
+          {
+            "nome": "Thiago",
+            "sobrenome": "Vieira",
+            "apelido": "Barba",
+            "posicao": "GOL"
+          },
+          {
+            "nome": "Adriano",
+            "sobrenome": "Moraes",
+            "apelido": "Peixe",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Cunha",
+            "apelido": "Toquinho",
+            "posicao": "ZAG"
+          },
+          {
+            "nome": "Renato",
+            "sobrenome": "Borges",
+            "apelido": "Buldogue",
+            "posicao": "LAD"
+          },
+          {
+            "nome": "Bruno",
+            "sobrenome": "Andrade",
+            "apelido": "Bolinha",
+            "posicao": "LAE"
+          },
+          {
+            "nome": "Alan",
+            "sobrenome": "Andrade",
+            "apelido": "Voador",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Wesley",
+            "sobrenome": "Araújo",
+            "apelido": "Gavião",
+            "posicao": "VOL"
+          },
+          {
+            "nome": "Lucas",
+            "sobrenome": "Rodrigues",
+            "apelido": "Gaúcho",
+            "posicao": "MEI"
+          },
+          {
+            "nome": "Wilian",
+            "sobrenome": "Souza",
+            "apelido": "Alemão",
+            "posicao": "PD"
+          },
+          {
+            "nome": "Felipe",
+            "sobrenome": "Dias",
+            "apelido": "Carioca",
+            "posicao": "PE"
+          },
+          {
+            "nome": "Mateus",
+            "sobrenome": "Batista",
+            "apelido": "Galinha",
+            "posicao": "CAM"
+          }
+        ]
+      }
+    }
+  ]
+}
