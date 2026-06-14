@@ -18,7 +18,6 @@
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--bg);color:var(--t1);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;min-height:100vh;}
-
 .topbar{background:var(--s1);border-bottom:1px solid var(--b1);padding:0 18px;display:flex;align-items:stretch;position:sticky;top:0;z-index:200;}
 .brand{font-size:14px;font-weight:700;color:var(--t1);padding:12px 14px 12px 0;display:flex;align-items:center;gap:6px;border-right:1px solid var(--b1);margin-right:6px;white-space:nowrap;}
 .brand span{color:var(--gd);}
@@ -30,8 +29,7 @@ body{background:var(--bg);color:var(--t1);font-family:'Segoe UI',system-ui,sans-
 .top-right{margin-left:auto;display:flex;align-items:center;gap:8px;}
 .pill{font-size:11px;color:var(--t2);background:var(--s2);border:1px solid var(--b1);padding:3px 10px;border-radius:20px;white-space:nowrap;}
 .pill.gd{color:var(--gd);}
-
-.main{display:grid;grid-template-columns:210px 1fr;}
+.main{display:grid;grid-template-columns:215px 1fr;}
 .sidebar{background:var(--s1);border-right:1px solid var(--b1);padding:10px 8px;display:flex;flex-direction:column;gap:3px;position:sticky;top:49px;height:calc(100vh - 49px);overflow-y:auto;}
 .sec-lbl{font-size:10px;font-weight:600;letter-spacing:.08em;color:var(--t3);text-transform:uppercase;padding:8px 8px 3px;}
 .nav-item{display:flex;align-items:center;gap:7px;padding:7px 9px;border-radius:var(--r);cursor:pointer;color:var(--t2);font-size:13px;border:1px solid transparent;transition:all .13s;user-select:none;}
@@ -46,20 +44,17 @@ body{background:var(--bg);color:var(--t1);font-family:'Segoe UI',system-ui,sans-
 .spd-row{display:flex;gap:3px;}
 .spd{flex:1;padding:4px 2px;border-radius:6px;border:1px solid var(--b1);background:transparent;color:var(--t2);font-size:10px;cursor:pointer;transition:all .13s;}
 .spd.on,.spd:hover{background:var(--s2);color:var(--t1);border-color:var(--b2);}
-.btn{width:100%;padding:7px 10px;border-radius:var(--r);border:1px solid var(--b2);background:var(--s2);color:var(--t1);font-size:12px;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .13s;}
+.btn{width:100%;padding:7px 10px;border-radius:var(--r);border:1px solid var(--b2);background:var(--s2);color:var(--t1);font-size:12px;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .13s;text-align:left;}
 .btn:hover:not(:disabled){background:var(--s3);border-color:rgba(255,255,255,.2);}
 .btn:disabled{opacity:.3;cursor:not-allowed;}
 .btn-gd{background:var(--gd2);border-color:rgba(245,200,66,.3);color:var(--gd);}
 .btn-gd:hover:not(:disabled){background:rgba(245,200,66,.2);}
 .btn-gn{background:var(--gn2);border-color:rgba(34,201,122,.3);color:var(--gn);}
 .btn-gn:hover:not(:disabled){background:rgba(34,201,122,.2);}
-.btn-pu{background:var(--pu2);border-color:rgba(176,126,245,.3);color:var(--pu);}
 .rnd-hint{text-align:center;font-size:11px;color:var(--t3);}
 .rnd-hint strong{color:var(--t2);}
 .vh{display:none!important;}
-
 .content{padding:16px;overflow-y:auto;min-height:calc(100vh - 49px);}
-
 /* TICKER */
 .ticker{background:var(--s1);border:1px solid var(--b1);border-radius:var(--rl);padding:12px 14px;margin-bottom:14px;display:none;}
 .ticker.on{display:block;}
@@ -76,7 +71,6 @@ body{background:var(--bg);color:var(--t1);font-family:'Segoe UI',system-ui,sans-
 .gev{display:flex;align-items:center;gap:6px;font-size:11px;padding:3px 7px;background:var(--gd2);border-radius:5px;border-left:2px solid var(--gd);animation:fi .2s ease;}
 @keyframes fi{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
 .gmin{color:var(--gd);font-weight:700;min-width:26px;font-family:monospace;}
-
 /* GRID */
 .grid-mode{display:none;margin-bottom:14px;}
 .grid-mode.on{display:block;}
@@ -95,12 +89,10 @@ body{background:var(--bg);color:var(--t1);font-family:'Segoe UI',system-ui,sans-
 .mc-sc{font-size:13px;font-weight:700;color:var(--t1);font-family:monospace;min-width:30px;text-align:center;}
 .mc-bar{height:2px;background:var(--s2);border-radius:99px;margin-top:5px;overflow:hidden;}
 .mc-fill{height:100%;background:var(--gd);border-radius:99px;}
-.mc-feed{margin-top:4px;max-height:44px;overflow-y:auto;display:flex;flex-direction:column;gap:2px;}
-.mc-gev{font-size:9px;color:var(--t2);padding:1px 0;border-left:1px solid var(--gd);padding-left:4px;animation:fi .2s ease;}
-
-/* STANDINGS LAYOUT */
-.slay{display:grid;grid-template-columns:1fr 260px;gap:16px;align-items:start;}
-@media(max-width:900px){.slay{grid-template-columns:1fr;}}
+.mc-feed{margin-top:4px;max-height:40px;overflow-y:auto;display:flex;flex-direction:column;gap:2px;}
+.mc-gev{font-size:9px;color:var(--t2);padding-left:4px;border-left:1px solid var(--gd);animation:fi .2s ease;}
+/* STANDINGS */
+.slay{display:grid;grid-template-columns:1fr 255px;gap:14px;align-items:start;}
 .div-hdr{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
 .div-dot-lg{width:9px;height:9px;border-radius:50%;}
 .div-title{font-size:15px;font-weight:600;}
@@ -126,27 +118,22 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 4px;}
 .bn{border-left:2px solid transparent;}
 .sgp{color:var(--gn);}
 .sgn{color:var(--rd);}
-
-/* FIXTURES PANEL */
+/* FIXTURES */
 .fix-panel{background:var(--s1);border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;}
-.fix-hdr{background:var(--s2);padding:8px 12px;font-size:11px;font-weight:600;color:var(--t2);border-bottom:1px solid var(--b1);}
-.fix-round{font-size:10px;color:var(--t3);font-weight:400;}
-.fix-list{overflow-y:auto;}
-.fix-item{display:grid;grid-template-columns:1fr auto 1fr;gap:6px;align-items:center;padding:6px 12px;border-bottom:1px solid var(--b1);font-size:11px;}
+.fix-hdr{background:var(--s2);padding:8px 12px;border-bottom:1px solid var(--b1);display:flex;justify-content:space-between;align-items:center;}
+.fix-hdr-title{font-size:11px;font-weight:600;color:var(--t2);}
+.fix-hdr-round{font-size:10px;color:var(--t3);}
+.fix-list{overflow-y:auto;max-height:500px;}
+.fix-item{display:grid;grid-template-columns:1fr 20px 1fr;gap:4px;align-items:center;padding:6px 12px;border-bottom:1px solid var(--b1);font-size:11px;}
 .fix-item:last-child{border-bottom:none;}
 .fix-home{text-align:right;color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.fix-vs{color:var(--t3);font-size:10px;white-space:nowrap;}
+.fix-vs{color:var(--t3);font-size:10px;text-align:center;}
 .fix-away{color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-
-/* FILTER BAR */
-.filter-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center;}
-.filter-label{font-size:11px;color:var(--t3);}
-.filter-select{background:var(--s2);border:1px solid var(--b2);color:var(--t1);font-size:12px;padding:5px 10px;border-radius:var(--r);cursor:pointer;}
-.filter-select:focus{outline:none;border-color:var(--gd);}
-
 /* RESULTS */
-.res-sec{margin-bottom:14px;}
-.res-dlbl{font-size:10px;font-weight:600;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;}
+.filter-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center;}
+.filter-lbl{font-size:11px;color:var(--t3);}
+.fsel{background:var(--s2);border:1px solid var(--b2);color:var(--t1);font-size:12px;padding:5px 10px;border-radius:var(--r);cursor:pointer;outline:none;}
+.fsel:focus{border-color:var(--gd);}
 .res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:5px;}
 .rc{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);padding:8px 10px;}
 .rc-row{display:grid;grid-template-columns:1fr auto 1fr;gap:5px;align-items:center;}
@@ -154,7 +141,6 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 4px;}
 .rc-n.aw{text-align:left;}
 .rc-sc{font-size:12px;font-weight:700;color:var(--t1);background:var(--s2);border:1px solid var(--b1);padding:2px 7px;border-radius:5px;white-space:nowrap;font-family:monospace;text-align:center;}
 .rc-w{color:var(--gn);}
-
 /* ARTILHARIA */
 .art-filter{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;}
 .art-ftab{padding:5px 12px;border-radius:20px;border:1px solid var(--b1);background:transparent;color:var(--t2);font-size:12px;cursor:pointer;transition:all .13s;}
@@ -170,31 +156,31 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 4px;}
 .art-sub{font-size:10px;color:var(--t3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .art-val{font-weight:700;color:var(--gd);min-width:20px;text-align:center;font-size:13px;}
 .art-val.gn{color:var(--gn);}
-
 /* HISTORICO */
 .hist-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;margin-bottom:12px;}
 .hist-hdr{background:var(--s2);padding:8px 12px;font-size:12px;font-weight:600;color:var(--t2);border-bottom:1px solid var(--b1);}
-.hist-row{display:flex;justify-content:space-between;padding:6px 12px;border-bottom:1px solid var(--b1);font-size:11px;gap:8px;}
+.hist-sec{padding:6px 12px 2px;font-size:10px;font-weight:600;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--b1);}
+.hist-row{display:flex;justify-content:space-between;padding:5px 12px;border-bottom:1px solid var(--b1);font-size:11px;gap:8px;}
 .hist-row:last-child{border-bottom:none;}
-.hist-lbl{color:var(--t3);}
+.hist-lbl{color:var(--t3);flex-shrink:0;}
 .hist-val{color:var(--t1);text-align:right;}
 .hist-val.gd{color:var(--gd);font-weight:600;}
 .hist-val.gn{color:var(--gn);}
 .hist-val.rd{color:var(--rd);}
-
+.hist-val.pu{color:var(--pu);font-weight:600;}
 /* REGIONAL */
-.reg-info-box{font-size:12px;color:var(--t2);padding:10px 14px;background:var(--s2);border-radius:var(--r);margin-bottom:14px;line-height:1.6;}
-.reg-matches{display:flex;flex-direction:column;gap:8px;max-width:480px;}
+.reg-info-box{font-size:12px;color:var(--t2);padding:10px 14px;background:var(--s2);border-radius:var(--r);margin-bottom:14px;line-height:1.7;}
+.reg-matches{display:flex;flex-direction:column;gap:8px;max-width:500px;}
 .reg-match{background:var(--s1);border:1px solid var(--b1);border-radius:var(--r);overflow:hidden;}
-.reg-match-hdr{background:var(--s2);padding:5px 12px;font-size:10px;font-weight:600;color:var(--pu);letter-spacing:.05em;border-bottom:1px solid var(--b1);}
-.reg-match-body{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:10px 14px;}
-.reg-tm{font-size:13px;font-weight:500;}
+.reg-mhdr{background:var(--s2);padding:5px 12px;font-size:10px;font-weight:600;color:var(--pu);letter-spacing:.05em;border-bottom:1px solid var(--b1);}
+.reg-mbody{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;padding:10px 14px;}
+.reg-tm{font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .reg-tm.r{text-align:right;}
-.reg-tm.winner{color:var(--gd);}
-.reg-sc{font-size:16px;font-weight:700;font-family:monospace;background:var(--s2);border:1px solid var(--b1);padding:3px 12px;border-radius:6px;text-align:center;}
-.reg-agg{text-align:center;font-size:10px;color:var(--t3);padding-bottom:8px;}
-.reg-winner-banner{text-align:center;padding:12px;font-size:15px;font-weight:700;color:var(--gd);}
-
+.reg-tm.win{color:var(--gd);font-weight:700;}
+.reg-sc{font-size:16px;font-weight:700;font-family:monospace;background:var(--s2);border:1px solid var(--b1);padding:3px 12px;border-radius:6px;text-align:center;white-space:nowrap;}
+.reg-agg{text-align:center;font-size:10px;color:var(--t3);padding:0 14px 8px;}
+.reg-winner{text-align:center;padding:12px;font-size:15px;font-weight:700;color:var(--gd);}
+.reg-next{font-size:12px;color:var(--t3);margin-top:10px;padding:8px 12px;background:var(--s2);border-radius:var(--r);}
 .empty{padding:28px;text-align:center;color:var(--t3);font-size:12px;}
 .notif{position:fixed;bottom:20px;right:20px;background:var(--s1);border:1px solid var(--b2);border-radius:var(--rl);padding:10px 14px;font-size:12px;color:var(--t1);z-index:999;animation:su .3s ease;max-width:260px;box-shadow:0 8px 24px rgba(0,0,0,.5);}
 @keyframes su{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -237,11 +223,11 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 4px;}
     <div class="rnd-hint" id="rnd-hint">—</div>
   </div>
 </div>
-<div class="content" id="main-content">
+<div class="content">
   <div class="ticker" id="ticker">
     <div class="tck-top">
       <div><div class="tck-dlbl" id="t-div">—</div><div class="tck-clock" id="t-clock">00'</div></div>
-      <div style="text-align:right"><div style="font-size:11px;color:var(--t2)" id="t-round">—</div><div style="font-size:10px;color:var(--t3);margin-top:2px">ao vivo</div></div>
+      <div style="text-align:right"><div style="font-size:11px;color:var(--t2)" id="t-label">—</div><div style="font-size:10px;color:var(--t3);margin-top:2px">ao vivo</div></div>
     </div>
     <div class="tck-match">
       <div class="tck-team" id="t-home">-</div>
@@ -253,7 +239,7 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 4px;}
   </div>
   <div class="grid-mode" id="grid-mode">
     <div class="gm-top">
-      <div style="font-size:12px;color:var(--t2)">Rodada <strong id="gm-round" style="color:var(--t1)">-</strong></div>
+      <div style="font-size:12px;color:var(--t2)" id="gm-label">—</div>
       <div class="gm-clock" id="gm-clock">00'</div>
     </div>
     <div class="gm-bar"><div class="gm-fill" id="gm-fill" style="width:0%"></div></div>
@@ -266,114 +252,106 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 4px;}
   <div id="view-regional" class="vh"></div>
 </div>
 </div>
-
 <script>
-const RAW = {"estados": [{"sigla": "SP", "nome": "São Paulo", "nomes_divisoes": ["A1", "A2", "B1", "B2"], "equipes": ["São Paulo", "Campinas", "Guarulhos", "São Bernardo do Campo", "Santo André", "Osasco", "Sorocaba", "Ribeirão Preto", "São José dos Campos", "Mogi das Cruzes", "Santos", "Diadema", "Carapicuíba", "Jundiaí", "Mauá", "Itaquaquecetuba", "Suzano", "Taboão da Serra", "São Vicente", "Praia Grande", "Barueri", "Piracicaba", "Bauru", "Franca", "São José do Rio Preto", "Limeira", "Taubaté", "Presidente Prudente", "Araçatuba", "Araraquara", "Marília", "Americana", "Hortolândia", "Indaiatuba", "Sumaré", "Cotia", "Itapevi", "Embu das Artes", "Ferraz de Vasconcelos", "Francisco Morato"]}, {"sigla": "RJ", "nome": "Rio de Janeiro", "nomes_divisoes": ["A1", "A2", "B1", "B2"], "equipes": ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias", "Nova Iguaçu", "Niterói", "Belford Roxo", "São João de Meriti", "Campos dos Goytacazes", "Petrópolis", "Volta Redonda", "Macaé", "Magé", "Itaboraí", "Mesquita", "Nilópolis", "Nova Friburgo", "Barra Mansa", "Maricá", "Queimados", "Cabo Frio", "Teresópolis", "Angra dos Reis", "Japeri", "Resende", "Seropédica", "Rio das Ostras", "Itaguaí", "Cachoeiras de Macacu", "Paracambi", "Guapimirim", "Três Rios", "Barra do Piraí", "Vassouras", "Valença", "Paraíba do Sul", "Bom Jesus do Itabapoana", "Santo Antônio de Pádua", "Itaperuna", "Miracema", "Aperibé"]}], "jogadores": {"SP": [{"nome": "Vítor", "sobrenome": "Correia", "apelido": "Macaco"}, {"nome": "Sérgio", "sobrenome": "Lopes", "apelido": "Canhão7"}, {"nome": "Bruno", "sobrenome": "Azevedo", "apelido": "Gavião2"}, {"nome": "Diego", "sobrenome": "Andrade", "apelido": "Tigre"}, {"nome": "Everton", "sobrenome": "Lopes", "apelido": "Pipoca"}, {"nome": "Cleber", "sobrenome": "Oliveira", "apelido": "Fera4"}, {"nome": "Renato", "sobrenome": "Rezende", "apelido": "Barba"}, {"nome": "Pedro", "sobrenome": "Moreira", "apelido": "Gordão"}, {"nome": "Thiago", "sobrenome": "Pereira", "apelido": "Turco3"}, {"nome": "Henrique", "sobrenome": "Correia", "apelido": "Laser"}, {"nome": "Ronaldo", "sobrenome": "Andrade", "apelido": "Macaco"}, {"nome": "Fred", "sobrenome": "Freitas", "apelido": "Laser"}, {"nome": "Igor", "sobrenome": "Silva", "apelido": "Condor"}, {"nome": "Emerson", "sobrenome": "Andrade", "apelido": "Turco"}, {"nome": "Gilberto", "sobrenome": "Barbosa", "apelido": "Tigrão7"}, {"nome": "João", "sobrenome": "Nascimento", "apelido": "Viking"}, {"nome": "Rivaldo", "sobrenome": "Nascimento", "apelido": "Falcão"}, {"nome": "Gustavo", "sobrenome": "Freitas", "apelido": "Viking5"}, {"nome": "Mateus", "sobrenome": "Nascimento", "apelido": "Turco"}, {"nome": "Alan", "sobrenome": "Miranda", "apelido": "Urubu"}, {"nome": "Gabriel", "sobrenome": "Cardoso", "apelido": "Relâmpago"}, {"nome": "Wilian", "sobrenome": "Santos", "apelido": "Leão3"}, {"nome": "Jadson", "sobrenome": "Ribeiro", "apelido": "Cobra7"}, {"nome": "Wilian", "sobrenome": "Azevedo", "apelido": "Bolinha3"}, {"nome": "Wesley", "sobrenome": "Rezende", "apelido": "Magrão"}, {"nome": "Everton", "sobrenome": "Cardoso", "apelido": "Gavião3"}, {"nome": "Wesley", "sobrenome": "Pereira", "apelido": "Zica"}, {"nome": "Jadson", "sobrenome": "Lopes", "apelido": "Leão"}, {"nome": "Caio", "sobrenome": "Lima", "apelido": "Paulista8"}, {"nome": "Vítor", "sobrenome": "Borges", "apelido": "Fantasma"}, {"nome": "Vítor", "sobrenome": "Lima", "apelido": "Torpedo"}, {"nome": "Kaká", "sobrenome": "Fonseca", "apelido": "Falcão"}, {"nome": "Neymar", "sobrenome": "Teixeira", "apelido": "Espanhol5"}, {"nome": "Diego", "sobrenome": "Cunha", "apelido": "Fantasma3"}, {"nome": "Gustavo", "sobrenome": "Cardoso", "apelido": "Falcão"}, {"nome": "Fernando", "sobrenome": "Rezende", "apelido": "Mineiro2"}, {"nome": "Fernando", "sobrenome": "Neto", "apelido": "Tigrão"}, {"nome": "Carlos", "sobrenome": "Nascimento", "apelido": "Bomba"}, {"nome": "Murilo", "sobrenome": "Neto", "apelido": "Canhão"}, {"nome": "Carlos", "sobrenome": "Rodrigues", "apelido": "Metralhadora"}, {"nome": "Bruno", "sobrenome": "Gomes", "apelido": "Pombo6"}, {"nome": "Henrique", "sobrenome": "Pereira", "apelido": "Rojão"}, {"nome": "Kleber", "sobrenome": "Barbosa", "apelido": "Gaúcho"}, {"nome": "Wesley", "sobrenome": "Rocha", "apelido": "Canhoto6"}, {"nome": "Gustavo", "sobrenome": "Campos", "apelido": "Gordão"}, {"nome": "Mateus", "sobrenome": "Ribeiro", "apelido": "Pivete2"}, {"nome": "Diego", "sobrenome": "Borges", "apelido": "Índio"}, {"nome": "Murilo", "sobrenome": "Campos", "apelido": "Ratão"}, {"nome": "Mateus", "sobrenome": "Andrade", "apelido": "Leão"}, {"nome": "Caio", "sobrenome": "Batista", "apelido": "Gavião"}, {"nome": "Thiago", "sobrenome": "Fonseca", "apelido": "Macaco"}, {"nome": "Bruno", "sobrenome": "Moura", "apelido": "Torpedo8"}, {"nome": "Paulo", "sobrenome": "Barbosa", "apelido": "Paulista3"}, {"nome": "Gustavo", "sobrenome": "Oliveira", "apelido": "Pistola"}, {"nome": "Neymar", "sobrenome": "Campos", "apelido": "Gladiador8"}, {"nome": "Fernando", "sobrenome": "Batista", "apelido": "Gladiador"}, {"nome": "Rafael", "sobrenome": "Pereira", "apelido": "Pivete"}, {"nome": "Leonardo", "sobrenome": "Araújo", "apelido": "Laser"}, {"nome": "Jadson", "sobrenome": "Monteiro", "apelido": "Toquinho"}, {"nome": "Rodrigo", "sobrenome": "Moreira", "apelido": "Pipoca"}, {"nome": "Gilberto", "sobrenome": "Cunha", "apelido": "Macaco5"}, {"nome": "Ronaldo", "sobrenome": "Moura", "apelido": "Craque"}, {"nome": "Hulk", "sobrenome": "Barbosa", "apelido": "Turco"}, {"nome": "Jadson", "sobrenome": "Moraes", "apelido": "Toquinho"}, {"nome": "Mateus", "sobrenome": "Xavier", "apelido": "Gavião"}, {"nome": "Marcelo", "sobrenome": "Ramos", "apelido": "Torpedo"}, {"nome": "Kleber", "sobrenome": "Lima", "apelido": "Rojão"}, {"nome": "Felipe", "sobrenome": "Dias", "apelido": "Barba5"}, {"nome": "Gustavo", "sobrenome": "Nunes", "apelido": "Baiano"}, {"nome": "Kleber", "sobrenome": "Azevedo", "apelido": "Foguete2"}, {"nome": "Lucas", "sobrenome": "Lopes", "apelido": "Viking"}, {"nome": "Gabriel", "sobrenome": "Souza", "apelido": "Pipoca"}, {"nome": "Neymar", "sobrenome": "Vieira", "apelido": "Gladiador8"}, {"nome": "Fernando", "sobrenome": "Moraes", "apelido": "Viking"}, {"nome": "Rafael", "sobrenome": "Gomes", "apelido": "Pivete"}, {"nome": "Alan", "sobrenome": "Correia", "apelido": "Gavião"}, {"nome": "Alan", "sobrenome": "Marques", "apelido": "Torpedo"}, {"nome": "Murilo", "sobrenome": "Silva", "apelido": "Laser"}, {"nome": "Bruno", "sobrenome": "Moreira", "apelido": "Bomba"}, {"nome": "Alan", "sobrenome": "Andrade", "apelido": "Bolinha8"}, {"nome": "Danilo", "sobrenome": "Ramos", "apelido": "Falcão9"}, {"nome": "Rodrigo", "sobrenome": "Moura", "apelido": "Russo"}, {"nome": "Hulk", "sobrenome": "Machado", "apelido": "Urubu"}, {"nome": "Emerson", "sobrenome": "Araújo", "apelido": "Paulista"}, {"nome": "Felipe", "sobrenome": "Carvalho", "apelido": "Urubu"}, {"nome": "Adriano", "sobrenome": "Correia", "apelido": "Galinha"}, {"nome": "Leonardo", "sobrenome": "Gomes", "apelido": "Laser3"}, {"nome": "Leandro", "sobrenome": "Rezende", "apelido": "Espanhol9"}, {"nome": "Wilian", "sobrenome": "Mendes", "apelido": "Foguete8"}, {"nome": "Wilian", "sobrenome": "Souza", "apelido": "Pivete9"}, {"nome": "Henrique", "sobrenome": "Oliveira", "apelido": "Condor"}, {"nome": "Pedro", "sobrenome": "Oliveira", "apelido": "Laser8"}, {"nome": "Rafael", "sobrenome": "Dias", "apelido": "Tigrão3"}, {"nome": "Fred", "sobrenome": "Souza", "apelido": "Russo2"}, {"nome": "Mateus", "sobrenome": "Rocha", "apelido": "Metralhadora"}, {"nome": "Renato", "sobrenome": "Teixeira", "apelido": "Macaco"}, {"nome": "Rodrigo", "sobrenome": "Mendes", "apelido": "Galinha"}, {"nome": "Murilo", "sobrenome": "Moraes", "apelido": "Lobo"}, {"nome": "Felipe", "sobrenome": "Cavalcante", "apelido": "Xerife"}, {"nome": "Paulo", "sobrenome": "Pereira", "apelido": "Fantasma"}, {"nome": "Gilberto", "sobrenome": "Nascimento", "apelido": "Pipoca4"}, {"nome": "Eduardo", "sobrenome": "Ferreira", "apelido": "Gladiador3"}, {"nome": "Cleber", "sobrenome": "Rodrigues", "apelido": "Coruja"}, {"nome": "Pedro", "sobrenome": "Andrade", "apelido": "Bazuca"}, {"nome": "Alexandre", "sobrenome": "Campos", "apelido": "Laser"}, {"nome": "Leandro", "sobrenome": "Miranda", "apelido": "Condor"}, {"nome": "Paulo", "sobrenome": "Silva", "apelido": "Russo9"}, {"nome": "Robinho", "sobrenome": "Lopes", "apelido": "Bolinha7"}, {"nome": "Carlos", "sobrenome": "Moraes", "apelido": "Gordão5"}, {"nome": "Diego", "sobrenome": "Ramos", "apelido": "Espanhol"}, {"nome": "Pedro", "sobrenome": "Barbosa", "apelido": "Turco6"}, {"nome": "Pedro", "sobrenome": "Guimarães", "apelido": "Pivete5"}, {"nome": "Alexandre", "sobrenome": "Machado", "apelido": "Índio9"}, {"nome": "Gabriel", "sobrenome": "Fernandes", "apelido": "Baiano"}, {"nome": "Leandro", "sobrenome": "Melo", "apelido": "Bolinha3"}, {"nome": "Gustavo", "sobrenome": "Gomes", "apelido": "Gladiador"}, {"nome": "João", "sobrenome": "Marques", "apelido": "Torpedo"}, {"nome": "Gabriel", "sobrenome": "Carvalho", "apelido": "Trovão"}, {"nome": "Robinho", "sobrenome": "Rocha", "apelido": "Buldogue"}, {"nome": "Fábio", "sobrenome": "Machado", "apelido": "Xerife"}, {"nome": "Danilo", "sobrenome": "Marques", "apelido": "Falcão"}, {"nome": "Marcelo", "sobrenome": "Batista", "apelido": "Pantera"}, {"nome": "Fernando", "sobrenome": "Machado", "apelido": "Gordão4"}, {"nome": "Fábio", "sobrenome": "Nunes", "apelido": "Tigre5"}, {"nome": "Mateus", "sobrenome": "Santos", "apelido": "Paulista"}, {"nome": "Wilian", "sobrenome": "Nunes", "apelido": "Condor7"}, {"nome": "Felipe", "sobrenome": "Miranda", "apelido": "Metralhadora"}, {"nome": "Mateus", "sobrenome": "Cavalcante", "apelido": "Falcão"}, {"nome": "Adriano", "sobrenome": "Barbosa", "apelido": "Gordão"}, {"nome": "Emerson", "sobrenome": "Dias", "apelido": "Raposa"}, {"nome": "Fred", "sobrenome": "Azevedo", "apelido": "Zica"}, {"nome": "Mateus", "sobrenome": "Moura", "apelido": "Falcão6"}, {"nome": "Márcio", "sobrenome": "Cardoso", "apelido": "Turco"}, {"nome": "Thiago", "sobrenome": "Rocha", "apelido": "Leão"}, {"nome": "Everton", "sobrenome": "Dias", "apelido": "Falcão7"}, {"nome": "Sérgio", "sobrenome": "Carvalho", "apelido": "Mineiro"}, {"nome": "Wilian", "sobrenome": "Campos", "apelido": "Canhoto"}, {"nome": "Rodrigo", "sobrenome": "Araújo", "apelido": "Gaúcho"}, {"nome": "Lucas", "sobrenome": "Rodrigues", "apelido": "Pivete9"}, {"nome": "Fernando", "sobrenome": "Miranda", "apelido": "Pombo"}, {"nome": "Henrique", "sobrenome": "Cardoso", "apelido": "Baiano"}, {"nome": "Fábio", "sobrenome": "Moreira", "apelido": "Coruja5"}, {"nome": "Gilberto", "sobrenome": "Moreira", "apelido": "Lobo"}, {"nome": "Thiago", "sobrenome": "Ramos", "apelido": "Galinha"}, {"nome": "Fábio", "sobrenome": "Neto", "apelido": "Urubu"}, {"nome": "Neymar", "sobrenome": "Ribeiro", "apelido": "Cobra"}, {"nome": "Cleber", "sobrenome": "Mendes", "apelido": "Pistola5"}, {"nome": "Leandro", "sobrenome": "Guimarães", "apelido": "Russo"}, {"nome": "Rafael", "sobrenome": "Melo", "apelido": "Ratão9"}, {"nome": "Igor", "sobrenome": "Miranda", "apelido": "Foguete"}, {"nome": "Wesley", "sobrenome": "Moreira", "apelido": "Voador"}, {"nome": "Fábio", "sobrenome": "Araújo", "apelido": "Gavião"}, {"nome": "Cleber", "sobrenome": "Fonseca", "apelido": "Canhoto"}, {"nome": "Gustavo", "sobrenome": "Rezende", "apelido": "Pipoca"}, {"nome": "Eduardo", "sobrenome": "Lopes", "apelido": "Pombo"}, {"nome": "Lucas", "sobrenome": "Cunha", "apelido": "Índio"}, {"nome": "Pedro", "sobrenome": "Dias", "apelido": "Bazuca6"}, {"nome": "Bruno", "sobrenome": "Nascimento", "apelido": "Torpedo8"}, {"nome": "Henrique", "sobrenome": "Moura", "apelido": "Barba"}, {"nome": "Rodrigo", "sobrenome": "Pereira", "apelido": "Leão5"}, {"nome": "Everton", "sobrenome": "Ribeiro", "apelido": "Foguete7"}, {"nome": "Diego", "sobrenome": "Dias", "apelido": "Gladiador"}, {"nome": "Igor", "sobrenome": "Guimarães", "apelido": "Índio"}, {"nome": "Hulk", "sobrenome": "Teixeira", "apelido": "Tigrão"}, {"nome": "Fernando", "sobrenome": "Ramos", "apelido": "Leão"}, {"nome": "Renato", "sobrenome": "Monteiro", "apelido": "Fera"}, {"nome": "Leonardo", "sobrenome": "Rezende", "apelido": "Rojão"}, {"nome": "Fábio", "sobrenome": "Silva", "apelido": "Canhoto"}, {"nome": "Marcelo", "sobrenome": "Ribeiro", "apelido": "Magrão3"}, {"nome": "Douglas", "sobrenome": "Costa", "apelido": "Zica"}, {"nome": "Diego", "sobrenome": "Neto", "apelido": "Fera"}, {"nome": "Rodrigo", "sobrenome": "Miranda", "apelido": "Leão3"}, {"nome": "Alexandre", "sobrenome": "Costa", "apelido": "Relâmpago"}, {"nome": "Everton", "sobrenome": "Vieira", "apelido": "Mineiro6"}, {"nome": "Thiago", "sobrenome": "Azevedo", "apelido": "Condor"}, {"nome": "Bruno", "sobrenome": "Nunes", "apelido": "Pipoca"}, {"nome": "Paulo", "sobrenome": "Monteiro", "apelido": "Pistola"}, {"nome": "Wesley", "sobrenome": "Melo", "apelido": "Gladiador"}, {"nome": "Sérgio", "sobrenome": "Andrade", "apelido": "Touro3"}, {"nome": "Fred", "sobrenome": "Dias", "apelido": "Viking"}, {"nome": "Leonardo", "sobrenome": "Rocha", "apelido": "Russo"}, {"nome": "Carlos", "sobrenome": "Campos", "apelido": "Turco5"}, {"nome": "André", "sobrenome": "Marques", "apelido": "Canhoto"}, {"nome": "Everton", "sobrenome": "Correia", "apelido": "Magrão2"}, {"nome": "Leandro", "sobrenome": "Teixeira", "apelido": "Lobo5"}, {"nome": "Rivaldo", "sobrenome": "Ferreira", "apelido": "Urubu"}, {"nome": "Alexandre", "sobrenome": "Carvalho", "apelido": "Relâmpago"}, {"nome": "Jadson", "sobrenome": "Cavalcante", "apelido": "Espanhol"}, {"nome": "Renato", "sobrenome": "Ramos", "apelido": "Raposa4"}, {"nome": "Márcio", "sobrenome": "Andrade", "apelido": "Buldogue"}, {"nome": "Paulo", "sobrenome": "Rocha", "apelido": "Fumaça"}, {"nome": "Caio", "sobrenome": "Dias", "apelido": "Barba"}, {"nome": "Robinho", "sobrenome": "Gomes", "apelido": "Índio"}, {"nome": "Danilo", "sobrenome": "Martins", "apelido": "Raposa8"}, {"nome": "Robinho", "sobrenome": "Azevedo", "apelido": "Bazuca"}, {"nome": "Kleber", "sobrenome": "Xavier", "apelido": "Gladiador"}, {"nome": "Diego", "sobrenome": "Pinto", "apelido": "Magrão"}, {"nome": "Marcelo", "sobrenome": "Cavalcante", "apelido": "Buldogue"}, {"nome": "Lucas", "sobrenome": "Campos", "apelido": "Zica"}, {"nome": "Fábio", "sobrenome": "Correia", "apelido": "Xerife"}, {"nome": "Sérgio", "sobrenome": "Almeida", "apelido": "Raposa"}, {"nome": "Carlos", "sobrenome": "Dias", "apelido": "Fera"}, {"nome": "João", "sobrenome": "Souza", "apelido": "Cobra"}, {"nome": "Marcelo", "sobrenome": "Neto", "apelido": "Touro"}, {"nome": "Ronaldo", "sobrenome": "Freitas", "apelido": "Leão"}, {"nome": "Fernando", "sobrenome": "Barbosa", "apelido": "Urubu"}, {"nome": "Marcelo", "sobrenome": "Mendes", "apelido": "Barba"}, {"nome": "Eduardo", "sobrenome": "Fonseca", "apelido": "Pantera"}, {"nome": "André", "sobrenome": "Moreira", "apelido": "Bomba"}, {"nome": "Leandro", "sobrenome": "Borges", "apelido": "Gladiador3"}, {"nome": "Renato", "sobrenome": "Souza", "apelido": "Falcão"}, {"nome": "Wilian", "sobrenome": "Lima", "apelido": "Urubu2"}, {"nome": "Diego", "sobrenome": "Fonseca", "apelido": "Barba"}, {"nome": "Alexandre", "sobrenome": "Melo", "apelido": "Pistola"}, {"nome": "Danilo", "sobrenome": "Rezende", "apelido": "Índio"}, {"nome": "Bruno", "sobrenome": "Barbosa", "apelido": "Toquinho5"}, {"nome": "Wilian", "sobrenome": "Nascimento", "apelido": "Bazuca8"}, {"nome": "Wilian", "sobrenome": "Ribeiro", "apelido": "Fantasma"}, {"nome": "João", "sobrenome": "Rodrigues", "apelido": "Baiano2"}, {"nome": "Eduardo", "sobrenome": "Pereira", "apelido": "Fantasma"}, {"nome": "Thiago", "sobrenome": "Guimarães", "apelido": "Zica"}, {"nome": "Gustavo", "sobrenome": "Souza", "apelido": "Espanhol"}, {"nome": "Gilberto", "sobrenome": "Monteiro", "apelido": "Trovão"}, {"nome": "Leonardo", "sobrenome": "Melo", "apelido": "Pantera8"}, {"nome": "Adriano", "sobrenome": "Machado", "apelido": "Fantasma"}, {"nome": "Vítor", "sobrenome": "Nascimento", "apelido": "Gladiador"}, {"nome": "Eduardo", "sobrenome": "Moraes", "apelido": "Turco7"}, {"nome": "Hulk", "sobrenome": "Neto", "apelido": "Baiano"}, {"nome": "Everton", "sobrenome": "Machado", "apelido": "Condor"}, {"nome": "Mateus", "sobrenome": "Batista", "apelido": "Gaúcho"}, {"nome": "Alan", "sobrenome": "Cardoso", "apelido": "Zica"}, {"nome": "Douglas", "sobrenome": "Andrade", "apelido": "Pipoca"}, {"nome": "Hulk", "sobrenome": "Fernandes", "apelido": "Torpedo"}, {"nome": "Neymar", "sobrenome": "Dias", "apelido": "Espanhol5"}, {"nome": "Lucas", "sobrenome": "Rezende", "apelido": "Toquinho5"}, {"nome": "Neymar", "sobrenome": "Ferreira", "apelido": "Gavião"}, {"nome": "Rafael", "sobrenome": "Correia", "apelido": "Carioca8"}, {"nome": "Emerson", "sobrenome": "Moura", "apelido": "Tigrão"}, {"nome": "Emerson", "sobrenome": "Machado", "apelido": "Toquinho"}, {"nome": "Diego", "sobrenome": "Moraes", "apelido": "Cobra"}, {"nome": "Thiago", "sobrenome": "Vieira", "apelido": "Laser"}, {"nome": "Kleber", "sobrenome": "Moraes", "apelido": "Zica"}, {"nome": "Diego", "sobrenome": "Rezende", "apelido": "Foguete"}, {"nome": "Gabriel", "sobrenome": "Andrade", "apelido": "Trovão7"}, {"nome": "Igor", "sobrenome": "Oliveira", "apelido": "Craque6"}, {"nome": "Rodrigo", "sobrenome": "Santos", "apelido": "Russo2"}, {"nome": "Igor", "sobrenome": "Vieira", "apelido": "Bolinha"}, {"nome": "Vítor", "sobrenome": "Batista", "apelido": "Pantera"}, {"nome": "Fábio", "sobrenome": "Freitas", "apelido": "Metralhadora"}, {"nome": "Rodrigo", "sobrenome": "Melo", "apelido": "Pombo"}, {"nome": "Gustavo", "sobrenome": "Santos", "apelido": "Falcão"}, {"nome": "André", "sobrenome": "Rezende", "apelido": "Pintado"}, {"nome": "Gilberto", "sobrenome": "Marques", "apelido": "Gavião"}, {"nome": "Igor", "sobrenome": "Costa", "apelido": "Gordão9"}, {"nome": "Hulk", "sobrenome": "Vieira", "apelido": "Gavião"}, {"nome": "Fábio", "sobrenome": "Rocha", "apelido": "Trovão"}, {"nome": "Márcio", "sobrenome": "Nunes", "apelido": "Bolinha"}, {"nome": "Felipe", "sobrenome": "Monteiro", "apelido": "Índio3"}, {"nome": "Bruno", "sobrenome": "Cardoso", "apelido": "Falcão"}, {"nome": "Ronaldo", "sobrenome": "Araújo", "apelido": "Voador"}, {"nome": "Jadson", "sobrenome": "Neto", "apelido": "Ratão6"}, {"nome": "Henrique", "sobrenome": "Martins", "apelido": "Viking"}, {"nome": "Eduardo", "sobrenome": "Machado", "apelido": "Fantasma"}, {"nome": "Adriano", "sobrenome": "Rezende", "apelido": "Míssil"}, {"nome": "Rodrigo", "sobrenome": "Cunha", "apelido": "Condor"}, {"nome": "Wilian", "sobrenome": "Xavier", "apelido": "Carioca"}, {"nome": "Henrique", "sobrenome": "Andrade", "apelido": "Coruja"}, {"nome": "Fábio", "sobrenome": "Moura", "apelido": "Tigre"}, {"nome": "Vítor", "sobrenome": "Ramos", "apelido": "Rojão"}, {"nome": "Thiago", "sobrenome": "Ribeiro", "apelido": "Foguete5"}, {"nome": "Thiago", "sobrenome": "Lopes", "apelido": "Zica"}, {"nome": "Leandro", "sobrenome": "Batista", "apelido": "Peixe"}, {"nome": "Murilo", "sobrenome": "Fonseca", "apelido": "Bazuca"}, {"nome": "Fernando", "sobrenome": "Silva", "apelido": "Lobo"}, {"nome": "Paulo", "sobrenome": "Ferreira", "apelido": "Peixe"}, {"nome": "Leonardo", "sobrenome": "Barbosa", "apelido": "Raposa"}, {"nome": "Renato", "sobrenome": "Ferreira", "apelido": "Macaco"}, {"nome": "Danilo", "sobrenome": "Guimarães", "apelido": "Zica"}, {"nome": "Fábio", "sobrenome": "Santos", "apelido": "Fera8"}, {"nome": "Robinho", "sobrenome": "Rezende", "apelido": "Pivete2"}, {"nome": "Lucas", "sobrenome": "Borges", "apelido": "Craque7"}, {"nome": "Henrique", "sobrenome": "Santos", "apelido": "Raposa"}, {"nome": "João", "sobrenome": "Ferreira", "apelido": "Foguete"}, {"nome": "Leandro", "sobrenome": "Ramos", "apelido": "Touro6"}, {"nome": "Igor", "sobrenome": "Martins", "apelido": "Fantasma"}, {"nome": "Diego", "sobrenome": "Oliveira", "apelido": "Touro3"}, {"nome": "Mateus", "sobrenome": "Moreira", "apelido": "Coruja2"}, {"nome": "Everton", "sobrenome": "Pinto", "apelido": "Gordão"}, {"nome": "Diego", "sobrenome": "Mendes", "apelido": "Gordão"}, {"nome": "Paulo", "sobrenome": "Guimarães", "apelido": "Gaúcho"}, {"nome": "Fábio", "sobrenome": "Martins", "apelido": "Alemão"}, {"nome": "Emerson", "sobrenome": "Monteiro", "apelido": "Metralhadora"}, {"nome": "Fred", "sobrenome": "Campos", "apelido": "Bolinha"}, {"nome": "André", "sobrenome": "Nunes", "apelido": "Canhoto6"}, {"nome": "Thiago", "sobrenome": "Costa", "apelido": "Magrão"}, {"nome": "Paulo", "sobrenome": "Teixeira", "apelido": "Pipoca"}, {"nome": "Paulo", "sobrenome": "Cavalcante", "apelido": "Laser"}, {"nome": "Kleber", "sobrenome": "Machado", "apelido": "Gladiador"}, {"nome": "Márcio", "sobrenome": "Dias", "apelido": "Mineiro5"}, {"nome": "Leandro", "sobrenome": "Pereira", "apelido": "Falcão"}, {"nome": "Diego", "sobrenome": "Carvalho", "apelido": "Bazuca"}, {"nome": "Cleber", "sobrenome": "Souza", "apelido": "Tigre4"}, {"nome": "Emerson", "sobrenome": "Guimarães", "apelido": "Viking"}, {"nome": "Lucas", "sobrenome": "Souza", "apelido": "Viking"}, {"nome": "Wilian", "sobrenome": "Martins", "apelido": "Barba6"}, {"nome": "Caio", "sobrenome": "Oliveira", "apelido": "Canhão"}, {"nome": "Wilian", "sobrenome": "Rocha", "apelido": "Falcão9"}, {"nome": "Felipe", "sobrenome": "Rezende", "apelido": "Rojão3"}, {"nome": "Everton", "sobrenome": "Souza", "apelido": "Mineiro6"}, {"nome": "Rodrigo", "sobrenome": "Marques", "apelido": "Canhoto"}, {"nome": "Emerson", "sobrenome": "Ribeiro", "apelido": "Pipoca"}, {"nome": "Marcelo", "sobrenome": "Marques", "apelido": "Índio3"}, {"nome": "Douglas", "sobrenome": "Fernandes", "apelido": "Galinha"}, {"nome": "Kaká", "sobrenome": "Pereira", "apelido": "Fumaça"}, {"nome": "Renato", "sobrenome": "Azevedo", "apelido": "Pombo"}, {"nome": "Paulo", "sobrenome": "Carvalho", "apelido": "Torpedo9"}, {"nome": "Everton", "sobrenome": "Monteiro", "apelido": "Xerife3"}, {"nome": "Murilo", "sobrenome": "Correia", "apelido": "Fumaça"}, {"nome": "Fábio", "sobrenome": "Cavalcante", "apelido": "Gaúcho"}, {"nome": "Danilo", "sobrenome": "Cunha", "apelido": "Fumaça"}, {"nome": "Gustavo", "sobrenome": "Borges", "apelido": "Espanhol"}, {"nome": "Igor", "sobrenome": "Cunha", "apelido": "Canhoto2"}, {"nome": "Gilberto", "sobrenome": "Santos", "apelido": "Fera"}, {"nome": "Douglas", "sobrenome": "Rodrigues", "apelido": "Tigre"}, {"nome": "Wesley", "sobrenome": "Pinto", "apelido": "Craque"}, {"nome": "Henrique", "sobrenome": "Monteiro", "apelido": "Mineiro6"}, {"nome": "Lucas", "sobrenome": "Vieira", "apelido": "Peixe8"}, {"nome": "André", "sobrenome": "Fonseca", "apelido": "Foguete"}, {"nome": "Leonardo", "sobrenome": "Borges", "apelido": "Mineiro"}, {"nome": "Fred", "sobrenome": "Cavalcante", "apelido": "Galinha2"}, {"nome": "Marcelo", "sobrenome": "Cardoso", "apelido": "Leão"}, {"nome": "Danilo", "sobrenome": "Miranda", "apelido": "Macaco"}, {"nome": "Ronaldo", "sobrenome": "Correia", "apelido": "Alemão9"}, {"nome": "Pedro", "sobrenome": "Fonseca", "apelido": "Magrão"}, {"nome": "Ronaldo", "sobrenome": "Oliveira", "apelido": "Macaco"}, {"nome": "Wilian", "sobrenome": "Carvalho", "apelido": "Macaco5"}, {"nome": "Diego", "sobrenome": "Almeida", "apelido": "Leão"}, {"nome": "Gustavo", "sobrenome": "Rodrigues", "apelido": "Peixe"}, {"nome": "Gilberto", "sobrenome": "Almeida", "apelido": "Alemão"}, {"nome": "Neymar", "sobrenome": "Ramos", "apelido": "Peixe"}, {"nome": "Everton", "sobrenome": "Borges", "apelido": "Bomba"}, {"nome": "Vítor", "sobrenome": "Costa", "apelido": "Relâmpago"}, {"nome": "Wilian", "sobrenome": "Teixeira", "apelido": "Carioca"}, {"nome": "Caio", "sobrenome": "Santos", "apelido": "Voador"}, {"nome": "Gabriel", "sobrenome": "Almeida", "apelido": "Fera"}, {"nome": "Alan", "sobrenome": "Monteiro", "apelido": "Magrão"}, {"nome": "Marcelo", "sobrenome": "Miranda", "apelido": "Alemão"}, {"nome": "Emerson", "sobrenome": "Marques", "apelido": "Torpedo"}, {"nome": "Leonardo", "sobrenome": "Moura", "apelido": "Pivete5"}, {"nome": "Cleber", "sobrenome": "Lopes", "apelido": "Toquinho"}, {"nome": "Rivaldo", "sobrenome": "Cardoso", "apelido": "Gladiador6"}, {"nome": "Hulk", "sobrenome": "Lima", "apelido": "Magrão3"}, {"nome": "Gabriel", "sobrenome": "Freitas", "apelido": "Russo"}, {"nome": "Jadson", "sobrenome": "Guimarães", "apelido": "Viking"}, {"nome": "Carlos", "sobrenome": "Machado", "apelido": "Canhão"}, {"nome": "Diego", "sobrenome": "Campos", "apelido": "Tigre"}, {"nome": "Leandro", "sobrenome": "Neto", "apelido": "Pivete"}, {"nome": "Eduardo", "sobrenome": "Neto", "apelido": "Peixe"}, {"nome": "Kleber", "sobrenome": "Pereira", "apelido": "Buldogue"}, {"nome": "Rodrigo", "sobrenome": "Carvalho", "apelido": "Barba"}, {"nome": "Rodrigo", "sobrenome": "Borges", "apelido": "Canhoto7"}, {"nome": "Murilo", "sobrenome": "Marques", "apelido": "Tigre3"}, {"nome": "Leandro", "sobrenome": "Moraes", "apelido": "Bazuca6"}, {"nome": "Marcelo", "sobrenome": "Azevedo", "apelido": "Raposa"}, {"nome": "Gilberto", "sobrenome": "Cardoso", "apelido": "Canhão"}, {"nome": "Caio", "sobrenome": "Freitas", "apelido": "Mineiro"}, {"nome": "Cleber", "sobrenome": "Moura", "apelido": "Leão8"}, {"nome": "Kleber", "sobrenome": "Carvalho", "apelido": "Fera"}, {"nome": "Wesley", "sobrenome": "Dias", "apelido": "Carioca4"}, {"nome": "Everton", "sobrenome": "Azevedo", "apelido": "Macaco8"}, {"nome": "Leonardo", "sobrenome": "Ramos", "apelido": "Macaco"}, {"nome": "Fábio", "sobrenome": "Almeida", "apelido": "Gavião"}, {"nome": "Diego", "sobrenome": "Xavier", "apelido": "Leão"}, {"nome": "Bruno", "sobrenome": "Marques", "apelido": "Buldogue"}, {"nome": "Márcio", "sobrenome": "Ferreira", "apelido": "Tigre"}, {"nome": "Fernando", "sobrenome": "Xavier", "apelido": "Voador3"}, {"nome": "Fred", "sobrenome": "Barbosa", "apelido": "Bazuca"}, {"nome": "Kleber", "sobrenome": "Souza", "apelido": "Condor8"}, {"nome": "Pedro", "sobrenome": "Azevedo", "apelido": "Baiano"}, {"nome": "Murilo", "sobrenome": "Santos", "apelido": "Xerife"}, {"nome": "Danilo", "sobrenome": "Borges", "apelido": "Bazuca2"}, {"nome": "Fernando", "sobrenome": "Gomes", "apelido": "Buldogue"}, {"nome": "Eduardo", "sobrenome": "Xavier", "apelido": "Gavião"}, {"nome": "Vítor", "sobrenome": "Azevedo", "apelido": "Canhoto"}, {"nome": "Gustavo", "sobrenome": "Correia", "apelido": "Pintado"}, {"nome": "Henrique", "sobrenome": "Xavier", "apelido": "Fantasma"}, {"nome": "Ronaldo", "sobrenome": "Borges", "apelido": "Pintado"}, {"nome": "Felipe", "sobrenome": "Santos", "apelido": "Fumaça4"}, {"nome": "Carlos", "sobrenome": "Cunha", "apelido": "Voador"}, {"nome": "Fred", "sobrenome": "Silva", "apelido": "Paulista9"}, {"nome": "Henrique", "sobrenome": "Lopes", "apelido": "Pombo"}, {"nome": "André", "sobrenome": "Almeida", "apelido": "Coruja2"}, {"nome": "Douglas", "sobrenome": "Mendes", "apelido": "Trovão3"}, {"nome": "Ronaldo", "sobrenome": "Nascimento", "apelido": "Magrão3"}, {"nome": "Rafael", "sobrenome": "Ramos", "apelido": "Fantasma"}, {"nome": "Everton", "sobrenome": "Marques", "apelido": "Canhoto3"}, {"nome": "Alan", "sobrenome": "Melo", "apelido": "Condor"}, {"nome": "Márcio", "sobrenome": "Martins", "apelido": "Buldogue"}, {"nome": "Adriano", "sobrenome": "Mendes", "apelido": "Buldogue"}, {"nome": "Márcio", "sobrenome": "Barbosa", "apelido": "Pipoca6"}, {"nome": "Wesley", "sobrenome": "Machado", "apelido": "Paulista"}, {"nome": "Caio", "sobrenome": "Ferreira", "apelido": "Pantera"}, {"nome": "Renato", "sobrenome": "Rodrigues", "apelido": "Xerife"}, {"nome": "Murilo", "sobrenome": "Lopes", "apelido": "Cobra"}, {"nome": "Carlos", "sobrenome": "Correia", "apelido": "Rojão"}, {"nome": "Jadson", "sobrenome": "Freitas", "apelido": "Turco"}, {"nome": "Diego", "sobrenome": "Moreira", "apelido": "Cobra3"}, {"nome": "João", "sobrenome": "Gomes", "apelido": "Espanhol8"}, {"nome": "Fred", "sobrenome": "Pereira", "apelido": "Laser2"}, {"nome": "Hulk", "sobrenome": "Cavalcante", "apelido": "Tigre7"}, {"nome": "Fred", "sobrenome": "Nunes", "apelido": "Gaúcho"}, {"nome": "Renato", "sobrenome": "Cunha", "apelido": "Macaco"}, {"nome": "Kaká", "sobrenome": "Silva", "apelido": "Zica8"}, {"nome": "Gustavo", "sobrenome": "Araújo", "apelido": "Turco2"}, {"nome": "Gustavo", "sobrenome": "Azevedo", "apelido": "Turco"}, {"nome": "Rivaldo", "sobrenome": "Andrade", "apelido": "Rojão"}, {"nome": "Ronaldo", "sobrenome": "Rodrigues", "apelido": "Touro7"}, {"nome": "André", "sobrenome": "Souza", "apelido": "Coruja"}, {"nome": "Vítor", "sobrenome": "Freitas", "apelido": "Mineiro2"}, {"nome": "Robinho", "sobrenome": "Fonseca", "apelido": "Touro"}, {"nome": "Danilo", "sobrenome": "Melo", "apelido": "Tigre"}, {"nome": "Kaká", "sobrenome": "Ribeiro", "apelido": "Fantasma3"}, {"nome": "Renato", "sobrenome": "Gomes", "apelido": "Xerife9"}, {"nome": "Rivaldo", "sobrenome": "Teixeira", "apelido": "Condor5"}, {"nome": "Fábio", "sobrenome": "Gomes", "apelido": "Fantasma5"}, {"nome": "Rafael", "sobrenome": "Freitas", "apelido": "Barba"}, {"nome": "Vítor", "sobrenome": "Rocha", "apelido": "Pintado"}, {"nome": "Fábio", "sobrenome": "Rezende", "apelido": "Espanhol"}, {"nome": "Emerson", "sobrenome": "Moreira", "apelido": "Gavião"}, {"nome": "Renato", "sobrenome": "Vieira", "apelido": "Buldogue"}, {"nome": "Everton", "sobrenome": "Moura", "apelido": "Fera"}, {"nome": "Alexandre", "sobrenome": "Martins", "apelido": "Pantera"}, {"nome": "Carlos", "sobrenome": "Moura", "apelido": "Condor"}, {"nome": "Pedro", "sobrenome": "Rocha", "apelido": "Bazuca"}, {"nome": "Felipe", "sobrenome": "Freitas", "apelido": "Falcão"}, {"nome": "Henrique", "sobrenome": "Moreira", "apelido": "Carioca"}, {"nome": "Neymar", "sobrenome": "Nascimento", "apelido": "Coruja"}, {"nome": "Danilo", "sobrenome": "Lima", "apelido": "Buldogue8"}, {"nome": "Gustavo", "sobrenome": "Moraes", "apelido": "Bolinha"}, {"nome": "Paulo", "sobrenome": "Cardoso", "apelido": "Canhão"}], "RJ": [{"nome": "Diego", "sobrenome": "Costa", "apelido": "Índio9"}, {"nome": "Paulo", "sobrenome": "Rocha", "apelido": "Viking"}, {"nome": "Kaká", "sobrenome": "Lopes", "apelido": "Raposa3"}, {"nome": "Leonardo", "sobrenome": "Teixeira", "apelido": "Foguete"}, {"nome": "Hulk", "sobrenome": "Cavalcante", "apelido": "Macaco"}, {"nome": "Hulk", "sobrenome": "Carvalho", "apelido": "Índio"}, {"nome": "Gustavo", "sobrenome": "Neto", "apelido": "Relâmpago2"}, {"nome": "Wesley", "sobrenome": "Costa", "apelido": "Cobra"}, {"nome": "João", "sobrenome": "Rocha", "apelido": "Espanhol"}, {"nome": "Carlos", "sobrenome": "Lima", "apelido": "Foguete"}, {"nome": "Leonardo", "sobrenome": "Miranda", "apelido": "Pipoca"}, {"nome": "Márcio", "sobrenome": "Batista", "apelido": "Fumaça"}, {"nome": "Fábio", "sobrenome": "Moreira", "apelido": "Pipoca"}, {"nome": "Carlos", "sobrenome": "Rezende", "apelido": "Buldogue4"}, {"nome": "Cleber", "sobrenome": "Martins", "apelido": "Espanhol3"}, {"nome": "Alexandre", "sobrenome": "Moreira", "apelido": "Toquinho"}, {"nome": "Alan", "sobrenome": "Silva", "apelido": "Cobra"}, {"nome": "Carlos", "sobrenome": "Fonseca", "apelido": "Zica8"}, {"nome": "Everton", "sobrenome": "Pinto", "apelido": "Gaúcho6"}, {"nome": "Fernando", "sobrenome": "Andrade", "apelido": "Baiano5"}, {"nome": "Sérgio", "sobrenome": "Oliveira", "apelido": "Gavião"}, {"nome": "Fernando", "sobrenome": "Pinto", "apelido": "Gladiador"}, {"nome": "Pedro", "sobrenome": "Fonseca", "apelido": "Buldogue"}, {"nome": "Henrique", "sobrenome": "Rodrigues", "apelido": "Touro"}, {"nome": "Ronaldo", "sobrenome": "Cardoso", "apelido": "Toquinho"}, {"nome": "Bruno", "sobrenome": "Carvalho", "apelido": "Buldogue"}, {"nome": "Everton", "sobrenome": "Cavalcante", "apelido": "Buldogue2"}, {"nome": "Wesley", "sobrenome": "Teixeira", "apelido": "Galinha"}, {"nome": "Mateus", "sobrenome": "Freitas", "apelido": "Pipoca3"}, {"nome": "Igor", "sobrenome": "Borges", "apelido": "Pistola"}, {"nome": "Henrique", "sobrenome": "Campos", "apelido": "Fumaça"}, {"nome": "Vítor", "sobrenome": "Fernandes", "apelido": "Pipoca2"}, {"nome": "Emerson", "sobrenome": "Silva", "apelido": "Tigre"}, {"nome": "Douglas", "sobrenome": "Ramos", "apelido": "Toquinho7"}, {"nome": "Carlos", "sobrenome": "Andrade", "apelido": "Ratão"}, {"nome": "Fábio", "sobrenome": "Ferreira", "apelido": "Pantera"}, {"nome": "Hulk", "sobrenome": "Xavier", "apelido": "Canhoto7"}, {"nome": "Leonardo", "sobrenome": "Guimarães", "apelido": "Tigre5"}, {"nome": "Fernando", "sobrenome": "Costa", "apelido": "Pivete9"}, {"nome": "Fernando", "sobrenome": "Pereira", "apelido": "Rojão9"}, {"nome": "Renato", "sobrenome": "Carvalho", "apelido": "Gordão"}, {"nome": "Alan", "sobrenome": "Rocha", "apelido": "Míssil"}, {"nome": "Rodrigo", "sobrenome": "Freitas", "apelido": "Rojão"}, {"nome": "Emerson", "sobrenome": "Ramos", "apelido": "Metralhadora7"}, {"nome": "Rivaldo", "sobrenome": "Pinto", "apelido": "Viking3"}, {"nome": "Rafael", "sobrenome": "Pereira", "apelido": "Touro"}, {"nome": "Gabriel", "sobrenome": "Santos", "apelido": "Leão5"}, {"nome": "Thiago", "sobrenome": "Guimarães", "apelido": "Gaúcho"}, {"nome": "Rafael", "sobrenome": "Rocha", "apelido": "Metralhadora7"}, {"nome": "Douglas", "sobrenome": "Freitas", "apelido": "Macaco"}, {"nome": "Carlos", "sobrenome": "Barbosa", "apelido": "Fumaça"}, {"nome": "João", "sobrenome": "Barbosa", "apelido": "Relâmpago"}, {"nome": "Henrique", "sobrenome": "Nascimento", "apelido": "Raposa"}, {"nome": "Márcio", "sobrenome": "Dias", "apelido": "Cobra"}, {"nome": "Everton", "sobrenome": "Moura", "apelido": "Gordão"}, {"nome": "Danilo", "sobrenome": "Lopes", "apelido": "Condor7"}, {"nome": "Eduardo", "sobrenome": "Machado", "apelido": "Rojão3"}, {"nome": "Renato", "sobrenome": "Mendes", "apelido": "Peixe"}, {"nome": "Mateus", "sobrenome": "Ferreira", "apelido": "Gavião9"}, {"nome": "Cleber", "sobrenome": "Monteiro", "apelido": "Bomba3"}, {"nome": "Jadson", "sobrenome": "Marques", "apelido": "Galinha"}, {"nome": "Renato", "sobrenome": "Cunha", "apelido": "Gordão"}, {"nome": "Márcio", "sobrenome": "Cunha", "apelido": "Raposa"}, {"nome": "Márcio", "sobrenome": "Moraes", "apelido": "Coruja"}, {"nome": "Igor", "sobrenome": "Freitas", "apelido": "Canhão"}, {"nome": "Alan", "sobrenome": "Neto", "apelido": "Gaúcho"}, {"nome": "Alexandre", "sobrenome": "Borges", "apelido": "Pombo"}, {"nome": "Leandro", "sobrenome": "Campos", "apelido": "Pantera"}, {"nome": "Gustavo", "sobrenome": "Nunes", "apelido": "Viking3"}, {"nome": "Fred", "sobrenome": "Neto", "apelido": "Relâmpago"}, {"nome": "Mateus", "sobrenome": "Costa", "apelido": "Fera3"}, {"nome": "Hulk", "sobrenome": "Rezende", "apelido": "Bomba4"}, {"nome": "Murilo", "sobrenome": "Vieira", "apelido": "Míssil7"}, {"nome": "Alan", "sobrenome": "Moraes", "apelido": "Trovão"}, {"nome": "Rodrigo", "sobrenome": "Miranda", "apelido": "Pombo7"}, {"nome": "Kaká", "sobrenome": "Silva", "apelido": "Magrão"}, {"nome": "Leonardo", "sobrenome": "Oliveira", "apelido": "Baiano"}, {"nome": "Leonardo", "sobrenome": "Almeida", "apelido": "Gaúcho"}, {"nome": "Kaká", "sobrenome": "Correia", "apelido": "Urubu"}, {"nome": "Márcio", "sobrenome": "Monteiro", "apelido": "Cobra2"}, {"nome": "Gilberto", "sobrenome": "Rezende", "apelido": "Alemão"}, {"nome": "Alexandre", "sobrenome": "Martins", "apelido": "Raposa"}, {"nome": "Douglas", "sobrenome": "Martins", "apelido": "Turco7"}, {"nome": "Wilian", "sobrenome": "Rocha", "apelido": "Gavião"}, {"nome": "Thiago", "sobrenome": "Carvalho", "apelido": "Russo"}, {"nome": "Rivaldo", "sobrenome": "Freitas", "apelido": "Buldogue"}, {"nome": "Diego", "sobrenome": "Machado", "apelido": "Toquinho"}, {"nome": "Adriano", "sobrenome": "Fernandes", "apelido": "Touro"}, {"nome": "Leandro", "sobrenome": "Oliveira", "apelido": "Tigre"}, {"nome": "Pedro", "sobrenome": "Oliveira", "apelido": "Mineiro"}, {"nome": "Marcelo", "sobrenome": "Gomes", "apelido": "Gavião"}, {"nome": "Diego", "sobrenome": "Miranda", "apelido": "Alemão"}, {"nome": "Thiago", "sobrenome": "Pereira", "apelido": "Pistola"}, {"nome": "Cleber", "sobrenome": "Xavier", "apelido": "Fantasma5"}, {"nome": "Fábio", "sobrenome": "Guimarães", "apelido": "Rojão"}, {"nome": "Vítor", "sobrenome": "Miranda", "apelido": "Coruja9"}, {"nome": "Márcio", "sobrenome": "Melo", "apelido": "Touro"}, {"nome": "Carlos", "sobrenome": "Moura", "apelido": "Carioca8"}, {"nome": "Sérgio", "sobrenome": "Ribeiro", "apelido": "Metralhadora"}, {"nome": "Diego", "sobrenome": "Teixeira", "apelido": "Barba"}, {"nome": "Renato", "sobrenome": "Pereira", "apelido": "Torpedo"}, {"nome": "Emerson", "sobrenome": "Azevedo", "apelido": "Míssil8"}, {"nome": "Robinho", "sobrenome": "Dias", "apelido": "Espanhol5"}, {"nome": "Fernando", "sobrenome": "Mendes", "apelido": "Laser7"}, {"nome": "Sérgio", "sobrenome": "Cavalcante", "apelido": "Tigre3"}, {"nome": "Fred", "sobrenome": "Xavier", "apelido": "Buldogue"}, {"nome": "Fred", "sobrenome": "Carvalho", "apelido": "Buldogue5"}, {"nome": "Pedro", "sobrenome": "Miranda", "apelido": "Gavião9"}, {"nome": "Douglas", "sobrenome": "Lopes", "apelido": "Fumaça"}, {"nome": "Vítor", "sobrenome": "Pereira", "apelido": "Mineiro"}, {"nome": "Vítor", "sobrenome": "Campos", "apelido": "Viking"}, {"nome": "Wesley", "sobrenome": "Azevedo", "apelido": "Trovão"}, {"nome": "Robinho", "sobrenome": "Moraes", "apelido": "Touro7"}, {"nome": "Carlos", "sobrenome": "Dias", "apelido": "Bazuca"}, {"nome": "Lucas", "sobrenome": "Xavier", "apelido": "Gladiador"}, {"nome": "Mateus", "sobrenome": "Campos", "apelido": "Gladiador"}, {"nome": "Wilian", "sobrenome": "Rodrigues", "apelido": "Alemão6"}, {"nome": "Mateus", "sobrenome": "Fernandes", "apelido": "Gavião"}, {"nome": "Sérgio", "sobrenome": "Dias", "apelido": "Torpedo"}, {"nome": "Adriano", "sobrenome": "Silva", "apelido": "Metralhadora"}, {"nome": "Renato", "sobrenome": "Xavier", "apelido": "Míssil"}, {"nome": "Fernando", "sobrenome": "Santos", "apelido": "Buldogue7"}, {"nome": "Everton", "sobrenome": "Borges", "apelido": "Cobra9"}, {"nome": "Vítor", "sobrenome": "Oliveira", "apelido": "Pivete"}, {"nome": "Cleber", "sobrenome": "Lima", "apelido": "Paulista"}, {"nome": "André", "sobrenome": "Rodrigues", "apelido": "Toquinho"}, {"nome": "Diego", "sobrenome": "Moraes", "apelido": "Gordão"}, {"nome": "Caio", "sobrenome": "Dias", "apelido": "Lobo"}, {"nome": "Pedro", "sobrenome": "Melo", "apelido": "Canhão"}, {"nome": "Pedro", "sobrenome": "Machado", "apelido": "Índio"}, {"nome": "Danilo", "sobrenome": "Costa", "apelido": "Macaco"}, {"nome": "Caio", "sobrenome": "Borges", "apelido": "Magrão4"}, {"nome": "Felipe", "sobrenome": "Ferreira", "apelido": "Condor"}, {"nome": "Rivaldo", "sobrenome": "Barbosa", "apelido": "Urubu"}, {"nome": "Fernando", "sobrenome": "Silva", "apelido": "Turco"}, {"nome": "Alan", "sobrenome": "Campos", "apelido": "Bomba4"}, {"nome": "Gabriel", "sobrenome": "Mendes", "apelido": "Índio3"}, {"nome": "Carlos", "sobrenome": "Miranda", "apelido": "Laser"}, {"nome": "Felipe", "sobrenome": "Monteiro", "apelido": "Urubu6"}, {"nome": "Kleber", "sobrenome": "Correia", "apelido": "Relâmpago"}, {"nome": "Fábio", "sobrenome": "Lopes", "apelido": "Foguete"}, {"nome": "Rodrigo", "sobrenome": "Moreira", "apelido": "Turco"}, {"nome": "Vítor", "sobrenome": "Batista", "apelido": "Galinha7"}, {"nome": "Rodrigo", "sobrenome": "Santos", "apelido": "Voador"}, {"nome": "Mateus", "sobrenome": "Pereira", "apelido": "Russo9"}, {"nome": "Fábio", "sobrenome": "Azevedo", "apelido": "Buldogue"}, {"nome": "Ronaldo", "sobrenome": "Costa", "apelido": "Alemão3"}, {"nome": "Lucas", "sobrenome": "Campos", "apelido": "Mineiro"}, {"nome": "Bruno", "sobrenome": "Freitas", "apelido": "Laser"}, {"nome": "Felipe", "sobrenome": "Pinto", "apelido": "Paulista"}, {"nome": "Rivaldo", "sobrenome": "Ribeiro", "apelido": "Cobra"}, {"nome": "Lucas", "sobrenome": "Rocha", "apelido": "Peixe"}, {"nome": "Cleber", "sobrenome": "Vieira", "apelido": "Zica"}, {"nome": "Gustavo", "sobrenome": "Machado", "apelido": "Pintado"}, {"nome": "Rivaldo", "sobrenome": "Campos", "apelido": "Paulista"}, {"nome": "Hulk", "sobrenome": "Gomes", "apelido": "Míssil8"}, {"nome": "Kleber", "sobrenome": "Fernandes", "apelido": "Falcão"}, {"nome": "João", "sobrenome": "Silva", "apelido": "Macaco2"}, {"nome": "Felipe", "sobrenome": "Freitas", "apelido": "Gladiador"}, {"nome": "Lucas", "sobrenome": "Miranda", "apelido": "Touro7"}, {"nome": "Emerson", "sobrenome": "Marques", "apelido": "Voador"}, {"nome": "Paulo", "sobrenome": "Lopes", "apelido": "Craque"}, {"nome": "Hulk", "sobrenome": "Monteiro", "apelido": "Baiano2"}, {"nome": "Márcio", "sobrenome": "Fonseca", "apelido": "Rojão"}, {"nome": "André", "sobrenome": "Lopes", "apelido": "Leão"}, {"nome": "Adriano", "sobrenome": "Lima", "apelido": "Fumaça"}, {"nome": "Leonardo", "sobrenome": "Neto", "apelido": "Coruja"}, {"nome": "João", "sobrenome": "Carvalho", "apelido": "Pintado"}, {"nome": "Danilo", "sobrenome": "Ferreira", "apelido": "Pintado4"}, {"nome": "Rafael", "sobrenome": "Machado", "apelido": "Bazuca"}, {"nome": "Gabriel", "sobrenome": "Moraes", "apelido": "Barba"}, {"nome": "Douglas", "sobrenome": "Rezende", "apelido": "Bazuca"}, {"nome": "Lucas", "sobrenome": "Carvalho", "apelido": "Galinha"}, {"nome": "Wilian", "sobrenome": "Marques", "apelido": "Baiano"}, {"nome": "Robinho", "sobrenome": "Andrade", "apelido": "Peixe"}, {"nome": "Fred", "sobrenome": "Gomes", "apelido": "Torpedo5"}, {"nome": "Neymar", "sobrenome": "Marques", "apelido": "Lobo"}, {"nome": "Kleber", "sobrenome": "Carvalho", "apelido": "Fumaça"}, {"nome": "Ronaldo", "sobrenome": "Gomes", "apelido": "Leão9"}, {"nome": "Alexandre", "sobrenome": "Guimarães", "apelido": "Índio"}, {"nome": "Kleber", "sobrenome": "Batista", "apelido": "Bolinha3"}, {"nome": "Alexandre", "sobrenome": "Gomes", "apelido": "Condor"}, {"nome": "Murilo", "sobrenome": "Rezende", "apelido": "Pistola9"}, {"nome": "Paulo", "sobrenome": "Dias", "apelido": "Coruja9"}, {"nome": "Renato", "sobrenome": "Monteiro", "apelido": "Fera"}, {"nome": "Kleber", "sobrenome": "Almeida", "apelido": "Míssil3"}, {"nome": "Danilo", "sobrenome": "Oliveira", "apelido": "Cobra8"}, {"nome": "Alexandre", "sobrenome": "Barbosa", "apelido": "Galinha5"}, {"nome": "Ronaldo", "sobrenome": "Cavalcante", "apelido": "Relâmpago4"}, {"nome": "Vítor", "sobrenome": "Andrade", "apelido": "Cobra"}, {"nome": "Kaká", "sobrenome": "Vieira", "apelido": "Turco"}, {"nome": "Diego", "sobrenome": "Santos", "apelido": "Trovão"}, {"nome": "Carlos", "sobrenome": "Machado", "apelido": "Leão"}, {"nome": "Carlos", "sobrenome": "Correia", "apelido": "Viking"}, {"nome": "Leandro", "sobrenome": "Santos", "apelido": "Leão"}, {"nome": "João", "sobrenome": "Dias", "apelido": "Bolinha"}, {"nome": "Thiago", "sobrenome": "Fernandes", "apelido": "Urubu3"}, {"nome": "Henrique", "sobrenome": "Dias", "apelido": "Touro"}, {"nome": "Alexandre", "sobrenome": "Lopes", "apelido": "Canhão"}, {"nome": "Everton", "sobrenome": "Lima", "apelido": "Gordão"}, {"nome": "Lucas", "sobrenome": "Pereira", "apelido": "Laser"}, {"nome": "Kaká", "sobrenome": "Guimarães", "apelido": "Touro6"}, {"nome": "Alexandre", "sobrenome": "Fernandes", "apelido": "Tigre7"}, {"nome": "Vítor", "sobrenome": "Cardoso", "apelido": "Toquinho"}, {"nome": "André", "sobrenome": "Guimarães", "apelido": "Russo"}, {"nome": "Paulo", "sobrenome": "Azevedo", "apelido": "Tigrão"}, {"nome": "Gustavo", "sobrenome": "Martins", "apelido": "Touro"}, {"nome": "Kaká", "sobrenome": "Carvalho", "apelido": "Fera"}, {"nome": "Jadson", "sobrenome": "Teixeira", "apelido": "Torpedo"}, {"nome": "Caio", "sobrenome": "Fonseca", "apelido": "Alemão"}, {"nome": "Bruno", "sobrenome": "Moraes", "apelido": "Lobo"}, {"nome": "Lucas", "sobrenome": "Cunha", "apelido": "Mineiro"}, {"nome": "Eduardo", "sobrenome": "Barbosa", "apelido": "Espanhol"}, {"nome": "Gabriel", "sobrenome": "Silva", "apelido": "Zica"}, {"nome": "Carlos", "sobrenome": "Souza", "apelido": "Relâmpago"}, {"nome": "Carlos", "sobrenome": "Nascimento", "apelido": "Pistola"}, {"nome": "Leonardo", "sobrenome": "Barbosa", "apelido": "Gaúcho"}, {"nome": "Rafael", "sobrenome": "Monteiro", "apelido": "Pantera3"}, {"nome": "André", "sobrenome": "Machado", "apelido": "Gladiador"}, {"nome": "Thiago", "sobrenome": "Lopes", "apelido": "Gavião"}, {"nome": "Wesley", "sobrenome": "Campos", "apelido": "Fantasma"}, {"nome": "Leandro", "sobrenome": "Batista", "apelido": "Canhoto9"}, {"nome": "Fernando", "sobrenome": "Dias", "apelido": "Coruja"}, {"nome": "Cleber", "sobrenome": "Costa", "apelido": "Falcão2"}, {"nome": "Lucas", "sobrenome": "Correia", "apelido": "Craque3"}, {"nome": "Vítor", "sobrenome": "Rezende", "apelido": "Torpedo"}, {"nome": "Gilberto", "sobrenome": "Pereira", "apelido": "Xerife2"}, {"nome": "Diego", "sobrenome": "Gomes", "apelido": "Rojão"}, {"nome": "Everton", "sobrenome": "Machado", "apelido": "Voador"}, {"nome": "Jadson", "sobrenome": "Azevedo", "apelido": "Viking4"}, {"nome": "Murilo", "sobrenome": "Azevedo", "apelido": "Condor"}, {"nome": "Fernando", "sobrenome": "Moreira", "apelido": "Pintado"}, {"nome": "Fernando", "sobrenome": "Martins", "apelido": "Peixe"}, {"nome": "Robinho", "sobrenome": "Machado", "apelido": "Tigre"}, {"nome": "Robinho", "sobrenome": "Martins", "apelido": "Voador2"}, {"nome": "Diego", "sobrenome": "Pereira", "apelido": "Pantera"}, {"nome": "Igor", "sobrenome": "Oliveira", "apelido": "Índio"}, {"nome": "Leandro", "sobrenome": "Neto", "apelido": "Macaco"}, {"nome": "Gabriel", "sobrenome": "Teixeira", "apelido": "Gordão"}, {"nome": "Everton", "sobrenome": "Oliveira", "apelido": "Alemão"}, {"nome": "Alexandre", "sobrenome": "Rodrigues", "apelido": "Tigre"}, {"nome": "Caio", "sobrenome": "Souza", "apelido": "Fantasma5"}, {"nome": "Rivaldo", "sobrenome": "Costa", "apelido": "Míssil5"}, {"nome": "Márcio", "sobrenome": "Araújo", "apelido": "Gaúcho"}, {"nome": "Fred", "sobrenome": "Barbosa", "apelido": "Barba6"}, {"nome": "André", "sobrenome": "Melo", "apelido": "Fera"}, {"nome": "Márcio", "sobrenome": "Correia", "apelido": "Fumaça"}, {"nome": "Cleber", "sobrenome": "Pinto", "apelido": "Bazuca"}, {"nome": "Carlos", "sobrenome": "Cunha", "apelido": "Xerife"}, {"nome": "Renato", "sobrenome": "Andrade", "apelido": "Laser"}, {"nome": "Jadson", "sobrenome": "Cardoso", "apelido": "Metralhadora8"}, {"nome": "Felipe", "sobrenome": "Machado", "apelido": "Pantera"}, {"nome": "Diego", "sobrenome": "Rocha", "apelido": "Bolinha"}, {"nome": "Rodrigo", "sobrenome": "Monteiro", "apelido": "Toquinho"}, {"nome": "Gabriel", "sobrenome": "Guimarães", "apelido": "Bomba5"}, {"nome": "Bruno", "sobrenome": "Martins", "apelido": "Bazuca"}, {"nome": "Hulk", "sobrenome": "Freitas", "apelido": "Magrão"}, {"nome": "João", "sobrenome": "Moraes", "apelido": "Barba"}, {"nome": "Henrique", "sobrenome": "Costa", "apelido": "Urubu"}, {"nome": "Cleber", "sobrenome": "Dias", "apelido": "Trovão"}, {"nome": "Caio", "sobrenome": "Freitas", "apelido": "Torpedo8"}, {"nome": "Diego", "sobrenome": "Ferreira", "apelido": "Pombo"}, {"nome": "Igor", "sobrenome": "Moraes", "apelido": "Magrão"}, {"nome": "Rafael", "sobrenome": "Andrade", "apelido": "Gavião"}, {"nome": "Everton", "sobrenome": "Rodrigues", "apelido": "Canhoto"}, {"nome": "Everton", "sobrenome": "Martins", "apelido": "Relâmpago4"}, {"nome": "Fábio", "sobrenome": "Gomes", "apelido": "Pistola"}, {"nome": "Douglas", "sobrenome": "Mendes", "apelido": "Gavião"}, {"nome": "Eduardo", "sobrenome": "Azevedo", "apelido": "Barba"}, {"nome": "Kaká", "sobrenome": "Ramos", "apelido": "Buldogue"}, {"nome": "Renato", "sobrenome": "Ramos", "apelido": "Pistola"}, {"nome": "Wesley", "sobrenome": "Andrade", "apelido": "Raposa"}, {"nome": "Leandro", "sobrenome": "Pereira", "apelido": "Míssil"}, {"nome": "Marcelo", "sobrenome": "Lopes", "apelido": "Foguete"}, {"nome": "Caio", "sobrenome": "Nunes", "apelido": "Foguete6"}, {"nome": "André", "sobrenome": "Fonseca", "apelido": "Cobra3"}, {"nome": "Emerson", "sobrenome": "Monteiro", "apelido": "Fera"}, {"nome": "Rodrigo", "sobrenome": "Lima", "apelido": "Voador4"}, {"nome": "Rafael", "sobrenome": "Santos", "apelido": "Gladiador"}, {"nome": "Gustavo", "sobrenome": "Ramos", "apelido": "Paulista"}, {"nome": "Adriano", "sobrenome": "Miranda", "apelido": "Mineiro"}, {"nome": "Henrique", "sobrenome": "Correia", "apelido": "Fantasma"}, {"nome": "Kaká", "sobrenome": "Ferreira", "apelido": "Fantasma"}, {"nome": "Gabriel", "sobrenome": "Machado", "apelido": "Falcão3"}, {"nome": "Douglas", "sobrenome": "Batista", "apelido": "Carioca5"}, {"nome": "Wilian", "sobrenome": "Xavier", "apelido": "Magrão3"}, {"nome": "Hulk", "sobrenome": "Melo", "apelido": "Toquinho"}, {"nome": "Mateus", "sobrenome": "Silva", "apelido": "Voador"}, {"nome": "Alexandre", "sobrenome": "Silva", "apelido": "Russo"}, {"nome": "Douglas", "sobrenome": "Araújo", "apelido": "Cobra6"}, {"nome": "Renato", "sobrenome": "Pinto", "apelido": "Pintado"}, {"nome": "Fábio", "sobrenome": "Santos", "apelido": "Mineiro"}, {"nome": "Danilo", "sobrenome": "Miranda", "apelido": "Voador"}, {"nome": "Kleber", "sobrenome": "Andrade", "apelido": "Russo2"}, {"nome": "Neymar", "sobrenome": "Miranda", "apelido": "Bolinha"}, {"nome": "Gabriel", "sobrenome": "Fernandes", "apelido": "Gladiador"}, {"nome": "Gabriel", "sobrenome": "Freitas", "apelido": "Mineiro"}, {"nome": "Carlos", "sobrenome": "Rocha", "apelido": "Leão"}, {"nome": "Adriano", "sobrenome": "Rocha", "apelido": "Paulista"}, {"nome": "Leandro", "sobrenome": "Xavier", "apelido": "Magrão8"}, {"nome": "Rivaldo", "sobrenome": "Cavalcante", "apelido": "Canhão6"}, {"nome": "Diego", "sobrenome": "Batista", "apelido": "Pintado"}, {"nome": "Paulo", "sobrenome": "Freitas", "apelido": "Condor8"}, {"nome": "Gustavo", "sobrenome": "Ferreira", "apelido": "Baiano6"}, {"nome": "Caio", "sobrenome": "Machado", "apelido": "Canhão"}, {"nome": "Danilo", "sobrenome": "Fonseca", "apelido": "Tigre"}, {"nome": "André", "sobrenome": "Miranda", "apelido": "Bolinha"}, {"nome": "Everton", "sobrenome": "Batista", "apelido": "Xerife"}, {"nome": "Rafael", "sobrenome": "Barbosa", "apelido": "Urubu"}, {"nome": "Kaká", "sobrenome": "Marques", "apelido": "Fantasma8"}, {"nome": "Adriano", "sobrenome": "Teixeira", "apelido": "Macaco"}, {"nome": "Alexandre", "sobrenome": "Mendes", "apelido": "Voador"}, {"nome": "Renato", "sobrenome": "Fernandes", "apelido": "Ratão4"}, {"nome": "Fred", "sobrenome": "Borges", "apelido": "Gaúcho"}, {"nome": "Jadson", "sobrenome": "Fonseca", "apelido": "Zica"}, {"nome": "Felipe", "sobrenome": "Vieira", "apelido": "Condor"}, {"nome": "Pedro", "sobrenome": "Azevedo", "apelido": "Rojão"}, {"nome": "Kleber", "sobrenome": "Cunha", "apelido": "Tigre"}, {"nome": "Adriano", "sobrenome": "Santos", "apelido": "Metralhadora"}, {"nome": "Wesley", "sobrenome": "Martins", "apelido": "Trovão"}, {"nome": "Thiago", "sobrenome": "Almeida", "apelido": "Craque"}, {"nome": "Leonardo", "sobrenome": "Lopes", "apelido": "Tigre"}, {"nome": "Gustavo", "sobrenome": "Cardoso", "apelido": "Toquinho8"}, {"nome": "João", "sobrenome": "Fernandes", "apelido": "Viking8"}, {"nome": "Fábio", "sobrenome": "Miranda", "apelido": "Pantera"}, {"nome": "Everton", "sobrenome": "Monteiro", "apelido": "Gaúcho"}, {"nome": "Renato", "sobrenome": "Teixeira", "apelido": "Pantera"}, {"nome": "Jadson", "sobrenome": "Pereira", "apelido": "Metralhadora"}, {"nome": "Pedro", "sobrenome": "Ferreira", "apelido": "Xerife"}, {"nome": "Kaká", "sobrenome": "Freitas", "apelido": "Alemão"}, {"nome": "Gilberto", "sobrenome": "Oliveira", "apelido": "Leão"}, {"nome": "Bruno", "sobrenome": "Mendes", "apelido": "Canhoto"}, {"nome": "Robinho", "sobrenome": "Freitas", "apelido": "Viking"}, {"nome": "João", "sobrenome": "Mendes", "apelido": "Cobra"}, {"nome": "Felipe", "sobrenome": "Cavalcante", "apelido": "Pistola6"}, {"nome": "Danilo", "sobrenome": "Souza", "apelido": "Lobo"}, {"nome": "Henrique", "sobrenome": "Batista", "apelido": "Zica6"}, {"nome": "Márcio", "sobrenome": "Nascimento", "apelido": "Mineiro"}, {"nome": "Hulk", "sobrenome": "Silva", "apelido": "Laser8"}, {"nome": "Douglas", "sobrenome": "Costa", "apelido": "Laser2"}, {"nome": "Márcio", "sobrenome": "Freitas", "apelido": "Bazuca"}, {"nome": "Rodrigo", "sobrenome": "Rocha", "apelido": "Turco"}, {"nome": "Douglas", "sobrenome": "Cavalcante", "apelido": "Bazuca"}, {"nome": "Wesley", "sobrenome": "Nascimento", "apelido": "Pipoca"}, {"nome": "Bruno", "sobrenome": "Teixeira", "apelido": "Falcão"}, {"nome": "Alexandre", "sobrenome": "Miranda", "apelido": "Canhão5"}, {"nome": "Kleber", "sobrenome": "Costa", "apelido": "Fera7"}, {"nome": "Renato", "sobrenome": "Neto", "apelido": "Mineiro"}, {"nome": "Neymar", "sobrenome": "Lima", "apelido": "Coruja"}, {"nome": "Henrique", "sobrenome": "Souza", "apelido": "Buldogue8"}, {"nome": "Márcio", "sobrenome": "Mendes", "apelido": "Mineiro"}, {"nome": "Rodrigo", "sobrenome": "Nascimento", "apelido": "Fera"}, {"nome": "André", "sobrenome": "Rezende", "apelido": "Canhoto"}, {"nome": "Pedro", "sobrenome": "Neto", "apelido": "Buldogue"}, {"nome": "Fernando", "sobrenome": "Neto", "apelido": "Bomba2"}, {"nome": "Gustavo", "sobrenome": "Marques", "apelido": "Gladiador"}, {"nome": "Adriano", "sobrenome": "Andrade", "apelido": "Laser"}, {"nome": "Fred", "sobrenome": "Moraes", "apelido": "Turco3"}, {"nome": "Everton", "sobrenome": "Andrade", "apelido": "Bazuca"}, {"nome": "Hulk", "sobrenome": "Rodrigues", "apelido": "Pintado4"}, {"nome": "Bruno", "sobrenome": "Cunha", "apelido": "Pintado"}, {"nome": "Gabriel", "sobrenome": "Almeida", "apelido": "Turco5"}, {"nome": "Kaká", "sobrenome": "Souza", "apelido": "Gaúcho"}, {"nome": "Gilberto", "sobrenome": "Mendes", "apelido": "Gaúcho3"}, {"nome": "Kleber", "sobrenome": "Cavalcante", "apelido": "Metralhadora"}, {"nome": "Fábio", "sobrenome": "Correia", "apelido": "Condor"}, {"nome": "Jadson", "sobrenome": "Nascimento", "apelido": "Viking5"}, {"nome": "Márcio", "sobrenome": "Moura", "apelido": "Rojão"}, {"nome": "Kaká", "sobrenome": "Nascimento", "apelido": "Viking"}, {"nome": "Emerson", "sobrenome": "Moura", "apelido": "Coruja3"}, {"nome": "Mateus", "sobrenome": "Melo", "apelido": "Leão"}, {"nome": "Pedro", "sobrenome": "Dias", "apelido": "Torpedo"}, {"nome": "Neymar", "sobrenome": "Teixeira", "apelido": "Gaúcho"}, {"nome": "Márcio", "sobrenome": "Costa", "apelido": "Buldogue"}, {"nome": "Caio", "sobrenome": "Ribeiro", "apelido": "Fumaça"}, {"nome": "Leandro", "sobrenome": "Moura", "apelido": "Metralhadora"}, {"nome": "Danilo", "sobrenome": "Barbosa", "apelido": "Viking"}, {"nome": "Alan", "sobrenome": "Ramos", "apelido": "Pombo"}, {"nome": "Ronaldo", "sobrenome": "Pinto", "apelido": "Bomba"}, {"nome": "Jadson", "sobrenome": "Lopes", "apelido": "Pombo"}, {"nome": "Vítor", "sobrenome": "Azevedo", "apelido": "Trovão9"}, {"nome": "Eduardo", "sobrenome": "Martins", "apelido": "Toquinho"}, {"nome": "Diego", "sobrenome": "Souza", "apelido": "Zica"}, {"nome": "Eduardo", "sobrenome": "Cavalcante", "apelido": "Baiano"}, {"nome": "Adriano", "sobrenome": "Rodrigues", "apelido": "Raposa"}, {"nome": "Diego", "sobrenome": "Barbosa", "apelido": "Pantera7"}, {"nome": "Wilian", "sobrenome": "Costa", "apelido": "Pipoca"}, {"nome": "Eduardo", "sobrenome": "Rocha", "apelido": "Peixe"}, {"nome": "Danilo", "sobrenome": "Almeida", "apelido": "Craque9"}, {"nome": "Bruno", "sobrenome": "Costa", "apelido": "Lobo"}, {"nome": "Fred", "sobrenome": "Vieira", "apelido": "Macaco"}, {"nome": "Ronaldo", "sobrenome": "Fonseca", "apelido": "Ratão"}, {"nome": "Wilian", "sobrenome": "Azevedo", "apelido": "Trovão"}, {"nome": "Kaká", "sobrenome": "Lima", "apelido": "Carioca"}, {"nome": "Leandro", "sobrenome": "Freitas", "apelido": "Voador4"}, {"nome": "Sérgio", "sobrenome": "Martins", "apelido": "Gaúcho9"}, {"nome": "Gilberto", "sobrenome": "Martins", "apelido": "Pipoca"}, {"nome": "Fernando", "sobrenome": "Moraes", "apelido": "Pivete"}, {"nome": "Ronaldo", "sobrenome": "Borges", "apelido": "Laser4"}, {"nome": "Felipe", "sobrenome": "Borges", "apelido": "Falcão"}, {"nome": "Kaká", "sobrenome": "Nunes", "apelido": "Gladiador"}, {"nome": "Jadson", "sobrenome": "Correia", "apelido": "Galinha"}, {"nome": "Eduardo", "sobrenome": "Xavier", "apelido": "Raposa9"}, {"nome": "Márcio", "sobrenome": "Almeida", "apelido": "Relâmpago"}, {"nome": "Mateus", "sobrenome": "Borges", "apelido": "Foguete"}, {"nome": "Carlos", "sobrenome": "Martins", "apelido": "Russo8"}, {"nome": "Kaká", "sobrenome": "Martins", "apelido": "Galinha"}, {"nome": "Mateus", "sobrenome": "Neto", "apelido": "Buldogue"}, {"nome": "Leonardo", "sobrenome": "Ramos", "apelido": "Voador"}, {"nome": "Everton", "sobrenome": "Marques", "apelido": "Turco"}, {"nome": "André", "sobrenome": "Moura", "apelido": "Paulista7"}, {"nome": "Robinho", "sobrenome": "Cunha", "apelido": "Cobra"}, {"nome": "Fábio", "sobrenome": "Mendes", "apelido": "Tigre"}, {"nome": "Henrique", "sobrenome": "Cavalcante", "apelido": "Carioca"}, {"nome": "Igor", "sobrenome": "Teixeira", "apelido": "Toquinho"}, {"nome": "Lucas", "sobrenome": "Costa", "apelido": "Touro"}, {"nome": "Renato", "sobrenome": "Vieira", "apelido": "Gordão4"}, {"nome": "Jadson", "sobrenome": "Ramos", "apelido": "Bomba"}, {"nome": "André", "sobrenome": "Moraes", "apelido": "Zica"}, {"nome": "João", "sobrenome": "Neto", "apelido": "Torpedo"}, {"nome": "Neymar", "sobrenome": "Carvalho", "apelido": "Gladiador"}, {"nome": "Robinho", "sobrenome": "Pinto", "apelido": "Fumaça2"}, {"nome": "Pedro", "sobrenome": "Ribeiro", "apelido": "Pombo"}, {"nome": "Vítor", "sobrenome": "Fonseca", "apelido": "Toquinho"}, {"nome": "Lucas", "sobrenome": "Neto", "apelido": "Pintado"}, {"nome": "Vítor", "sobrenome": "Marques", "apelido": "Touro"}, {"nome": "Mateus", "sobrenome": "Rodrigues", "apelido": "Canhoto"}, {"nome": "Fred", "sobrenome": "Lopes", "apelido": "Alemão4"}, {"nome": "Vítor", "sobrenome": "Rodrigues", "apelido": "Magrão4"}, {"nome": "Carlos", "sobrenome": "Mendes", "apelido": "Canhoto"}, {"nome": "Diego", "sobrenome": "Dias", "apelido": "Falcão9"}, {"nome": "Eduardo", "sobrenome": "Lopes", "apelido": "Trovão2"}, {"nome": "Marcelo", "sobrenome": "Santos", "apelido": "Fantasma"}, {"nome": "Sérgio", "sobrenome": "Souza", "apelido": "Turco"}, {"nome": "Robinho", "sobrenome": "Almeida", "apelido": "Buldogue"}, {"nome": "Eduardo", "sobrenome": "Fonseca", "apelido": "Pipoca"}, {"nome": "Danilo", "sobrenome": "Mendes", "apelido": "Bomba"}, {"nome": "Felipe", "sobrenome": "Melo", "apelido": "Míssil"}, {"nome": "Robinho", "sobrenome": "Cavalcante", "apelido": "Viking"}, {"nome": "Igor", "sobrenome": "Carvalho", "apelido": "Barba"}]}};
+const RAW={"estados": [{"sigla": "SP", "nome": "São Paulo", "equipes": ["São Paulo", "Campinas", "Guarulhos", "São Bernardo do Campo", "Santo André", "Osasco", "Sorocaba", "Ribeirão Preto", "São José dos Campos", "Mogi das Cruzes", "Santos", "Diadema", "Carapicuíba", "Jundiaí", "Mauá", "Itaquaquecetuba", "Suzano", "Taboão da Serra", "São Vicente", "Praia Grande", "Barueri", "Piracicaba", "Bauru", "Franca", "São José do Rio Preto", "Limeira", "Taubaté", "Presidente Prudente", "Araçatuba", "Araraquara", "Marília", "Americana", "Hortolândia", "Indaiatuba", "Sumaré", "Cotia", "Itapevi", "Embu das Artes", "Ferraz de Vasconcelos", "Francisco Morato"]}, {"sigla": "RJ", "nome": "Rio de Janeiro", "equipes": ["Rio de Janeiro", "São Gonçalo", "Duque de Caxias", "Nova Iguaçu", "Niterói", "Belford Roxo", "São João de Meriti", "Campos dos Goytacazes", "Petrópolis", "Volta Redonda", "Macaé", "Magé", "Itaboraí", "Mesquita", "Nilópolis", "Nova Friburgo", "Barra Mansa", "Maricá", "Queimados", "Cabo Frio", "Teresópolis", "Angra dos Reis", "Japeri", "Resende", "Seropédica", "Rio das Ostras", "Itaguaí", "Cachoeiras de Macacu", "Paracambi", "Guapimirim", "Três Rios", "Barra do Piraí", "Vassouras", "Valença", "Paraíba do Sul", "Bom Jesus do Itabapoana", "Santo Antônio de Pádua", "Itaperuna", "Miracema", "Aperibé"]}], "jogadores": [{"nome": "Cleber", "sobrenome": "Ferreira", "apelido": "Fumaça"}, {"nome": "Lucas", "sobrenome": "Moura", "apelido": "Relâmpago"}, {"nome": "Henrique", "sobrenome": "Barbosa", "apelido": "Pintado"}, {"nome": "Marcelo", "sobrenome": "Rodrigues", "apelido": "Galinha"}, {"nome": "Souza", "sobrenome": "Pereira", "apelido": "Barba"}, {"nome": "Robinho", "sobrenome": "Moura", "apelido": "Toquinho"}, {"nome": "Ramires", "sobrenome": "Campos", "apelido": "Bolinha"}, {"nome": "Felipe", "sobrenome": "Azevedo", "apelido": "Ratão"}, {"nome": "Renato", "sobrenome": "Oliveira", "apelido": "Zica"}, {"nome": "Lucas", "sobrenome": "Lima", "apelido": "Pipoca"}, {"nome": "Fernando", "sobrenome": "Moreira", "apelido": "Touro"}, {"nome": "Everton", "sobrenome": "Borges", "apelido": "Xerife"}, {"nome": "Lucas", "sobrenome": "Xavier", "apelido": "Lobo"}, {"nome": "Rodrigo", "sobrenome": "Melo", "apelido": "Gaúcho"}, {"nome": "Jadson", "sobrenome": "Marques", "apelido": "Mineiro"}, {"nome": "Márcio", "sobrenome": "Mendes", "apelido": "Baiano"}, {"nome": "Marcelo", "sobrenome": "Freitas", "apelido": "Carioca"}, {"nome": "Gilberto", "sobrenome": "Rocha", "apelido": "Paulista"}, {"nome": "Welliton", "sobrenome": "Brito", "apelido": "Voador"}, {"nome": "Carlos", "sobrenome": "Neto", "apelido": "Trovão"}, {"nome": "Welliton", "sobrenome": "Nascimento", "apelido": "Fantasma"}, {"nome": "Fred", "sobrenome": "Nunes", "apelido": "Canhoto"}, {"nome": "Vítor", "sobrenome": "Rocha", "apelido": "Pivete"}, {"nome": "Pedro", "sobrenome": "Dias", "apelido": "Fera"}, {"nome": "Alex", "sobrenome": "Cardoso", "apelido": "Tigrão"}, {"nome": "Bruno", "sobrenome": "Lima", "apelido": "Alemão"}, {"nome": "Murilo", "sobrenome": "Pereira", "apelido": "Turco"}, {"nome": "Caio", "sobrenome": "Alves", "apelido": "Índio"}, {"nome": "Caio", "sobrenome": "Borges", "apelido": "Espanhol"}, {"nome": "Gustavo", "sobrenome": "Torres", "apelido": "Russo"}, {"nome": "Gabriel", "sobrenome": "Miranda", "apelido": "Viking"}, {"nome": "Alan", "sobrenome": "Campos", "apelido": "Gladiador"}, {"nome": "Diego", "sobrenome": "Falcão", "apelido": "Peixe"}, {"nome": "Murilo", "sobrenome": "Lima", "apelido": "Cobra"}, {"nome": "Danilo", "sobrenome": "Martins", "apelido": "Leão"}, {"nome": "Luan", "sobrenome": "Fonseca", "apelido": "Tigre"}, {"nome": "Adriano", "sobrenome": "Castro", "apelido": "Pombo"}, {"nome": "Willian", "sobrenome": "Correia", "apelido": "Gavião"}, {"nome": "Emerson", "sobrenome": "Fernandes", "apelido": "Urubu"}, {"nome": "Elias", "sobrenome": "Souza", "apelido": "Coruja"}, {"nome": "Gabriel", "sobrenome": "Lopes", "apelido": "Macaco"}, {"nome": "Marcelo", "sobrenome": "Rezende", "apelido": "Raposa"}, {"nome": "Alexandre", "sobrenome": "Lima", "apelido": "Buldogue"}, {"nome": "Naldo", "sobrenome": "Moreira", "apelido": "Pantera"}, {"nome": "Willian", "sobrenome": "Pereira", "apelido": "Falcão"}, {"nome": "Murilo", "sobrenome": "Rocha", "apelido": "Condor"}, {"nome": "Alan", "sobrenome": "Fonseca", "apelido": "Pistola"}, {"nome": "Luan", "sobrenome": "Correia", "apelido": "Foguete"}, {"nome": "Thiago", "sobrenome": "Correia", "apelido": "Torpedo"}, {"nome": "Caio", "sobrenome": "Dias", "apelido": "Míssil"}, {"nome": "Rivaldo", "sobrenome": "Rocha", "apelido": "Laser"}, {"nome": "Fred", "sobrenome": "Falcão", "apelido": "Radar"}, {"nome": "Robinho", "sobrenome": "Guimarães", "apelido": "Sonar"}, {"nome": "Rafael", "sobrenome": "Borges", "apelido": "Draga"}, {"nome": "Cleber", "sobrenome": "Nascimento", "apelido": "Trator"}, {"nome": "Márcio", "sobrenome": "Miranda", "apelido": "Tanque"}, {"nome": "Leonardo", "sobrenome": "Nascimento", "apelido": "Canhão"}, {"nome": "Alan", "sobrenome": "Batista", "apelido": "Rojão"}, {"nome": "Henrique", "sobrenome": "Falcão", "apelido": "Bazuca"}, {"nome": "Cleber", "sobrenome": "Marques", "apelido": "Bomba"}, {"nome": "Danilo", "sobrenome": "Moreira", "apelido": "Tocha"}, {"nome": "Robinho", "sobrenome": "Gomes", "apelido": "Farol"}, {"nome": "Luan", "sobrenome": "Rezende", "apelido": "Faísca"}, {"nome": "Jonas", "sobrenome": "Costa", "apelido": "Centelha"}, {"nome": "Marcelo", "sobrenome": "Vargas", "apelido": "Brasa"}, {"nome": "Gabriel", "sobrenome": "Torres", "apelido": "Braseiro"}, {"nome": "João", "sobrenome": "Monteiro", "apelido": "Vulcão"}, {"nome": "Henrique", "sobrenome": "Souza", "apelido": "Tsunami"}, {"nome": "Fernando", "sobrenome": "Evangelista", "apelido": "Furacão"}, {"nome": "Emerson", "sobrenome": "Castro", "apelido": "Ciclone"}, {"nome": "Elias", "sobrenome": "Gomes", "apelido": "Tornado"}, {"nome": "Fernando", "sobrenome": "Guimarães", "apelido": "Vendaval"}, {"nome": "Wilian", "sobrenome": "Monteiro", "apelido": "Chuva"}, {"nome": "Oscar", "sobrenome": "Evangelista", "apelido": "Vento"}, {"nome": "Jadson", "sobrenome": "Cavalcante", "apelido": "Brisa"}, {"nome": "Pedro", "sobrenome": "Ribeiro", "apelido": "Tempestade"}, {"nome": "André", "sobrenome": "Barbosa", "apelido": "Raio"}, {"nome": "Souza", "sobrenome": "Xavier", "apelido": "Relevo"}, {"nome": "Márcio", "sobrenome": "Ribeiro", "apelido": "Rochedo"}, {"nome": "Souza", "sobrenome": "Azevedo", "apelido": "Pedreira"}, {"nome": "Renato", "sobrenome": "Duarte", "apelido": "Granito"}, {"nome": "Gilberto", "sobrenome": "Monteiro", "apelido": "Basalto"}, {"nome": "Igor", "sobrenome": "Moreira", "apelido": "Quartzo"}, {"nome": "André", "sobrenome": "Moraes", "apelido": "Safira"}, {"nome": "Wilian", "sobrenome": "Lima", "apelido": "Rubi"}, {"nome": "Alex", "sobrenome": "Costa", "apelido": "Esmeralda"}, {"nome": "Willian", "sobrenome": "Ferreira", "apelido": "Diamante"}, {"nome": "Pedro", "sobrenome": "Fonseca", "apelido": "Ônix"}, {"nome": "Thiago", "sobrenome": "Sabino", "apelido": "Jade"}, {"nome": "Robinho", "sobrenome": "Nunes", "apelido": "Ágata"}, {"nome": "Wesley", "sobrenome": "Souza", "apelido": "Craque"}, {"nome": "Murilo", "sobrenome": "Batista", "apelido": "Ás"}, {"nome": "Wesley", "sobrenome": "Cavalcante", "apelido": "Mágico"}, {"nome": "Kleber", "sobrenome": "Ribeiro", "apelido": "Gênio"}, {"nome": "Danilo", "sobrenome": "Brito", "apelido": "Maestro"}, {"nome": "Carlos", "sobrenome": "Machado", "apelido": "Virtuoso"}, {"nome": "Grafite", "sobrenome": "Ferreira", "apelido": "Prodígio"}, {"nome": "Robinho", "sobrenome": "Castro", "apelido": "Fenômeno"}, {"nome": "Márcio", "sobrenome": "Neto", "apelido": "Monstro"}, {"nome": "Henrique", "sobrenome": "Rezende", "apelido": "Capitão"}, {"nome": "Jadson", "sobrenome": "Cardoso", "apelido": "General"}, {"nome": "Diego", "sobrenome": "Martins", "apelido": "Sargento"}, {"nome": "Renato", "sobrenome": "Nascimento", "apelido": "Coronel"}, {"nome": "Alan", "sobrenome": "Silva", "apelido": "Tenente"}, {"nome": "Grafite", "sobrenome": "Castro", "apelido": "Cabo"}, {"nome": "Grafite", "sobrenome": "Ribeiro", "apelido": "Soldado"}, {"nome": "Everton", "sobrenome": "Neto", "apelido": "Guerreiro"}, {"nome": "Eduardo", "sobrenome": "Moraes", "apelido": "Herói"}, {"nome": "Bernard", "sobrenome": "Pereira", "apelido": "Lenda"}, {"nome": "Willian", "sobrenome": "Fonseca", "apelido": "Rei Neto"}, {"nome": "Paulo", "sobrenome": "Zanetti", "apelido": "Rei Júnior"}, {"nome": "Cleber", "sobrenome": "Moraes", "apelido": "Rei Filho"}, {"nome": "Wesley", "sobrenome": "Fernandes", "apelido": "Rei da Silva"}, {"nome": "Pedro", "sobrenome": "Correia", "apelido": "Rei dos Santos"}, {"nome": "Alex", "sobrenome": "Nascimento", "apelido": "Rei de Souza"}, {"nome": "Márcio", "sobrenome": "Rezende", "apelido": "Rei Lima"}, {"nome": "David", "sobrenome": "Vieira", "apelido": "Rei Costa"}, {"nome": "Bernard", "sobrenome": "Silva", "apelido": "Rei Pereira"}, {"nome": "Wesley", "sobrenome": "Gomes", "apelido": "Rei Baiano"}, {"nome": "Wilian", "sobrenome": "Santos", "apelido": "Rei Gaúcho"}, {"nome": "Igor", "sobrenome": "Castro", "apelido": "Rei Mineiro"}, {"nome": "Luan", "sobrenome": "Torres", "apelido": "Rei Carioca"}, {"nome": "Paulo", "sobrenome": "Barbosa", "apelido": "Rei Paulista"}, {"nome": "Mateus", "sobrenome": "Barbosa", "apelido": "Rei Nordestino"}, {"nome": "Oscar", "sobrenome": "Andrade", "apelido": "Rei Nortista"}, {"nome": "Felipe", "sobrenome": "Lima", "apelido": "Rei Sulista"}, {"nome": "Grafite", "sobrenome": "Ramos", "apelido": "Rei Capixaba"}, {"nome": "Julio", "sobrenome": "Souza", "apelido": "Rei Goiano"}, {"nome": "Alex", "sobrenome": "Campos", "apelido": "Rei Pernambucano"}, {"nome": "Jonas", "sobrenome": "Rodrigues", "apelido": "Rei Velho"}, {"nome": "André", "sobrenome": "Lopes", "apelido": "Rei Novo"}, {"nome": "Douglas", "sobrenome": "Xavier", "apelido": "Rei Grande"}, {"nome": "Thiago", "sobrenome": "Ribeiro", "apelido": "Rei Pequeno"}, {"nome": "Kleber", "sobrenome": "Brito", "apelido": "Rei Gordo"}, {"nome": "Wesley", "sobrenome": "Nunes", "apelido": "Rei Magro"}, {"nome": "Fernando", "sobrenome": "Falcão", "apelido": "Rei Alto"}, {"nome": "Grafite", "sobrenome": "Marques", "apelido": "Rei Baixo"}, {"nome": "Paulo", "sobrenome": "Monteiro", "apelido": "Rei Forte"}, {"nome": "Rivaldo", "sobrenome": "Guimarães", "apelido": "Rei Rápido"}, {"nome": "Igor", "sobrenome": "Freitas", "apelido": "Rei I"}, {"nome": "Ramires", "sobrenome": "Vieira", "apelido": "Rei II"}, {"nome": "Sérgio", "sobrenome": "Ferreira", "apelido": "Rei III"}, {"nome": "Leonardo", "sobrenome": "Moreira", "apelido": "Rei IV"}, {"nome": "Rafael", "sobrenome": "Cardoso", "apelido": "Rei V"}, {"nome": "Lucas", "sobrenome": "Azevedo", "apelido": "Rei VI"}, {"nome": "Gilberto", "sobrenome": "Moreira", "apelido": "Rei VII"}, {"nome": "Carlos", "sobrenome": "Souza", "apelido": "Rei VIII"}, {"nome": "Elias", "sobrenome": "Fonseca", "apelido": "Rei IX"}, {"nome": "Mateus", "sobrenome": "Moreira", "apelido": "Rei X"}, {"nome": "Rafael", "sobrenome": "Duarte", "apelido": "Rei 10"}, {"nome": "Gabriel", "sobrenome": "Brito", "apelido": "Rei 7"}, {"nome": "Vítor", "sobrenome": "Souza", "apelido": "Rei 9"}, {"nome": "Everton", "sobrenome": "Barbosa", "apelido": "Rei 11"}, {"nome": "Henrique", "sobrenome": "Lopes", "apelido": "Rei 3"}, {"nome": "Wilian", "sobrenome": "Dias", "apelido": "Rei 4"}, {"nome": "Márcio", "sobrenome": "Rodrigues", "apelido": "Rei 5"}, {"nome": "Grafite", "sobrenome": "Falcão", "apelido": "Rei 6"}, {"nome": "Emerson", "sobrenome": "Pinto", "apelido": "Rei 8"}, {"nome": "Leonardo", "sobrenome": "Sabino", "apelido": "Rei 1"}, {"nome": "Douglas", "sobrenome": "Torres", "apelido": "Dom Neto"}, {"nome": "Fábio", "sobrenome": "Fernandes", "apelido": "Dom Júnior"}, {"nome": "Bruno", "sobrenome": "Pereira", "apelido": "Dom Filho"}, {"nome": "Rivaldo", "sobrenome": "Nunes", "apelido": "Dom da Silva"}, {"nome": "Caio", "sobrenome": "Nunes", "apelido": "Dom dos Santos"}, {"nome": "Fábio", "sobrenome": "Cavalcante", "apelido": "Dom de Souza"}, {"nome": "Willian", "sobrenome": "Miranda", "apelido": "Dom Lima"}, {"nome": "Mateus", "sobrenome": "Machado", "apelido": "Dom Costa"}, {"nome": "Jadson", "sobrenome": "Guimarães", "apelido": "Dom Pereira"}, {"nome": "Bruno", "sobrenome": "Costa", "apelido": "Dom Baiano"}, {"nome": "Leandro", "sobrenome": "Miranda", "apelido": "Dom Gaúcho"}, {"nome": "Vítor", "sobrenome": "Torres", "apelido": "Dom Mineiro"}, {"nome": "Leonardo", "sobrenome": "Fernandes", "apelido": "Dom Carioca"}, {"nome": "Rodrigo", "sobrenome": "Campos", "apelido": "Dom Paulista"}, {"nome": "Sérgio", "sobrenome": "Rodrigues", "apelido": "Dom Nordestino"}, {"nome": "Renato", "sobrenome": "Carvalho", "apelido": "Dom Nortista"}, {"nome": "Henrique", "sobrenome": "Cavalcante", "apelido": "Dom Sulista"}, {"nome": "Leonardo", "sobrenome": "Brito", "apelido": "Dom Capixaba"}, {"nome": "David", "sobrenome": "Souza", "apelido": "Dom Goiano"}, {"nome": "Sérgio", "sobrenome": "Torres", "apelido": "Dom Pernambucano"}, {"nome": "Willian", "sobrenome": "Alves", "apelido": "Dom Velho"}, {"nome": "Danilo", "sobrenome": "Pereira", "apelido": "Dom Novo"}, {"nome": "Mateus", "sobrenome": "Guimarães", "apelido": "Dom Grande"}, {"nome": "Márcio", "sobrenome": "Zanetti", "apelido": "Dom Pequeno"}, {"nome": "Carlos", "sobrenome": "Lima", "apelido": "Dom Gordo"}, {"nome": "David", "sobrenome": "Neto", "apelido": "Dom Magro"}, {"nome": "Naldo", "sobrenome": "Barbosa", "apelido": "Dom Alto"}, {"nome": "Thiago", "sobrenome": "Mendes", "apelido": "Dom Baixo"}, {"nome": "Wilian", "sobrenome": "Pinto", "apelido": "Dom Forte"}, {"nome": "Fernando", "sobrenome": "Brito", "apelido": "Dom Rápido"}, {"nome": "Leandro", "sobrenome": "Duarte", "apelido": "Dom I"}, {"nome": "Mateus", "sobrenome": "Nascimento", "apelido": "Dom II"}, {"nome": "Murilo", "sobrenome": "Silva", "apelido": "Dom III"}, {"nome": "Murilo", "sobrenome": "Ribeiro", "apelido": "Dom IV"}, {"nome": "David", "sobrenome": "Sabino", "apelido": "Dom V"}, {"nome": "Vagner", "sobrenome": "Cavalcante", "apelido": "Dom VI"}, {"nome": "Alexandre", "sobrenome": "Nunes", "apelido": "Dom VII"}, {"nome": "Fred", "sobrenome": "Miranda", "apelido": "Dom VIII"}, {"nome": "Vagner", "sobrenome": "Xavier", "apelido": "Dom IX"}, {"nome": "Rivaldo", "sobrenome": "Melo", "apelido": "Dom X"}, {"nome": "Wilian", "sobrenome": "Almeida", "apelido": "Dom 10"}, {"nome": "Rodrigo", "sobrenome": "Martins", "apelido": "Dom 7"}, {"nome": "Fernando", "sobrenome": "Costa", "apelido": "Dom 9"}, {"nome": "Gilberto", "sobrenome": "Moura", "apelido": "Dom 11"}, {"nome": "Márcio", "sobrenome": "Costa", "apelido": "Dom 3"}, {"nome": "Souza", "sobrenome": "Gomes", "apelido": "Dom 4"}, {"nome": "Mateus", "sobrenome": "Costa", "apelido": "Dom 5"}, {"nome": "Gilberto", "sobrenome": "Pinto", "apelido": "Dom 6"}, {"nome": "Everton", "sobrenome": "Evangelista", "apelido": "Dom 8"}, {"nome": "Naldo", "sobrenome": "Vieira", "apelido": "Dom 1"}, {"nome": "Thiago", "sobrenome": "Costa", "apelido": "Mestre Neto"}, {"nome": "Everton", "sobrenome": "Lima", "apelido": "Mestre Júnior"}, {"nome": "Naldo", "sobrenome": "Carvalho", "apelido": "Mestre Filho"}, {"nome": "Rafael", "sobrenome": "Machado", "apelido": "Mestre da Silva"}, {"nome": "Willian", "sobrenome": "Barbosa", "apelido": "Mestre dos Santos"}, {"nome": "Leandro", "sobrenome": "Ferreira", "apelido": "Mestre de Souza"}, {"nome": "Leonardo", "sobrenome": "Azevedo", "apelido": "Mestre Lima"}, {"nome": "Wesley", "sobrenome": "Oliveira", "apelido": "Mestre Costa"}, {"nome": "Adriano", "sobrenome": "Lima", "apelido": "Mestre Pereira"}, {"nome": "Fábio", "sobrenome": "Lopes", "apelido": "Mestre Baiano"}, {"nome": "Gilberto", "sobrenome": "Andrade", "apelido": "Mestre Gaúcho"}, {"nome": "Kleber", "sobrenome": "Gomes", "apelido": "Mestre Mineiro"}, {"nome": "David", "sobrenome": "Ribeiro", "apelido": "Mestre Carioca"}, {"nome": "Fernando", "sobrenome": "Lopes", "apelido": "Mestre Paulista"}, {"nome": "Leonardo", "sobrenome": "Ribeiro", "apelido": "Mestre Nordestino"}, {"nome": "Leandro", "sobrenome": "Rodrigues", "apelido": "Mestre Nortista"}, {"nome": "Paulo", "sobrenome": "Cavalcante", "apelido": "Mestre Sulista"}, {"nome": "João", "sobrenome": "Falcão", "apelido": "Mestre Capixaba"}, {"nome": "Alex", "sobrenome": "Falcão", "apelido": "Mestre Goiano"}, {"nome": "Rafael", "sobrenome": "Silva", "apelido": "Mestre Pernambucano"}, {"nome": "Alan", "sobrenome": "Cunha", "apelido": "Mestre Velho"}, {"nome": "Emerson", "sobrenome": "Pereira", "apelido": "Mestre Novo"}, {"nome": "Rafael", "sobrenome": "Campos", "apelido": "Mestre Grande"}, {"nome": "Fernando", "sobrenome": "Moraes", "apelido": "Mestre Pequeno"}, {"nome": "Gustavo", "sobrenome": "Rodrigues", "apelido": "Mestre Gordo"}, {"nome": "David", "sobrenome": "Teixeira", "apelido": "Mestre Magro"}, {"nome": "Oscar", "sobrenome": "Souza", "apelido": "Mestre Alto"}, {"nome": "Oscar", "sobrenome": "Barbosa", "apelido": "Mestre Baixo"}, {"nome": "Igor", "sobrenome": "Martins", "apelido": "Mestre Forte"}, {"nome": "Thiago", "sobrenome": "Freitas", "apelido": "Mestre Rápido"}, {"nome": "Luan", "sobrenome": "Campos", "apelido": "Mestre I"}, {"nome": "Elias", "sobrenome": "Araújo", "apelido": "Mestre II"}, {"nome": "Adriano", "sobrenome": "Torres", "apelido": "Mestre III"}, {"nome": "Jadson", "sobrenome": "Vieira", "apelido": "Mestre IV"}, {"nome": "Carlos", "sobrenome": "Lopes", "apelido": "Mestre V"}, {"nome": "Julio", "sobrenome": "Xavier", "apelido": "Mestre VI"}, {"nome": "Paulo", "sobrenome": "Falcão", "apelido": "Mestre VII"}, {"nome": "Rivaldo", "sobrenome": "Pereira", "apelido": "Mestre VIII"}, {"nome": "Oscar", "sobrenome": "Rodrigues", "apelido": "Mestre IX"}, {"nome": "Gustavo", "sobrenome": "Ferreira", "apelido": "Mestre X"}, {"nome": "Oscar", "sobrenome": "Pereira", "apelido": "Mestre 10"}, {"nome": "Pedro", "sobrenome": "Rocha", "apelido": "Mestre 7"}, {"nome": "Alexandre", "sobrenome": "Borges", "apelido": "Mestre 9"}, {"nome": "Fernando", "sobrenome": "Melo", "apelido": "Mestre 11"}, {"nome": "Vítor", "sobrenome": "Dias", "apelido": "Mestre 3"}, {"nome": "Robinho", "sobrenome": "Fonseca", "apelido": "Mestre 4"}, {"nome": "Naldo", "sobrenome": "Ribeiro", "apelido": "Mestre 5"}, {"nome": "Everton", "sobrenome": "Ramos", "apelido": "Mestre 6"}, {"nome": "Gustavo", "sobrenome": "Duarte", "apelido": "Mestre 8"}, {"nome": "Bernard", "sobrenome": "Alves", "apelido": "Mestre 1"}, {"nome": "Mateus", "sobrenome": "Lima", "apelido": "Bala Neto"}, {"nome": "Cleber", "sobrenome": "Nunes", "apelido": "Bala Júnior"}, {"nome": "Luan", "sobrenome": "Rocha", "apelido": "Bala Filho"}, {"nome": "Gabriel", "sobrenome": "Silva", "apelido": "Bala da Silva"}, {"nome": "Vítor", "sobrenome": "Rezende", "apelido": "Bala dos Santos"}, {"nome": "André", "sobrenome": "Fonseca", "apelido": "Bala de Souza"}, {"nome": "Gustavo", "sobrenome": "Nascimento", "apelido": "Bala Lima"}, {"nome": "Souza", "sobrenome": "Freitas", "apelido": "Bala Costa"}, {"nome": "Danilo", "sobrenome": "Melo", "apelido": "Bala Pereira"}, {"nome": "Renato", "sobrenome": "Xavier", "apelido": "Bala Baiano"}, {"nome": "Carlos", "sobrenome": "Ferreira", "apelido": "Bala Gaúcho"}, {"nome": "Rafael", "sobrenome": "Castro", "apelido": "Bala Mineiro"}, {"nome": "Fred", "sobrenome": "Duarte", "apelido": "Bala Carioca"}, {"nome": "Pedro", "sobrenome": "Campos", "apelido": "Bala Paulista"}, {"nome": "Gabriel", "sobrenome": "Zanetti", "apelido": "Bala Nordestino"}, {"nome": "Igor", "sobrenome": "Azevedo", "apelido": "Bala Nortista"}, {"nome": "Danilo", "sobrenome": "Almeida", "apelido": "Bala Sulista"}, {"nome": "Renato", "sobrenome": "Rodrigues", "apelido": "Bala Capixaba"}, {"nome": "Gabriel", "sobrenome": "Araújo", "apelido": "Bala Goiano"}, {"nome": "Igor", "sobrenome": "Duarte", "apelido": "Bala Pernambucano"}, {"nome": "Willian", "sobrenome": "Oliveira", "apelido": "Bala Velho"}, {"nome": "Ramires", "sobrenome": "Teixeira", "apelido": "Bala Novo"}, {"nome": "Fernando", "sobrenome": "Machado", "apelido": "Bala Grande"}, {"nome": "Leonardo", "sobrenome": "Lopes", "apelido": "Bala Pequeno"}, {"nome": "Bruno", "sobrenome": "Teixeira", "apelido": "Bala Gordo"}, {"nome": "Jonas", "sobrenome": "Xavier", "apelido": "Bala Magro"}, {"nome": "Oscar", "sobrenome": "Brito", "apelido": "Bala Alto"}, {"nome": "Fábio", "sobrenome": "Cunha", "apelido": "Bala Baixo"}, {"nome": "Souza", "sobrenome": "Almeida", "apelido": "Bala Forte"}, {"nome": "David", "sobrenome": "Falcão", "apelido": "Bala Rápido"}, {"nome": "Thiago", "sobrenome": "Torres", "apelido": "Bala I"}, {"nome": "Welliton", "sobrenome": "Carvalho", "apelido": "Bala II"}, {"nome": "Oscar", "sobrenome": "Mendes", "apelido": "Bala III"}, {"nome": "Lucas", "sobrenome": "Carvalho", "apelido": "Bala IV"}, {"nome": "Souza", "sobrenome": "Falcão", "apelido": "Bala V"}, {"nome": "Vítor", "sobrenome": "Sabino", "apelido": "Bala VI"}, {"nome": "David", "sobrenome": "Mendes", "apelido": "Bala VII"}, {"nome": "Welliton", "sobrenome": "Lopes", "apelido": "Bala VIII"}, {"nome": "Willian", "sobrenome": "Moura", "apelido": "Bala IX"}, {"nome": "Welliton", "sobrenome": "Barbosa", "apelido": "Bala X"}, {"nome": "Henrique", "sobrenome": "Nascimento", "apelido": "Bala 10"}, {"nome": "Vagner", "sobrenome": "Marques", "apelido": "Bala 7"}, {"nome": "Bruno", "sobrenome": "Batista", "apelido": "Bala 9"}, {"nome": "Naldo", "sobrenome": "Pinto", "apelido": "Bala 11"}, {"nome": "Marcelo", "sobrenome": "Fernandes", "apelido": "Bala 3"}, {"nome": "Julio", "sobrenome": "Evangelista", "apelido": "Bala 4"}, {"nome": "Alan", "sobrenome": "Teixeira", "apelido": "Bala 5"}, {"nome": "Paulo", "sobrenome": "Vargas", "apelido": "Bala 6"}, {"nome": "Vagner", "sobrenome": "Brito", "apelido": "Bala 8"}, {"nome": "Marcelo", "sobrenome": "Moreira", "apelido": "Bala 1"}, {"nome": "Lucas", "sobrenome": "Lopes", "apelido": "Foguete Neto"}, {"nome": "Rodrigo", "sobrenome": "Monteiro", "apelido": "Foguete Júnior"}, {"nome": "Willian", "sobrenome": "Souza", "apelido": "Foguete Filho"}, {"nome": "Jonas", "sobrenome": "Rocha", "apelido": "Foguete da Silva"}, {"nome": "Caio", "sobrenome": "Guimarães", "apelido": "Foguete dos Santos"}, {"nome": "Everton", "sobrenome": "Monteiro", "apelido": "Foguete de Souza"}, {"nome": "Robinho", "sobrenome": "Zanetti", "apelido": "Foguete Lima"}, {"nome": "Márcio", "sobrenome": "Cardoso", "apelido": "Foguete Costa"}, {"nome": "Lucas", "sobrenome": "Ferreira", "apelido": "Foguete Pereira"}, {"nome": "Oscar", "sobrenome": "Ribeiro", "apelido": "Foguete Baiano"}, {"nome": "Eduardo", "sobrenome": "Azevedo", "apelido": "Foguete Gaúcho"}, {"nome": "Gustavo", "sobrenome": "Oliveira", "apelido": "Foguete Mineiro"}, {"nome": "Bruno", "sobrenome": "Borges", "apelido": "Foguete Carioca"}, {"nome": "Renato", "sobrenome": "Teixeira", "apelido": "Foguete Paulista"}, {"nome": "Grafite", "sobrenome": "Sabino", "apelido": "Foguete Nordestino"}, {"nome": "João", "sobrenome": "Nunes", "apelido": "Foguete Nortista"}, {"nome": "Wesley", "sobrenome": "Moraes", "apelido": "Foguete Sulista"}, {"nome": "Diego", "sobrenome": "Batista", "apelido": "Foguete Capixaba"}, {"nome": "Ramires", "sobrenome": "Andrade", "apelido": "Foguete Goiano"}, {"nome": "Rodrigo", "sobrenome": "Ribeiro", "apelido": "Foguete Pernambucano"}, {"nome": "Gabriel", "sobrenome": "Melo", "apelido": "Foguete Velho"}, {"nome": "Renato", "sobrenome": "Silva", "apelido": "Foguete Novo"}, {"nome": "Kleber", "sobrenome": "Falcão", "apelido": "Foguete Grande"}, {"nome": "Welliton", "sobrenome": "Campos", "apelido": "Foguete Pequeno"}, {"nome": "Robinho", "sobrenome": "Miranda", "apelido": "Foguete Gordo"}, {"nome": "Souza", "sobrenome": "Moura", "apelido": "Foguete Magro"}, {"nome": "Rivaldo", "sobrenome": "Fernandes", "apelido": "Foguete Alto"}, {"nome": "Igor", "sobrenome": "Nunes", "apelido": "Foguete Baixo"}, {"nome": "Rafael", "sobrenome": "Lopes", "apelido": "Foguete Forte"}, {"nome": "Bernard", "sobrenome": "Cardoso", "apelido": "Foguete Rápido"}, {"nome": "Adriano", "sobrenome": "Gomes", "apelido": "Foguete I"}, {"nome": "Rivaldo", "sobrenome": "Alves", "apelido": "Foguete II"}, {"nome": "Diego", "sobrenome": "Miranda", "apelido": "Foguete III"}, {"nome": "Ramires", "sobrenome": "Araújo", "apelido": "Foguete IV"}, {"nome": "Everton", "sobrenome": "Araújo", "apelido": "Foguete V"}, {"nome": "Rivaldo", "sobrenome": "Mendes", "apelido": "Foguete VI"}, {"nome": "Fred", "sobrenome": "Martins", "apelido": "Foguete VII"}, {"nome": "Danilo", "sobrenome": "Rodrigues", "apelido": "Foguete VIII"}, {"nome": "Rodrigo", "sobrenome": "Mendes", "apelido": "Foguete IX"}, {"nome": "Rivaldo", "sobrenome": "Batista", "apelido": "Foguete X"}, {"nome": "Ramires", "sobrenome": "Carvalho", "apelido": "Foguete 10"}, {"nome": "Adriano", "sobrenome": "Andrade", "apelido": "Foguete 7"}, {"nome": "Danilo", "sobrenome": "Zanetti", "apelido": "Foguete 9"}, {"nome": "Carlos", "sobrenome": "Araújo", "apelido": "Foguete 11"}, {"nome": "Alexandre", "sobrenome": "Dias", "apelido": "Foguete 3"}, {"nome": "Renato", "sobrenome": "Sabino", "apelido": "Foguete 4"}, {"nome": "Gilberto", "sobrenome": "Borges", "apelido": "Foguete 5"}, {"nome": "Jadson", "sobrenome": "Gomes", "apelido": "Foguete 6"}, {"nome": "Alan", "sobrenome": "Freitas", "apelido": "Foguete 8"}, {"nome": "Sérgio", "sobrenome": "Machado", "apelido": "Foguete 1"}, {"nome": "Douglas", "sobrenome": "Sabino", "apelido": "Bomba Neto"}, {"nome": "Ramires", "sobrenome": "Sabino", "apelido": "Bomba Júnior"}, {"nome": "Souza", "sobrenome": "Nascimento", "apelido": "Bomba Filho"}, {"nome": "Rivaldo", "sobrenome": "Lima", "apelido": "Bomba da Silva"}, {"nome": "Alexandre", "sobrenome": "Moraes", "apelido": "Bomba dos Santos"}, {"nome": "Rivaldo", "sobrenome": "Fonseca", "apelido": "Bomba de Souza"}, {"nome": "Adriano", "sobrenome": "Cardoso", "apelido": "Bomba Lima"}, {"nome": "Felipe", "sobrenome": "Vargas", "apelido": "Bomba Costa"}, {"nome": "Alex", "sobrenome": "Barbosa", "apelido": "Bomba Pereira"}, {"nome": "Robinho", "sobrenome": "Araújo", "apelido": "Bomba Baiano"}, {"nome": "Marcelo", "sobrenome": "Torres", "apelido": "Bomba Gaúcho"}, {"nome": "Rodrigo", "sobrenome": "Almeida", "apelido": "Bomba Mineiro"}, {"nome": "Lucas", "sobrenome": "Oliveira", "apelido": "Bomba Carioca"}, {"nome": "Leonardo", "sobrenome": "Pinto", "apelido": "Bomba Paulista"}, {"nome": "Adriano", "sobrenome": "Alves", "apelido": "Bomba Nordestino"}, {"nome": "Jonas", "sobrenome": "Souza", "apelido": "Bomba Nortista"}, {"nome": "Alan", "sobrenome": "Mendes", "apelido": "Bomba Sulista"}, {"nome": "Oscar", "sobrenome": "Fonseca", "apelido": "Bomba Capixaba"}, {"nome": "Elias", "sobrenome": "Marques", "apelido": "Bomba Goiano"}, {"nome": "Murilo", "sobrenome": "Ramos", "apelido": "Bomba Pernambucano"}, {"nome": "Leandro", "sobrenome": "Barbosa", "apelido": "Bomba Velho"}, {"nome": "Pedro", "sobrenome": "Guimarães", "apelido": "Bomba Novo"}, {"nome": "Fred", "sobrenome": "Silva", "apelido": "Bomba Grande"}, {"nome": "Ramires", "sobrenome": "Neto", "apelido": "Bomba Pequeno"}, {"nome": "Willian", "sobrenome": "Rezende", "apelido": "Bomba Gordo"}, {"nome": "Jonas", "sobrenome": "Nunes", "apelido": "Bomba Magro"}, {"nome": "Marcelo", "sobrenome": "Carvalho", "apelido": "Bomba Alto"}, {"nome": "Welliton", "sobrenome": "Marques", "apelido": "Bomba Baixo"}, {"nome": "Kleber", "sobrenome": "Cavalcante", "apelido": "Bomba Forte"}, {"nome": "Mateus", "sobrenome": "Xavier", "apelido": "Bomba Rápido"}, {"nome": "Leonardo", "sobrenome": "Evangelista", "apelido": "Bomba I"}, {"nome": "Naldo", "sobrenome": "Ferreira", "apelido": "Bomba II"}, {"nome": "Alan", "sobrenome": "Rodrigues", "apelido": "Bomba III"}, {"nome": "Welliton", "sobrenome": "Cavalcante", "apelido": "Bomba IV"}, {"nome": "Rivaldo", "sobrenome": "Vieira", "apelido": "Bomba V"}, {"nome": "Danilo", "sobrenome": "Borges", "apelido": "Bomba VI"}, {"nome": "João", "sobrenome": "Neto", "apelido": "Bomba VII"}, {"nome": "Ramires", "sobrenome": "Freitas", "apelido": "Bomba VIII"}, {"nome": "Adriano", "sobrenome": "Vargas", "apelido": "Bomba IX"}, {"nome": "Grafite", "sobrenome": "Duarte", "apelido": "Bomba X"}, {"nome": "Everton", "sobrenome": "Nunes", "apelido": "Bomba 10"}, {"nome": "Luan", "sobrenome": "Evangelista", "apelido": "Bomba 7"}, {"nome": "Danilo", "sobrenome": "Freitas", "apelido": "Bomba 9"}, {"nome": "Ramires", "sobrenome": "Nascimento", "apelido": "Bomba 11"}, {"nome": "Souza", "sobrenome": "Brito", "apelido": "Bomba 3"}, {"nome": "Douglas", "sobrenome": "Freitas", "apelido": "Bomba 4"}, {"nome": "Gustavo", "sobrenome": "Neto", "apelido": "Bomba 5"}, {"nome": "Leonardo", "sobrenome": "Zanetti", "apelido": "Bomba 6"}, {"nome": "Cleber", "sobrenome": "Rocha", "apelido": "Bomba 8"}, {"nome": "Jonas", "sobrenome": "Rezende", "apelido": "Bomba 1"}, {"nome": "Kleber", "sobrenome": "Ramos", "apelido": "Trovão Neto"}, {"nome": "Cleber", "sobrenome": "Barbosa", "apelido": "Trovão Júnior"}, {"nome": "Henrique", "sobrenome": "Freitas", "apelido": "Trovão Filho"}, {"nome": "Rafael", "sobrenome": "Melo", "apelido": "Trovão da Silva"}, {"nome": "Alexandre", "sobrenome": "Barbosa", "apelido": "Trovão dos Santos"}, {"nome": "Henrique", "sobrenome": "Cardoso", "apelido": "Trovão de Souza"}, {"nome": "João", "sobrenome": "Duarte", "apelido": "Trovão Lima"}, {"nome": "Márcio", "sobrenome": "Lima", "apelido": "Trovão Costa"}, {"nome": "André", "sobrenome": "Almeida", "apelido": "Trovão Pereira"}, {"nome": "Marcelo", "sobrenome": "Batista", "apelido": "Trovão Baiano"}, {"nome": "Fred", "sobrenome": "Almeida", "apelido": "Trovão Gaúcho"}, {"nome": "Elias", "sobrenome": "Dias", "apelido": "Trovão Mineiro"}, {"nome": "Rafael", "sobrenome": "Mendes", "apelido": "Trovão Carioca"}, {"nome": "Fábio", "sobrenome": "Cardoso", "apelido": "Trovão Paulista"}, {"nome": "Márcio", "sobrenome": "Cavalcante", "apelido": "Trovão Nordestino"}, {"nome": "Fábio", "sobrenome": "Costa", "apelido": "Trovão Nortista"}, {"nome": "Fernando", "sobrenome": "Zanetti", "apelido": "Trovão Sulista"}, {"nome": "Fábio", "sobrenome": "Batista", "apelido": "Trovão Capixaba"}, {"nome": "Ramires", "sobrenome": "Rezende", "apelido": "Trovão Goiano"}, {"nome": "Gilberto", "sobrenome": "Marques", "apelido": "Trovão Pernambucano"}, {"nome": "Lucas", "sobrenome": "Alves", "apelido": "Trovão Velho"}, {"nome": "Oscar", "sobrenome": "Neto", "apelido": "Trovão Novo"}, {"nome": "Emerson", "sobrenome": "Batista", "apelido": "Trovão Grande"}, {"nome": "Douglas", "sobrenome": "Silva", "apelido": "Trovão Pequeno"}, {"nome": "Caio", "sobrenome": "Araújo", "apelido": "Trovão Gordo"}, {"nome": "Alex", "sobrenome": "Batista", "apelido": "Trovão Magro"}, {"nome": "Naldo", "sobrenome": "Duarte", "apelido": "Trovão Alto"}, {"nome": "Luan", "sobrenome": "Mendes", "apelido": "Trovão Baixo"}, {"nome": "Márcio", "sobrenome": "Moura", "apelido": "Trovão Forte"}, {"nome": "Souza", "sobrenome": "Campos", "apelido": "Trovão Rápido"}, {"nome": "Welliton", "sobrenome": "Borges", "apelido": "Trovão I"}, {"nome": "Ramires", "sobrenome": "Moreira", "apelido": "Trovão II"}, {"nome": "Wilian", "sobrenome": "Moreira", "apelido": "Trovão III"}, {"nome": "Henrique", "sobrenome": "Nunes", "apelido": "Trovão IV"}, {"nome": "Murilo", "sobrenome": "Cardoso", "apelido": "Trovão V"}, {"nome": "Rivaldo", "sobrenome": "Machado", "apelido": "Trovão VI"}, {"nome": "Welliton", "sobrenome": "Monteiro", "apelido": "Trovão VII"}, {"nome": "Grafite", "sobrenome": "Nascimento", "apelido": "Trovão VIII"}, {"nome": "Luan", "sobrenome": "Cavalcante", "apelido": "Trovão IX"}, {"nome": "Bernard", "sobrenome": "Rodrigues", "apelido": "Trovão X"}, {"nome": "Adriano", "sobrenome": "Campos", "apelido": "Trovão 10"}, {"nome": "Lucas", "sobrenome": "Evangelista", "apelido": "Trovão 7"}, {"nome": "Leandro", "sobrenome": "Azevedo", "apelido": "Trovão 9"}, {"nome": "Emerson", "sobrenome": "Lopes", "apelido": "Trovão 11"}, {"nome": "Jadson", "sobrenome": "Nunes", "apelido": "Trovão 3"}, {"nome": "André", "sobrenome": "Brito", "apelido": "Trovão 4"}, {"nome": "Alan", "sobrenome": "Carvalho", "apelido": "Trovão 5"}, {"nome": "Mateus", "sobrenome": "Ribeiro", "apelido": "Trovão 6"}, {"nome": "Murilo", "sobrenome": "Gomes", "apelido": "Trovão 8"}, {"nome": "Fernando", "sobrenome": "Cavalcante", "apelido": "Trovão 1"}, {"nome": "João", "sobrenome": "Cardoso", "apelido": "Relâmpago Neto"}, {"nome": "Alex", "sobrenome": "Castro", "apelido": "Relâmpago Júnior"}, {"nome": "Alex", "sobrenome": "Zanetti", "apelido": "Relâmpago Filho"}, {"nome": "Fábio", "sobrenome": "Ribeiro", "apelido": "Relâmpago da Silva"}, {"nome": "Luan", "sobrenome": "Lima", "apelido": "Relâmpago dos Santos"}, {"nome": "Douglas", "sobrenome": "Santos", "apelido": "Relâmpago de Souza"}, {"nome": "Mateus", "sobrenome": "Teixeira", "apelido": "Relâmpago Lima"}, {"nome": "Marcelo", "sobrenome": "Guimarães", "apelido": "Relâmpago Costa"}, {"nome": "Rafael", "sobrenome": "Rezende", "apelido": "Relâmpago Pereira"}, {"nome": "Jadson", "sobrenome": "Oliveira", "apelido": "Relâmpago Baiano"}, {"nome": "Alex", "sobrenome": "Santos", "apelido": "Relâmpago Gaúcho"}, {"nome": "Luan", "sobrenome": "Santos", "apelido": "Relâmpago Mineiro"}, {"nome": "Adriano", "sobrenome": "Almeida", "apelido": "Relâmpago Carioca"}, {"nome": "Leonardo", "sobrenome": "Rodrigues", "apelido": "Relâmpago Paulista"}, {"nome": "Douglas", "sobrenome": "Lopes", "apelido": "Relâmpago Nordestino"}, {"nome": "Diego", "sobrenome": "Andrade", "apelido": "Relâmpago Nortista"}, {"nome": "Fred", "sobrenome": "Ribeiro", "apelido": "Relâmpago Sulista"}, {"nome": "Jonas", "sobrenome": "Correia", "apelido": "Relâmpago Capixaba"}, {"nome": "Thiago", "sobrenome": "Borges", "apelido": "Relâmpago Goiano"}, {"nome": "Wesley", "sobrenome": "Moura", "apelido": "Relâmpago Pernambucano"}, {"nome": "Elias", "sobrenome": "Ferreira", "apelido": "Relâmpago Velho"}, {"nome": "Jonas", "sobrenome": "Vargas", "apelido": "Relâmpago Novo"}, {"nome": "Thiago", "sobrenome": "Araújo", "apelido": "Relâmpago Grande"}, {"nome": "Bruno", "sobrenome": "Azevedo", "apelido": "Relâmpago Pequeno"}, {"nome": "Lucas", "sobrenome": "Falcão", "apelido": "Relâmpago Gordo"}, {"nome": "Paulo", "sobrenome": "Andrade", "apelido": "Relâmpago Magro"}, {"nome": "Robinho", "sobrenome": "Evangelista", "apelido": "Relâmpago Alto"}, {"nome": "Murilo", "sobrenome": "Monteiro", "apelido": "Relâmpago Baixo"}, {"nome": "Elias", "sobrenome": "Fernandes", "apelido": "Relâmpago Forte"}, {"nome": "Rafael", "sobrenome": "Azevedo", "apelido": "Relâmpago Rápido"}, {"nome": "Fred", "sobrenome": "Zanetti", "apelido": "Relâmpago I"}, {"nome": "Bruno", "sobrenome": "Marques", "apelido": "Relâmpago II"}, {"nome": "Jonas", "sobrenome": "Araújo", "apelido": "Relâmpago III"}, {"nome": "Naldo", "sobrenome": "Machado", "apelido": "Relâmpago IV"}, {"nome": "Wesley", "sobrenome": "Torres", "apelido": "Relâmpago V"}, {"nome": "Diego", "sobrenome": "Sabino", "apelido": "Relâmpago VI"}, {"nome": "Emerson", "sobrenome": "Sabino", "apelido": "Relâmpago VII"}, {"nome": "Gabriel", "sobrenome": "Teixeira", "apelido": "Relâmpago VIII"}, {"nome": "Márcio", "sobrenome": "Nunes", "apelido": "Relâmpago IX"}, {"nome": "Rivaldo", "sobrenome": "Correia", "apelido": "Relâmpago X"}, {"nome": "Rafael", "sobrenome": "Moraes", "apelido": "Relâmpago 10"}, {"nome": "Carlos", "sobrenome": "Alves", "apelido": "Relâmpago 7"}, {"nome": "Fábio", "sobrenome": "Vargas", "apelido": "Relâmpago 9"}, {"nome": "Wilian", "sobrenome": "Pereira", "apelido": "Relâmpago 11"}, {"nome": "Renato", "sobrenome": "Correia", "apelido": "Relâmpago 3"}, {"nome": "Cleber", "sobrenome": "Duarte", "apelido": "Relâmpago 4"}, {"nome": "Elias", "sobrenome": "Almeida", "apelido": "Relâmpago 5"}, {"nome": "Grafite", "sobrenome": "Vieira", "apelido": "Relâmpago 6"}, {"nome": "Jadson", "sobrenome": "Rocha", "apelido": "Relâmpago 8"}, {"nome": "Bernard", "sobrenome": "Campos", "apelido": "Relâmpago 1"}, {"nome": "Jonas", "sobrenome": "Pinto", "apelido": "Furacão Neto"}, {"nome": "Alan", "sobrenome": "Nunes", "apelido": "Furacão Júnior"}, {"nome": "Julio", "sobrenome": "Miranda", "apelido": "Furacão Filho"}, {"nome": "João", "sobrenome": "Alves", "apelido": "Furacão da Silva"}, {"nome": "David", "sobrenome": "Lima", "apelido": "Furacão dos Santos"}, {"nome": "Henrique", "sobrenome": "Castro", "apelido": "Furacão de Souza"}, {"nome": "Sérgio", "sobrenome": "Barbosa", "apelido": "Furacão Lima"}, {"nome": "Alex", "sobrenome": "Cavalcante", "apelido": "Furacão Costa"}, {"nome": "Emerson", "sobrenome": "Cunha", "apelido": "Furacão Pereira"}, {"nome": "Vítor", "sobrenome": "Santos", "apelido": "Furacão Baiano"}, {"nome": "Wilian", "sobrenome": "Alves", "apelido": "Furacão Gaúcho"}, {"nome": "João", "sobrenome": "Carvalho", "apelido": "Furacão Mineiro"}, {"nome": "Caio", "sobrenome": "Torres", "apelido": "Furacão Carioca"}, {"nome": "Gustavo", "sobrenome": "Cardoso", "apelido": "Furacão Paulista"}, {"nome": "Wesley", "sobrenome": "Marques", "apelido": "Furacão Nordestino"}, {"nome": "Oscar", "sobrenome": "Rocha", "apelido": "Furacão Nortista"}, {"nome": "Danilo", "sobrenome": "Silva", "apelido": "Furacão Sulista"}, {"nome": "Kleber", "sobrenome": "Fernandes", "apelido": "Furacão Capixaba"}, {"nome": "Felipe", "sobrenome": "Barbosa", "apelido": "Furacão Goiano"}, {"nome": "Grafite", "sobrenome": "Mendes", "apelido": "Furacão Pernambucano"}, {"nome": "Wilian", "sobrenome": "Xavier", "apelido": "Furacão Velho"}, {"nome": "Fred", "sobrenome": "Pinto", "apelido": "Furacão Novo"}, {"nome": "Jadson", "sobrenome": "Melo", "apelido": "Furacão Grande"}, {"nome": "Wilian", "sobrenome": "Freitas", "apelido": "Furacão Pequeno"}, {"nome": "Vagner", "sobrenome": "Santos", "apelido": "Furacão Gordo"}, {"nome": "Felipe", "sobrenome": "Martins", "apelido": "Furacão Magro"}, {"nome": "Marcelo", "sobrenome": "Monteiro", "apelido": "Furacão Alto"}, {"nome": "Fred", "sobrenome": "Barbosa", "apelido": "Furacão Baixo"}, {"nome": "Paulo", "sobrenome": "Lopes", "apelido": "Furacão Forte"}, {"nome": "Gilberto", "sobrenome": "Correia", "apelido": "Furacão Rápido"}, {"nome": "Kleber", "sobrenome": "Teixeira", "apelido": "Furacão I"}, {"nome": "Renato", "sobrenome": "Moura", "apelido": "Furacão II"}, {"nome": "Danilo", "sobrenome": "Cardoso", "apelido": "Furacão III"}, {"nome": "Caio", "sobrenome": "Marques", "apelido": "Furacão IV"}, {"nome": "Alan", "sobrenome": "Rocha", "apelido": "Furacão V"}, {"nome": "Paulo", "sobrenome": "Ribeiro", "apelido": "Furacão VI"}, {"nome": "Marcelo", "sobrenome": "Ferreira", "apelido": "Furacão VII"}, {"nome": "Grafite", "sobrenome": "Fernandes", "apelido": "Furacão VIII"}, {"nome": "João", "sobrenome": "Ferreira", "apelido": "Furacão IX"}, {"nome": "Alex", "sobrenome": "Marques", "apelido": "Furacão X"}, {"nome": "Eduardo", "sobrenome": "Fernandes", "apelido": "Furacão 10"}, {"nome": "Fernando", "sobrenome": "Moura", "apelido": "Furacão 7"}, {"nome": "Douglas", "sobrenome": "Rocha", "apelido": "Furacão 9"}, {"nome": "Grafite", "sobrenome": "Azevedo", "apelido": "Furacão 11"}, {"nome": "Alex", "sobrenome": "Vieira", "apelido": "Furacão 3"}, {"nome": "Wesley", "sobrenome": "Martins", "apelido": "Furacão 4"}, {"nome": "Bruno", "sobrenome": "Zanetti", "apelido": "Furacão 5"}, {"nome": "Marcelo", "sobrenome": "Correia", "apelido": "Furacão 6"}, {"nome": "Eduardo", "sobrenome": "Araújo", "apelido": "Furacão 8"}, {"nome": "Carlos", "sobrenome": "Melo", "apelido": "Furacão 1"}, {"nome": "Henrique", "sobrenome": "Oliveira", "apelido": "Ventania Neto"}, {"nome": "Alexandre", "sobrenome": "Marques", "apelido": "Ventania Júnior"}, {"nome": "Willian", "sobrenome": "Neto", "apelido": "Ventania Filho"}, {"nome": "Willian", "sobrenome": "Silva", "apelido": "Ventania da Silva"}, {"nome": "Emerson", "sobrenome": "Martins", "apelido": "Ventania dos Santos"}, {"nome": "Douglas", "sobrenome": "Pinto", "apelido": "Ventania de Souza"}, {"nome": "Sérgio", "sobrenome": "Cardoso", "apelido": "Ventania Lima"}, {"nome": "Eduardo", "sobrenome": "Costa", "apelido": "Ventania Costa"}, {"nome": "Gustavo", "sobrenome": "Brito", "apelido": "Ventania Pereira"}, {"nome": "Douglas", "sobrenome": "Ferreira", "apelido": "Ventania Baiano"}, {"nome": "Leandro", "sobrenome": "Ramos", "apelido": "Ventania Gaúcho"}, {"nome": "Rafael", "sobrenome": "Andrade", "apelido": "Ventania Mineiro"}, {"nome": "Cleber", "sobrenome": "Machado", "apelido": "Ventania Carioca"}, {"nome": "Mateus", "sobrenome": "Almeida", "apelido": "Ventania Paulista"}, {"nome": "Pedro", "sobrenome": "Torres", "apelido": "Ventania Nordestino"}, {"nome": "Emerson", "sobrenome": "Araújo", "apelido": "Ventania Nortista"}, {"nome": "Diego", "sobrenome": "Xavier", "apelido": "Ventania Sulista"}, {"nome": "Alex", "sobrenome": "Mendes", "apelido": "Ventania Capixaba"}, {"nome": "Wesley", "sobrenome": "Borges", "apelido": "Ventania Goiano"}, {"nome": "Vagner", "sobrenome": "Cunha", "apelido": "Ventania Pernambucano"}, {"nome": "Kleber", "sobrenome": "Batista", "apelido": "Ventania Velho"}, {"nome": "Sérgio", "sobrenome": "Evangelista", "apelido": "Ventania Novo"}, {"nome": "Sérgio", "sobrenome": "Araújo", "apelido": "Ventania Grande"}, {"nome": "Willian", "sobrenome": "Azevedo", "apelido": "Ventania Pequeno"}, {"nome": "Renato", "sobrenome": "Araújo", "apelido": "Ventania Gordo"}, {"nome": "Mateus", "sobrenome": "Cunha", "apelido": "Ventania Magro"}, {"nome": "Alex", "sobrenome": "Dias", "apelido": "Ventania Alto"}, {"nome": "Cleber", "sobrenome": "Dias", "apelido": "Ventania Baixo"}, {"nome": "Gustavo", "sobrenome": "Lopes", "apelido": "Ventania Forte"}, {"nome": "Felipe", "sobrenome": "Nascimento", "apelido": "Ventania Rápido"}, {"nome": "Leonardo", "sobrenome": "Carvalho", "apelido": "Ventania I"}, {"nome": "Danilo", "sobrenome": "Souza", "apelido": "Ventania II"}, {"nome": "Thiago", "sobrenome": "Silva", "apelido": "Ventania III"}, {"nome": "Fábio", "sobrenome": "Freitas", "apelido": "Ventania IV"}, {"nome": "Fred", "sobrenome": "Borges", "apelido": "Ventania V"}, {"nome": "Douglas", "sobrenome": "Martins", "apelido": "Ventania VI"}, {"nome": "Gabriel", "sobrenome": "Moreira", "apelido": "Ventania VII"}, {"nome": "Alexandre", "sobrenome": "Melo", "apelido": "Ventania VIII"}, {"nome": "Willian", "sobrenome": "Cavalcante", "apelido": "Ventania IX"}, {"nome": "Marcelo", "sobrenome": "Falcão", "apelido": "Ventania X"}, {"nome": "Gustavo", "sobrenome": "Sabino", "apelido": "Ventania 10"}, {"nome": "Vagner", "sobrenome": "Fonseca", "apelido": "Ventania 7"}, {"nome": "Gilberto", "sobrenome": "Lopes", "apelido": "Ventania 9"}, {"nome": "Welliton", "sobrenome": "Falcão", "apelido": "Ventania 11"}, {"nome": "Rodrigo", "sobrenome": "Nunes", "apelido": "Ventania 3"}, {"nome": "Diego", "sobrenome": "Campos", "apelido": "Ventania 4"}, {"nome": "Pedro", "sobrenome": "Evangelista", "apelido": "Ventania 5"}, {"nome": "Henrique", "sobrenome": "Vargas", "apelido": "Ventania 6"}, {"nome": "Pedro", "sobrenome": "Souza", "apelido": "Ventania 8"}, {"nome": "Vagner", "sobrenome": "Araújo", "apelido": "Ventania 1"}, {"nome": "Julio", "sobrenome": "Andrade", "apelido": "Touro Neto"}, {"nome": "Bernard", "sobrenome": "Martins", "apelido": "Touro Júnior"}, {"nome": "Alan", "sobrenome": "Marques", "apelido": "Touro Filho"}, {"nome": "Paulo", "sobrenome": "Marques", "apelido": "Touro da Silva"}, {"nome": "Leandro", "sobrenome": "Rocha", "apelido": "Touro dos Santos"}, {"nome": "Everton", "sobrenome": "Campos", "apelido": "Touro de Souza"}, {"nome": "Felipe", "sobrenome": "Borges", "apelido": "Touro Lima"}, {"nome": "Gabriel", "sobrenome": "Castro", "apelido": "Touro Costa"}, {"nome": "João", "sobrenome": "Borges", "apelido": "Touro Pereira"}, {"nome": "Gustavo", "sobrenome": "Santos", "apelido": "Touro Baiano"}, {"nome": "Felipe", "sobrenome": "Moreira", "apelido": "Touro Gaúcho"}, {"nome": "Willian", "sobrenome": "Andrade", "apelido": "Touro Mineiro"}, {"nome": "Gilberto", "sobrenome": "Santos", "apelido": "Touro Carioca"}, {"nome": "Alex", "sobrenome": "Machado", "apelido": "Touro Paulista"}, {"nome": "Julio", "sobrenome": "Rocha", "apelido": "Touro Nordestino"}, {"nome": "Emerson", "sobrenome": "Oliveira", "apelido": "Touro Nortista"}, {"nome": "Alex", "sobrenome": "Neto", "apelido": "Touro Sulista"}, {"nome": "Eduardo", "sobrenome": "Pinto", "apelido": "Touro Capixaba"}, {"nome": "Kleber", "sobrenome": "Guimarães", "apelido": "Touro Goiano"}, {"nome": "Henrique", "sobrenome": "Carvalho", "apelido": "Touro Pernambucano"}, {"nome": "Gilberto", "sobrenome": "Nunes", "apelido": "Touro Velho"}, {"nome": "Cleber", "sobrenome": "Vargas", "apelido": "Touro Novo"}, {"nome": "Douglas", "sobrenome": "Teixeira", "apelido": "Touro Grande"}, {"nome": "João", "sobrenome": "Lopes", "apelido": "Touro Pequeno"}, {"nome": "Bruno", "sobrenome": "Alves", "apelido": "Touro Gordo"}, {"nome": "Thiago", "sobrenome": "Cardoso", "apelido": "Touro Magro"}, {"nome": "Fábio", "sobrenome": "Marques", "apelido": "Touro Alto"}, {"nome": "Wilian", "sobrenome": "Martins", "apelido": "Touro Baixo"}, {"nome": "Rivaldo", "sobrenome": "Monteiro", "apelido": "Touro Forte"}, {"nome": "Julio", "sobrenome": "Neto", "apelido": "Touro Rápido"}, {"nome": "Danilo", "sobrenome": "Oliveira", "apelido": "Touro I"}, {"nome": "Alan", "sobrenome": "Lima", "apelido": "Touro II"}, {"nome": "João", "sobrenome": "Ribeiro", "apelido": "Touro III"}, {"nome": "Jonas", "sobrenome": "Monteiro", "apelido": "Touro IV"}, {"nome": "Willian", "sobrenome": "Moraes", "apelido": "Touro V"}, {"nome": "Julio", "sobrenome": "Silva", "apelido": "Touro VI"}, {"nome": "Rivaldo", "sobrenome": "Brito", "apelido": "Touro VII"}, {"nome": "Rodrigo", "sobrenome": "Vieira", "apelido": "Touro VIII"}, {"nome": "Igor", "sobrenome": "Cunha", "apelido": "Touro IX"}, {"nome": "Alex", "sobrenome": "Ramos", "apelido": "Touro X"}, {"nome": "Cleber", "sobrenome": "Freitas", "apelido": "Touro 10"}, {"nome": "Fernando", "sobrenome": "Rocha", "apelido": "Touro 7"}, {"nome": "David", "sobrenome": "Martins", "apelido": "Touro 9"}, {"nome": "Sérgio", "sobrenome": "Castro", "apelido": "Touro 11"}, {"nome": "Fred", "sobrenome": "Ramos", "apelido": "Touro 3"}, {"nome": "Diego", "sobrenome": "Santos", "apelido": "Touro 4"}, {"nome": "Cleber", "sobrenome": "Borges", "apelido": "Touro 5"}, {"nome": "Elias", "sobrenome": "Nascimento", "apelido": "Touro 6"}, {"nome": "Paulo", "sobrenome": "Xavier", "apelido": "Touro 8"}, {"nome": "Carlos", "sobrenome": "Xavier", "apelido": "Touro 1"}, {"nome": "Fábio", "sobrenome": "Lima", "apelido": "Leão Neto"}, {"nome": "Marcelo", "sobrenome": "Zanetti", "apelido": "Leão Júnior"}, {"nome": "Bernard", "sobrenome": "Ferreira", "apelido": "Leão Filho"}, {"nome": "Alan", "sobrenome": "Ferreira", "apelido": "Leão da Silva"}, {"nome": "Jadson", "sobrenome": "Zanetti", "apelido": "Leão dos Santos"}, {"nome": "Pedro", "sobrenome": "Ramos", "apelido": "Leão de Souza"}, {"nome": "David", "sobrenome": "Melo", "apelido": "Leão Lima"}, {"nome": "Elias", "sobrenome": "Rocha", "apelido": "Leão Costa"}, {"nome": "Fábio", "sobrenome": "Zanetti", "apelido": "Leão Pereira"}, {"nome": "Leonardo", "sobrenome": "Cavalcante", "apelido": "Leão Baiano"}, {"nome": "Murilo", "sobrenome": "Fernandes", "apelido": "Leão Gaúcho"}, {"nome": "Bernard", "sobrenome": "Borges", "apelido": "Leão Mineiro"}, {"nome": "Everton", "sobrenome": "Moura", "apelido": "Leão Carioca"}, {"nome": "Vagner", "sobrenome": "Alves", "apelido": "Leão Paulista"}, {"nome": "Everton", "sobrenome": "Rocha", "apelido": "Leão Nordestino"}, {"nome": "Alexandre", "sobrenome": "Miranda", "apelido": "Leão Nortista"}, {"nome": "Gilberto", "sobrenome": "Azevedo", "apelido": "Leão Sulista"}, {"nome": "Rivaldo", "sobrenome": "Ramos", "apelido": "Leão Capixaba"}, {"nome": "Willian", "sobrenome": "Almeida", "apelido": "Leão Goiano"}, {"nome": "Sérgio", "sobrenome": "Campos", "apelido": "Leão Pernambucano"}, {"nome": "Vítor", "sobrenome": "Xavier", "apelido": "Leão Velho"}, {"nome": "Murilo", "sobrenome": "Cavalcante", "apelido": "Leão Novo"}, {"nome": "David", "sobrenome": "Gomes", "apelido": "Leão Grande"}, {"nome": "Willian", "sobrenome": "Fernandes", "apelido": "Leão Pequeno"}, {"nome": "Marcelo", "sobrenome": "Alves", "apelido": "Leão Gordo"}, {"nome": "Jonas", "sobrenome": "Mendes", "apelido": "Leão Magro"}, {"nome": "Gabriel", "sobrenome": "Gomes", "apelido": "Leão Alto"}, {"nome": "Souza", "sobrenome": "Pinto", "apelido": "Leão Baixo"}, {"nome": "Elias", "sobrenome": "Evangelista", "apelido": "Leão Forte"}, {"nome": "Welliton", "sobrenome": "Batista", "apelido": "Leão Rápido"}, {"nome": "Murilo", "sobrenome": "Lopes", "apelido": "Leão I"}, {"nome": "Vagner", "sobrenome": "Vargas", "apelido": "Leão II"}, {"nome": "Jadson", "sobrenome": "Almeida", "apelido": "Leão III"}, {"nome": "Wilian", "sobrenome": "Oliveira", "apelido": "Leão IV"}, {"nome": "Gilberto", "sobrenome": "Cardoso", "apelido": "Leão V"}, {"nome": "Sérgio", "sobrenome": "Pereira", "apelido": "Leão VI"}, {"nome": "Kleber", "sobrenome": "Evangelista", "apelido": "Leão VII"}, {"nome": "Grafite", "sobrenome": "Almeida", "apelido": "Leão VIII"}, {"nome": "Fábio", "sobrenome": "Brito", "apelido": "Leão IX"}, {"nome": "Rafael", "sobrenome": "Pinto", "apelido": "Leão X"}, {"nome": "Vagner", "sobrenome": "Ribeiro", "apelido": "Leão 10"}, {"nome": "Vítor", "sobrenome": "Cunha", "apelido": "Leão 7"}, {"nome": "Fred", "sobrenome": "Monteiro", "apelido": "Leão 9"}, {"nome": "Jadson", "sobrenome": "Lima", "apelido": "Leão 11"}, {"nome": "Naldo", "sobrenome": "Cardoso", "apelido": "Leão 3"}, {"nome": "Naldo", "sobrenome": "Campos", "apelido": "Leão 4"}, {"nome": "Cleber", "sobrenome": "Melo", "apelido": "Leão 5"}, {"nome": "Wilian", "sobrenome": "Brito", "apelido": "Leão 6"}, {"nome": "Márcio", "sobrenome": "Oliveira", "apelido": "Leão 8"}, {"nome": "Adriano", "sobrenome": "Souza", "apelido": "Leão 1"}, {"nome": "Leonardo", "sobrenome": "Fonseca", "apelido": "Tigre Neto"}, {"nome": "Alexandre", "sobrenome": "Moreira", "apelido": "Tigre Júnior"}, {"nome": "Souza", "sobrenome": "Lima", "apelido": "Tigre Filho"}, {"nome": "Renato", "sobrenome": "Pereira", "apelido": "Tigre da Silva"}, {"nome": "Alex", "sobrenome": "Fonseca", "apelido": "Tigre dos Santos"}, {"nome": "Elias", "sobrenome": "Brito", "apelido": "Tigre de Souza"}, {"nome": "Bruno", "sobrenome": "Freitas", "apelido": "Tigre Lima"}, {"nome": "Thiago", "sobrenome": "Marques", "apelido": "Tigre Costa"}, {"nome": "Paulo", "sobrenome": "Duarte", "apelido": "Tigre Pereira"}, {"nome": "João", "sobrenome": "Sabino", "apelido": "Tigre Baiano"}, {"nome": "Mateus", "sobrenome": "Martins", "apelido": "Tigre Gaúcho"}, {"nome": "Caio", "sobrenome": "Correia", "apelido": "Tigre Mineiro"}, {"nome": "Renato", "sobrenome": "Almeida", "apelido": "Tigre Carioca"}, {"nome": "Leonardo", "sobrenome": "Vieira", "apelido": "Tigre Paulista"}, {"nome": "Fábio", "sobrenome": "Andrade", "apelido": "Tigre Nordestino"}, {"nome": "Robinho", "sobrenome": "Sabino", "apelido": "Tigre Nortista"}, {"nome": "Eduardo", "sobrenome": "Nascimento", "apelido": "Tigre Sulista"}, {"nome": "Eduardo", "sobrenome": "Lima", "apelido": "Tigre Capixaba"}, {"nome": "Adriano", "sobrenome": "Brito", "apelido": "Tigre Goiano"}, {"nome": "Murilo", "sobrenome": "Cunha", "apelido": "Tigre Pernambucano"}, {"nome": "Robinho", "sobrenome": "Barbosa", "apelido": "Tigre Velho"}, {"nome": "Wilian", "sobrenome": "Evangelista", "apelido": "Tigre Novo"}, {"nome": "Gilberto", "sobrenome": "Almeida", "apelido": "Tigre Grande"}, {"nome": "Marcelo", "sobrenome": "Cavalcante", "apelido": "Tigre Pequeno"}, {"nome": "Cleber", "sobrenome": "Ribeiro", "apelido": "Tigre Gordo"}, {"nome": "Alan", "sobrenome": "Ribeiro", "apelido": "Tigre Magro"}, {"nome": "Rivaldo", "sobrenome": "Silva", "apelido": "Tigre Alto"}, {"nome": "Ramires", "sobrenome": "Torres", "apelido": "Tigre Baixo"}, {"nome": "Alan", "sobrenome": "Duarte", "apelido": "Tigre Forte"}, {"nome": "Alexandre", "sobrenome": "Machado", "apelido": "Tigre Rápido"}, {"nome": "Márcio", "sobrenome": "Nascimento", "apelido": "Tigre I"}, {"nome": "Rafael", "sobrenome": "Freitas", "apelido": "Tigre II"}, {"nome": "Caio", "sobrenome": "Azevedo", "apelido": "Tigre III"}, {"nome": "Paulo", "sobrenome": "Fonseca", "apelido": "Tigre IV"}, {"nome": "Renato", "sobrenome": "Marques", "apelido": "Tigre V"}, {"nome": "Gustavo", "sobrenome": "Cavalcante", "apelido": "Tigre VI"}, {"nome": "Naldo", "sobrenome": "Araújo", "apelido": "Tigre VII"}, {"nome": "Rodrigo", "sobrenome": "Batista", "apelido": "Tigre VIII"}, {"nome": "Bruno", "sobrenome": "Barbosa", "apelido": "Tigre IX"}, {"nome": "Murilo", "sobrenome": "Andrade", "apelido": "Tigre X"}, {"nome": "Caio", "sobrenome": "Andrade", "apelido": "Tigre 10"}, {"nome": "Alexandre", "sobrenome": "Santos", "apelido": "Tigre 7"}, {"nome": "Luan", "sobrenome": "Lopes", "apelido": "Tigre 9"}, {"nome": "Carlos", "sobrenome": "Andrade", "apelido": "Tigre 11"}, {"nome": "Willian", "sobrenome": "Machado", "apelido": "Tigre 3"}, {"nome": "Jonas", "sobrenome": "Moura", "apelido": "Tigre 4"}, {"nome": "Mateus", "sobrenome": "Evangelista", "apelido": "Tigre 5"}, {"nome": "Wilian", "sobrenome": "Zanetti", "apelido": "Tigre 6"}, {"nome": "Ramires", "sobrenome": "Duarte", "apelido": "Tigre 8"}, {"nome": "Alexandre", "sobrenome": "Rezende", "apelido": "Tigre 1"}, {"nome": "Welliton", "sobrenome": "Moreira", "apelido": "Lobo Neto"}, {"nome": "Caio", "sobrenome": "Moreira", "apelido": "Lobo Júnior"}, {"nome": "Cleber", "sobrenome": "Fernandes", "apelido": "Lobo Filho"}, {"nome": "Adriano", "sobrenome": "Ribeiro", "apelido": "Lobo da Silva"}, {"nome": "Robinho", "sobrenome": "Neto", "apelido": "Lobo dos Santos"}, {"nome": "Grafite", "sobrenome": "Rezende", "apelido": "Lobo de Souza"}, {"nome": "Luan", "sobrenome": "Rodrigues", "apelido": "Lobo Lima"}, {"nome": "Cleber", "sobrenome": "Pereira", "apelido": "Lobo Costa"}, {"nome": "Ramires", "sobrenome": "Fonseca", "apelido": "Lobo Pereira"}, {"nome": "Paulo", "sobrenome": "Sabino", "apelido": "Lobo Baiano"}, {"nome": "Sérgio", "sobrenome": "Oliveira", "apelido": "Lobo Gaúcho"}, {"nome": "Grafite", "sobrenome": "Rodrigues", "apelido": "Lobo Mineiro"}, {"nome": "Felipe", "sobrenome": "Evangelista", "apelido": "Lobo Carioca"}, {"nome": "Alexandre", "sobrenome": "Gomes", "apelido": "Lobo Paulista"}, {"nome": "Souza", "sobrenome": "Mendes", "apelido": "Lobo Nordestino"}, {"nome": "André", "sobrenome": "Sabino", "apelido": "Lobo Nortista"}, {"nome": "Márcio", "sobrenome": "Castro", "apelido": "Lobo Sulista"}, {"nome": "Igor", "sobrenome": "Vieira", "apelido": "Lobo Capixaba"}, {"nome": "Henrique", "sobrenome": "Zanetti", "apelido": "Lobo Goiano"}, {"nome": "Bernard", "sobrenome": "Vargas", "apelido": "Lobo Pernambucano"}, {"nome": "Alexandre", "sobrenome": "Moura", "apelido": "Lobo Velho"}, {"nome": "Willian", "sobrenome": "Cardoso", "apelido": "Lobo Novo"}, {"nome": "Welliton", "sobrenome": "Ferreira", "apelido": "Lobo Grande"}, {"nome": "Alan", "sobrenome": "Souza", "apelido": "Lobo Pequeno"}, {"nome": "Pedro", "sobrenome": "Neto", "apelido": "Lobo Gordo"}, {"nome": "Marcelo", "sobrenome": "Brito", "apelido": "Lobo Magro"}, {"nome": "Robinho", "sobrenome": "Monteiro", "apelido": "Lobo Alto"}, {"nome": "Naldo", "sobrenome": "Torres", "apelido": "Lobo Baixo"}, {"nome": "Danilo", "sobrenome": "Correia", "apelido": "Lobo Forte"}, {"nome": "Felipe", "sobrenome": "Sabino", "apelido": "Lobo Rápido"}, {"nome": "Leandro", "sobrenome": "Silva", "apelido": "Lobo I"}, {"nome": "Gustavo", "sobrenome": "Campos", "apelido": "Lobo II"}, {"nome": "Diego", "sobrenome": "Cavalcante", "apelido": "Lobo III"}, {"nome": "Igor", "sobrenome": "Machado", "apelido": "Lobo IV"}, {"nome": "Souza", "sobrenome": "Machado", "apelido": "Lobo V"}, {"nome": "Gustavo", "sobrenome": "Azevedo", "apelido": "Lobo VI"}, {"nome": "Murilo", "sobrenome": "Vargas", "apelido": "Lobo VII"}, {"nome": "Cleber", "sobrenome": "Correia", "apelido": "Lobo VIII"}, {"nome": "Bruno", "sobrenome": "Machado", "apelido": "Lobo IX"}, {"nome": "Marcelo", "sobrenome": "Pinto", "apelido": "Lobo X"}, {"nome": "Lucas", "sobrenome": "Cunha", "apelido": "Lobo 10"}, {"nome": "Oscar", "sobrenome": "Xavier", "apelido": "Lobo 7"}, {"nome": "João", "sobrenome": "Evangelista", "apelido": "Lobo 9"}, {"nome": "Adriano", "sobrenome": "Moreira", "apelido": "Lobo 11"}, {"nome": "Jadson", "sobrenome": "Souza", "apelido": "Lobo 3"}, {"nome": "Alan", "sobrenome": "Evangelista", "apelido": "Lobo 4"}, {"nome": "Fred", "sobrenome": "Araújo", "apelido": "Lobo 5"}, {"nome": "Jadson", "sobrenome": "Mendes", "apelido": "Lobo 6"}, {"nome": "Diego", "sobrenome": "Rodrigues", "apelido": "Lobo 8"}, {"nome": "Gabriel", "sobrenome": "Oliveira", "apelido": "Lobo 1"}, {"nome": "Paulo", "sobrenome": "Ramos", "apelido": "Cobra Neto"}, {"nome": "Diego", "sobrenome": "Pereira", "apelido": "Cobra Júnior"}, {"nome": "Leonardo", "sobrenome": "Castro", "apelido": "Cobra Filho"}, {"nome": "Igor", "sobrenome": "Lopes", "apelido": "Cobra da Silva"}, {"nome": "Souza", "sobrenome": "Marques", "apelido": "Cobra dos Santos"}, {"nome": "Jadson", "sobrenome": "Pereira", "apelido": "Cobra de Souza"}, {"nome": "Luan", "sobrenome": "Ramos", "apelido": "Cobra Lima"}, {"nome": "Adriano", "sobrenome": "Mendes", "apelido": "Cobra Costa"}, {"nome": "Fred", "sobrenome": "Correia", "apelido": "Cobra Pereira"}, {"nome": "Fernando", "sobrenome": "Freitas", "apelido": "Cobra Baiano"}, {"nome": "Naldo", "sobrenome": "Correia", "apelido": "Cobra Gaúcho"}, {"nome": "Igor", "sobrenome": "Campos", "apelido": "Cobra Mineiro"}, {"nome": "Ramires", "sobrenome": "Guimarães", "apelido": "Cobra Carioca"}, {"nome": "Caio", "sobrenome": "Costa", "apelido": "Cobra Paulista"}, {"nome": "Rodrigo", "sobrenome": "Ferreira", "apelido": "Cobra Nordestino"}, {"nome": "Naldo", "sobrenome": "Vargas", "apelido": "Cobra Nortista"}, {"nome": "Rivaldo", "sobrenome": "Dias", "apelido": "Cobra Sulista"}, {"nome": "Jadson", "sobrenome": "Fonseca", "apelido": "Cobra Capixaba"}, {"nome": "Wesley", "sobrenome": "Santos", "apelido": "Cobra Goiano"}, {"nome": "Mateus", "sobrenome": "Sabino", "apelido": "Cobra Pernambucano"}, {"nome": "Vítor", "sobrenome": "Barbosa", "apelido": "Cobra Velho"}, {"nome": "Emerson", "sobrenome": "Dias", "apelido": "Cobra Novo"}, {"nome": "Rafael", "sobrenome": "Zanetti", "apelido": "Cobra Grande"}, {"nome": "Alex", "sobrenome": "Xavier", "apelido": "Cobra Pequeno"}, {"nome": "Fernando", "sobrenome": "Azevedo", "apelido": "Cobra Gordo"}, {"nome": "Fernando", "sobrenome": "Vargas", "apelido": "Cobra Magro"}, {"nome": "Willian", "sobrenome": "Moreira", "apelido": "Cobra Alto"}, {"nome": "Pedro", "sobrenome": "Sabino", "apelido": "Cobra Baixo"}, {"nome": "Ramires", "sobrenome": "Borges", "apelido": "Cobra Forte"}, {"nome": "Carlos", "sobrenome": "Rocha", "apelido": "Cobra Rápido"}, {"nome": "Naldo", "sobrenome": "Almeida", "apelido": "Cobra I"}, {"nome": "André", "sobrenome": "Campos", "apelido": "Cobra II"}, {"nome": "Eduardo", "sobrenome": "Ferreira", "apelido": "Cobra III"}, {"nome": "Lucas", "sobrenome": "Rodrigues", "apelido": "Cobra IV"}, {"nome": "Carlos", "sobrenome": "Teixeira", "apelido": "Cobra V"}, {"nome": "Vagner", "sobrenome": "Sabino", "apelido": "Cobra VI"}, {"nome": "João", "sobrenome": "Santos", "apelido": "Cobra VII"}, {"nome": "Eduardo", "sobrenome": "Ribeiro", "apelido": "Cobra VIII"}, {"nome": "Mateus", "sobrenome": "Rodrigues", "apelido": "Cobra IX"}, {"nome": "Kleber", "sobrenome": "Ferreira", "apelido": "Cobra X"}, {"nome": "Souza", "sobrenome": "Souza", "apelido": "Cobra 10"}, {"nome": "Everton", "sobrenome": "Azevedo", "apelido": "Cobra 7"}, {"nome": "Everton", "sobrenome": "Moreira", "apelido": "Cobra 9"}, {"nome": "Adriano", "sobrenome": "Oliveira", "apelido": "Cobra 11"}, {"nome": "Bernard", "sobrenome": "Brito", "apelido": "Cobra 3"}, {"nome": "Jadson", "sobrenome": "Santos", "apelido": "Cobra 4"}, {"nome": "Mateus", "sobrenome": "Pinto", "apelido": "Cobra 5"}, {"nome": "Naldo", "sobrenome": "Monteiro", "apelido": "Cobra 6"}, {"nome": "Renato", "sobrenome": "Machado", "apelido": "Cobra 8"}, {"nome": "Bruno", "sobrenome": "Ramos", "apelido": "Cobra 1"}, {"nome": "Sérgio", "sobrenome": "Souza", "apelido": "Falcão Neto"}, {"nome": "Ramires", "sobrenome": "Lima", "apelido": "Falcão Júnior"}, {"nome": "André", "sobrenome": "Rocha", "apelido": "Falcão Filho"}, {"nome": "Adriano", "sobrenome": "Fonseca", "apelido": "Falcão da Silva"}, {"nome": "Gilberto", "sobrenome": "Xavier", "apelido": "Falcão dos Santos"}, {"nome": "Murilo", "sobrenome": "Borges", "apelido": "Falcão de Souza"}, {"nome": "Kleber", "sobrenome": "Martins", "apelido": "Falcão Lima"}, {"nome": "Alan", "sobrenome": "Moraes", "apelido": "Falcão Costa"}, {"nome": "Bruno", "sobrenome": "Sabino", "apelido": "Falcão Pereira"}, {"nome": "Fred", "sobrenome": "Ferreira", "apelido": "Falcão Baiano"}, {"nome": "Naldo", "sobrenome": "Guimarães", "apelido": "Falcão Gaúcho"}, {"nome": "Jadson", "sobrenome": "Castro", "apelido": "Falcão Mineiro"}, {"nome": "Grafite", "sobrenome": "Brito", "apelido": "Falcão Carioca"}, {"nome": "Fernando", "sobrenome": "Nunes", "apelido": "Falcão Paulista"}, {"nome": "Marcelo", "sobrenome": "Mendes", "apelido": "Falcão Nordestino"}, {"nome": "Vítor", "sobrenome": "Vargas", "apelido": "Falcão Nortista"}, {"nome": "Alan", "sobrenome": "Monteiro", "apelido": "Falcão Sulista"}, {"nome": "Fábio", "sobrenome": "Miranda", "apelido": "Falcão Capixaba"}, {"nome": "Bruno", "sobrenome": "Gomes", "apelido": "Falcão Goiano"}, {"nome": "Renato", "sobrenome": "Gomes", "apelido": "Falcão Pernambucano"}, {"nome": "Rivaldo", "sobrenome": "Ribeiro", "apelido": "Falcão Velho"}]};
+// A1=12 A2=10 B1=10 B2=8 (total 40 per state)
+const DIV_SIZES={A1:12,A2:10,B1:10,B2:8};
+// How many drop DOWN from each div
+const DIV_REB={A1:3,A2:2,B1:2,B2:0};
+// How many rise UP from each div
+const DIV_PROMO={A1:0,A2:3,B1:2,B2:2};
+const DIV_COLOR={A1:"var(--gd)",A2:"var(--bl)",B1:"var(--gn)",B2:"var(--t3)"};
+const DIVS=["A1","A2","B1","B2"];
+const POS=["GOL","ZAG","ZAG","LAD","LAE","VOL","VOL","MEI","PD","PE","CAM"];
 
-// DIV sizes: A1=12, A2=10, B1=10, B2=8
-const DIV_SIZES = {A1:12,A2:10,B1:10,B2:8};
-// Relegate 3 from A1, 2 from A2, 2 from B1, 0 from B2
-// Promote  3 to   A1, 2 to   A2, 2 to   B1, 0 (B2 absorbs)
-const DIV_REB  = {A1:3,A2:2,B1:2,B2:0};
-const DIV_PROMO= {A1:3,A2:2,B1:2,B2:0}; // these go UP (to A1, A2, B1)
-const DIV_COLOR= {A1:"var(--gd)",A2:"var(--bl)",B1:"var(--gn)",B2:"var(--t3)"};
-const DIV_NAMES= ["A1","A2","B1","B2"];
-// Rounds per season: 2*(n-1) for round-robin
-function nRounds(n){return 2*(n-1);}
-
-let season=2024, curState="SP", curDiv="A1", curContent="standings";
-let tickSpd=35, busy=false, tickIv=null, gridIv=null;
-let stateData={}, artStats={}, allResults={}, historico=[];
-// regional: queue of matches to simulate one by one
-let regional={available:false,prevSeason:null,participants:null,matchQueue:[],played:[],done:false};
+let season=2024,curState="SP",curDiv="A1",curContent="standings";
+let tickSpd=35,busy=false,tickIv=null,gridIv=null;
+let stateData={},artStats={},allResults={},historico=[];
+// playerRoster[sig][teamName] = [{nome,sobrenome,apelido,posicao},...]
+let playerRoster={};
+// Regional state
+let reg={available:false,prevSeason:null,parts:null,queue:[],played:[],done:false,winner:null};
 let regBusy=false;
 
-// ── PLAYER POOL (shuffled per save) ──
-let playerAssign={}; // playerAssign[sig][teamName] = array of 11 player objects
+// ─── PLAYER SHUFFLE ───
+function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
 
-function shufflePlayers(){
-  playerAssign={};
+function assignPlayers(){
+  playerRoster={};
+  // 880 players shared across both states — split 440/440 randomly
+  const pool=shuffle([...RAW.jogadores]);
+  let offset=0;
   for(const e of RAW.estados){
-    const sig=e.sigla;
-    const pool=[...RAW.jogadores[sig]];
-    // Fisher-Yates
-    for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
-    playerAssign[sig]={};
-    const positions=["GOL","ZAG","ZAG","LAD","LAE","VOL","VOL","MEI","PD","PE","CAM"];
+    playerRoster[e.sigla]={};
+    const statePool=pool.slice(offset,offset+e.equipes.length*11);
+    offset+=e.equipes.length*11;
     e.equipes.forEach((team,ti)=>{
-      const slice=pool.slice(ti*11,(ti+1)*11);
-      playerAssign[sig][team]=slice.map((p,pi)=>({...p,posicao:positions[pi]}));
+      playerRoster[e.sigla][team]=statePool.slice(ti*11,(ti+1)*11).map((p,pi)=>({...p,posicao:POS[pi]}));
     });
   }
 }
 
-function getPlayers(sig,team){return playerAssign[sig]?.[team]||[];}
 function getScorer(sig,team){
-  const pl=getPlayers(sig,team).filter(p=>p.posicao!=="GOL");
-  return pl[Math.floor(Math.random()*pl.length)]||null;
+  const pl=(playerRoster[sig]?.[team]||[]).filter(p=>p.posicao!=="GOL");
+  return pl.length?pl[Math.floor(Math.random()*pl.length)]:null;
 }
 
-// ── INIT ──
+// ─── INIT ───
 function initAll(){
-  season=2024; historico=[];
-  regional={available:false,prevSeason:null,participants:null,matchQueue:[],played:[],done:false};
-  shufflePlayers();
-  stateData={}; artStats={}; allResults={};
-  for(const e of RAW.estados) initState(e);
-  renderSidebar(); showContent("standings"); updPills();
-  setNextBtn(false);
+  season=2024;historico=[];
+  reg={available:false,prevSeason:null,parts:null,queue:[],played:[],done:false,winner:null};
+  assignPlayers();
+  stateData={};artStats={};allResults={};
+  for(const e of RAW.estados)initState(e);
+  renderSidebar();showContent("standings");updPills();setNextBtn(false);
 }
 
 function initState(e){
-  const sig=e.sigla, divs=DIV_NAMES;
-  stateData[sig]={}; artStats[sig]={}; allResults[sig]={};
-  // distribute 40 teams: A1=12,A2=10,B1=10,B2=8
-  const teams=[...e.equipes];
+  const sig=e.sigla;
+  // RANDOM distribution of teams into divisions on first init
+  const all=shuffle([...e.equipes]);
+  stateData[sig]={};artStats[sig]={};allResults[sig]={};
   let idx=0;
-  for(const dn of divs){
+  for(const dn of DIVS){
     const sz=DIV_SIZES[dn];
-    const slice=teams.slice(idx,idx+sz); idx+=sz;
-    stateData[sig][dn]={teams:slice.map(mkT),round:0,maxRounds:nRounds(sz),queue:[],lastRes:[],done:false};
-    artStats[sig][dn]={};
-    allResults[sig][dn]={};
+    const slice=all.slice(idx,idx+sz);idx+=sz;
+    stateData[sig][dn]={teams:slice.map(mkT),round:0,maxR:2*(sz-1),queue:[],lastRes:[],done:false};
+    artStats[sig][dn]={};allResults[sig][dn]={};
   }
 }
 
-function mkT(name){return{name,pts:0,j:0,v:0,e:0,d:0,gp:0,gc:0,sg:0};}
-function sortD(arr){arr.sort((a,b)=>b.pts-a.pts||b.sg-a.sg||b.gp-a.gp||a.name.localeCompare(b.name));}
+function mkT(n){return{name:n,pts:0,j:0,v:0,e:0,d:0,gp:0,gc:0,sg:0};}
+function sortD(a){a.sort((x,y)=>y.pts-x.pts||y.sg-x.sg||y.gp-x.gp||x.name.localeCompare(y.name));}
 
-// ── MATCH SIM ──
+// ─── MATCH SIM ───
 function simMatch(home,away,sig,dn){
   const total=Math.floor(Math.random()*6);
   const mins=Array.from({length:total},()=>Math.floor(Math.random()*90)+1).sort((a,b)=>a-b);
-  let gh=0,ga=0; const goals=[];
+  let gh=0,ga=0;const goals=[];
   for(const min of mins){
     const isH=Math.random()<0.5;
-    const teamName=isH?home.name:away.name;
-    const scorer=getScorer(sig,teamName);
-    const nick=scorer?scorer.apelido:null;
+    const tname=isH?home.name:away.name;
+    const scorer=getScorer(sig,tname);
+    const nick=scorer?.apelido||null;
     if(nick){
-      if(!artStats[sig][dn][teamName]) artStats[sig][dn][teamName]={};
-      if(!artStats[sig][dn][teamName][nick]) artStats[sig][dn][teamName][nick]={gols:0,assist:0,nome:scorer.nome+" "+scorer.sobrenome};
-      artStats[sig][dn][teamName][nick].gols++;
-      // assist: random other player
-      const others=getPlayers(sig,teamName).filter(p=>p.posicao!=="GOL"&&p.apelido!==nick);
+      const ad=artStats[sig][dn];
+      if(!ad[tname])ad[tname]={};
+      if(!ad[tname][nick])ad[tname][nick]={gols:0,assist:0,nome:scorer.nome+" "+scorer.sobrenome};
+      ad[tname][nick].gols++;
+      // assist
+      const others=(playerRoster[sig]?.[tname]||[]).filter(p=>p.posicao!=="GOL"&&p.apelido!==nick);
       if(others.length){
         const ass=others[Math.floor(Math.random()*others.length)];
-        if(!artStats[sig][dn][teamName][ass.apelido]) artStats[sig][dn][teamName][ass.apelido]={gols:0,assist:0,nome:ass.nome+" "+ass.sobrenome};
-        artStats[sig][dn][teamName][ass.apelido].assist++;
-        goals.push({min,side:isH?"home":"away",nick,team:teamName,assist:ass.apelido});
-      } else {
-        goals.push({min,side:isH?"home":"away",nick,team:teamName,assist:null});
-      }
-    } else {
-      goals.push({min,side:isH?"home":"away",nick:null,team:teamName,assist:null});
-    }
+        if(!ad[tname][ass.apelido])ad[tname][ass.apelido]={gols:0,assist:0,nome:ass.nome+" "+ass.sobrenome};
+        ad[tname][ass.apelido].assist++;
+        goals.push({min,side:isH?"home":"away",nick,team:tname,assist:ass.apelido});
+      }else goals.push({min,side:isH?"home":"away",nick,team:tname,assist:null});
+    }else goals.push({min,side:isH?"home":"away",nick:null,team:tname});
     if(isH)gh++;else ga++;
   }
   if(gh>ga){home.v++;away.d++;home.pts+=3;}
   else if(ga>gh){away.v++;home.d++;away.pts+=3;}
-  else{home.e++;away.e++;home.pts+=1;away.pts+=1;}
+  else{home.e++;away.e++;home.pts++;away.pts++;}
   home.j++;away.j++;home.gp+=gh;home.gc+=ga;home.sg=home.gp-home.gc;
   away.gp+=ga;away.gc+=gh;away.sg=away.gp-away.gc;
   return{home:home.name,away:away.name,gh,ga,goals};
@@ -384,40 +362,39 @@ function getPairs(teams,rnd){
   const off=(rnd-1)%(n-1);
   const rot=rest.slice(off).concat(rest.slice(0,off));
   const all=[pivot,...rot],pairs=[];
-  for(let i=0;i<n/2;i++) pairs.push([all[i],all[n-1-i]]);
+  for(let i=0;i<n/2;i++)pairs.push([all[i],all[n-1-i]]);
   return pairs;
 }
 
-function buildQueue(sig,dn){
-  const d=stateData[sig][dn];
-  return getPairs(d.teams,d.round).map(([a,b])=>({sig,dn,home:a,away:b}));
-}
-
+// ─── ROUND PREP ───
 function prepRound(sig,dn){
   const d=stateData[sig][dn];
   if(!d.queue.length&&!d.done){
-    d.round++;
-    d.lastRes=[];
-    d.queue=buildQueue(sig,dn);
-    if(!allResults[sig][dn]) allResults[sig][dn]={};
-    allResults[sig][dn][d.round]=[];
-    renderSidebar(); updPills();
+    d.round++;d.lastRes=[];
+    d.queue=getPairs(d.teams,d.round).map(([a,b])=>({sig,dn,home:a,away:b}));
+    if(!allResults[sig][dn][d.round])allResults[sig][dn][d.round]=[];
+    renderSidebar();updPills();
   }
 }
 
 function checkDivDone(sig,dn){
   const d=stateData[sig][dn];
-  if(d.round>=d.maxRounds&&!d.queue.length&&!d.done){
-    d.done=true;
-    renderSidebar();
-    checkAllDone();
+  if(d.round>=d.maxR&&!d.queue.length&&!d.done){
+    d.done=true;renderSidebar();checkAllDone();
   }
 }
 
+function allLeagueDone(){
+  for(const e of RAW.estados)for(const dn of DIVS)if(!stateData[e.sigla]?.[dn]?.done)return false;
+  return true;
+}
+
 function checkAllDone(){
-  let done=true;
-  for(const e of RAW.estados) for(const dn of DIV_NAMES) if(!stateData[e.sigla][dn].done){done=false;break;}
-  if(done) setNextBtn(true);
+  if(allLeagueDone()&&reg.done)setNextBtn(true);
+  else if(allLeagueDone()&&!reg.available){
+    // leagues done but no regional yet (first season end - will unlock after season advance)
+    // Actually regional becomes available after nextSeason, so just wait
+  }
 }
 
 function setNextBtn(show){
@@ -425,41 +402,39 @@ function setNextBtn(show){
   ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>document.getElementById(id).disabled=show);
 }
 
-// ── BUSY ──
+// ─── BUSY ───
 function setBusy(b){
   busy=b;
-  ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>document.getElementById(id).disabled=b);
+  if(!b){
+    // re-evaluate disabled state based on context
+    const inSim=curContent==="standings"||curContent==="regional";
+    ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>{
+      const el=document.getElementById(id);
+      const isTemp=id==="btn-temp";
+      // temp disabled in regional
+      if(curContent==="regional"&&isTemp)el.disabled=true;
+      else el.disabled=!inSim;
+    });
+  } else {
+    ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>document.getElementById(id).disabled=true);
+  }
 }
 
-// ── ACTIONS DISPATCHER ──
-function doAction(type){
-  if(curState==="REG"){doRegAction(type);return;}
-  if(busy) return;
-  const d=stateData[curState]?.[curDiv];
-  if(!d||d.done) return;
-  if(type==="match") doNextMatch();
-  else if(type==="grid") doGrid();
-  else if(type==="direto") doDireto();
-  else if(type==="temp") doTemp();
-}
-
+// ─── TICKER ───
 function hideTicker(){clearInterval(tickIv);tickIv=null;document.getElementById("ticker").classList.remove("on");}
 function hideGrid(){clearInterval(gridIv);gridIv=null;document.getElementById("grid-mode").classList.remove("on");}
 
-// ── BRASFOOT ──
-function playTicker(item,label,onDone){
-  const{sig,dn,home,away}=item;
-  const result=simMatch(home,away,sig,dn);
+function runTicker(home,away,divLabel,roundLabel,goals_in,onDone){
   hideTicker();hideGrid();
   const el=document.getElementById("ticker");el.classList.add("on");
-  document.getElementById("t-div").textContent=label;
-  document.getElementById("t-round").textContent=dn?`Rodada ${stateData[sig]?.[dn]?.round||""}`:label;
-  document.getElementById("t-home").textContent=home.name||home;
-  document.getElementById("t-away").textContent=away.name||away;
+  document.getElementById("t-div").textContent=divLabel;
+  document.getElementById("t-label").textContent=roundLabel;
+  document.getElementById("t-home").textContent=home;
+  document.getElementById("t-away").textContent=away;
   document.getElementById("t-score").textContent="0 × 0";
   document.getElementById("t-feed").innerHTML="";
   document.getElementById("t-fill").style.width="0%";
-  let elapsed=0,gh=0,ga=0;const goals=[...result.goals];
+  let elapsed=0,gh=0,ga=0;const goals=[...goals_in];
   clearInterval(tickIv);
   tickIv=setInterval(()=>{
     elapsed++;
@@ -471,62 +446,74 @@ function playTicker(item,label,onDone){
       document.getElementById("t-score").textContent=`${gh} × ${ga}`;
       const feed=document.getElementById("t-feed");
       const ev=document.createElement("div");ev.className="gev";
-      const who=g.nick?`${g.nick} (${g.team})`:(g.team||"");
+      const who=g.nick?`${g.nick} (${g.team||""})`:g.team||"";
       ev.innerHTML=`<span class="gmin">${g.min}'</span><span>⚽</span><span style="color:var(--t2)">${who}</span>`;
       feed.prepend(ev);
     }
-    if(elapsed>=90){clearInterval(tickIv);tickIv=null;onDone(result);}
+    if(elapsed>=90){clearInterval(tickIv);tickIv=null;onDone();}
   },tickSpd);
-  return result;
 }
 
+// ─── ACTIONS DISPATCHER ───
+function doAction(type){
+  if(busy||regBusy)return;
+  if(curContent==="regional"){doRegAction(type);return;}
+  if(curContent!=="standings")return;
+  const d=stateData[curState]?.[curDiv];
+  if(!d||d.done)return;
+  if(type==="match")doNextMatch();
+  else if(type==="grid")doGrid();
+  else if(type==="direto")doDireto();
+  else if(type==="temp")doTemp();
+}
+
+// ─── NEXT MATCH (BRASFOOT) ───
 function doNextMatch(){
   prepRound(curState,curDiv);
-  const d=stateData[curState][curDiv];
+  const d=stateData[curState][curDiv],sig=curState,dn=curDiv;
   if(!d.queue.length)return;
-  setBusy(true);
+  busy=true;setBusy(true);
   const item=d.queue.shift();
-  playTicker(item,`${curState} — ${curDiv}`,(result)=>{
-    d.lastRes.push(result);
-    if(allResults[curState][curDiv][d.round]) allResults[curState][curDiv][d.round].push(result);
-    sortD(d.teams);renderStandings();setBusy(false);
-    if(!d.queue.length)checkDivDone(curState,curDiv);
+  const result=simMatch(item.home,item.away,sig,dn);
+  d.lastRes.push(result);
+  if(!allResults[sig][dn][d.round])allResults[sig][dn][d.round]=[];
+  allResults[sig][dn][d.round].push(result);
+  runTicker(item.home.name,item.away.name,`${sig} — ${dn}`,`Rodada ${d.round}`,result.goals,()=>{
+    sortD(d.teams);renderStandings();busy=false;setBusy(false);
+    if(!d.queue.length)checkDivDone(sig,dn);
   });
 }
 
-// ── GRID ──
+// ─── GRID (all simultaneous) ───
 function doGrid(){
   prepRound(curState,curDiv);
-  const d=stateData[curState][curDiv];
+  const d=stateData[curState][curDiv],sig=curState,dn=curDiv;
   if(!d.queue.length)return;
-  setBusy(true);hideTicker();
-  const sig=curState,dn=curDiv;
-  const allItems=[...d.queue];d.queue=[];
-  const results=allItems.map(item=>({...item,result:simMatch(item.home,item.away,sig,dn)}));
+  busy=true;setBusy(true);hideTicker();
+  const items=[...d.queue];d.queue=[];
+  const results=items.map(it=>({...it,result:simMatch(it.home,it.away,sig,dn)}));
   d.lastRes=results.map(x=>x.result);
-  if(!allResults[sig][dn][d.round]) allResults[sig][dn][d.round]=[];
+  if(!allResults[sig][dn][d.round])allResults[sig][dn][d.round]=[];
   allResults[sig][dn][d.round].push(...d.lastRes);
 
   const gm=document.getElementById("grid-mode");gm.classList.add("on");
-  document.getElementById("gm-round").textContent=d.round;
+  document.getElementById("gm-label").textContent=`${sig} ${dn} — Rodada ${d.round}`;
   document.getElementById("gm-clock").textContent="00'";
   document.getElementById("gm-fill").style.width="0%";
-
   const body=document.getElementById("gm-body");body.innerHTML="";
   const grid=document.createElement("div");grid.className="mini-grid";
   const mcMap={};
   results.forEach((x,i)=>{
-    const id=`mc${i}`;
+    const id="mc"+i;
     const card=document.createElement("div");card.className="mc";card.id=id;
     card.innerHTML=`<div class="mc-top"><span class="mc-dlbl">${dn}</span><span class="mc-t" id="${id}t">00'</span></div>
       <div class="mc-teams"><span class="mc-name r" id="${id}h">${x.home.name}</span><span class="mc-sc" id="${id}s">0×0</span><span class="mc-name" id="${id}a">${x.away.name}</span></div>
       <div class="mc-bar"><div class="mc-fill" id="${id}b" style="width:0%"></div></div>
       <div class="mc-feed" id="${id}f"></div>`;
     grid.appendChild(card);
-    mcMap[id]={...x,gh:0,ga:0,goals:[...x.result.goals]};
+    mcMap[id]={gh:0,ga:0,goals:[...x.result.goals],home:x.home.name,away:x.away.name};
   });
   body.appendChild(grid);
-
   let elapsed=0;clearInterval(gridIv);
   gridIv=setInterval(()=>{
     elapsed++;const pct=elapsed/90*100;
@@ -541,389 +528,310 @@ function doGrid(){
         document.getElementById(id+"s").textContent=`${st.gh}×${st.ga}`;
         const feed=document.getElementById(id+"f");
         const ev=document.createElement("div");ev.className="mc-gev";
-        const who=g.nick||g.team;
-        ev.textContent=`⚽${g.min}' ${who}`;
+        ev.textContent=`⚽${g.min}' ${g.nick||g.team}`;
         feed.prepend(ev);
       }
     }
     if(elapsed>=90){
       clearInterval(gridIv);gridIv=null;
-      sortD(d.teams);renderStandings();setBusy(false);
+      sortD(d.teams);renderStandings();busy=false;setBusy(false);
       checkDivDone(sig,dn);
     }
   },tickSpd);
 }
 
-// ── DIRETO ──
+// ─── DIRETO ───
 function doDireto(){
   prepRound(curState,curDiv);
   const d=stateData[curState][curDiv],sig=curState,dn=curDiv;
   if(!d.queue.length)return;
   hideTicker();hideGrid();
   const items=[...d.queue];d.queue=[];d.lastRes=[];
-  if(!allResults[sig][dn][d.round]) allResults[sig][dn][d.round]=[];
-  for(const item of items){
-    const r=simMatch(item.home,item.away,sig,dn);
+  if(!allResults[sig][dn][d.round])allResults[sig][dn][d.round]=[];
+  for(const it of items){
+    const r=simMatch(it.home,it.away,sig,dn);
     d.lastRes.push(r);allResults[sig][dn][d.round].push(r);
   }
-  sortD(d.teams);renderStandings();
-  checkDivDone(sig,dn);
-  if(curContent==="standings") showContent("results");
-  else renderResults();
+  sortD(d.teams);renderStandings();checkDivDone(sig,dn);
+  showContent("results");
 }
 
-// ── TEMP ──
+// ─── TEMP ───
 function doTemp(){
   const sig=curState,dn=curDiv,d=stateData[sig][dn];
   if(d.done)return;
-  setBusy(true);hideTicker();hideGrid();
-  // finish current partial round
+  busy=true;setBusy(true);hideTicker();hideGrid();
   if(d.queue.length){
-    if(!allResults[sig][dn][d.round]) allResults[sig][dn][d.round]=[];
-    for(const item of d.queue){const r=simMatch(item.home,item.away,sig,dn);d.lastRes.push(r);allResults[sig][dn][d.round].push(r);}
+    if(!allResults[sig][dn][d.round])allResults[sig][dn][d.round]=[];
+    for(const it of d.queue){const r=simMatch(it.home,it.away,sig,dn);d.lastRes.push(r);allResults[sig][dn][d.round].push(r);}
     d.queue=[];sortD(d.teams);
   }
-  while(d.round<d.maxRounds){
+  while(d.round<d.maxR){
     d.round++;d.lastRes=[];
-    const q=buildQueue(sig,dn);
-    if(!allResults[sig][dn][d.round]) allResults[sig][dn][d.round]=[];
-    for(const item of q){const r=simMatch(item.home,item.away,sig,dn);d.lastRes.push(r);allResults[sig][dn][d.round].push(r);}
+    if(!allResults[sig][dn][d.round])allResults[sig][dn][d.round]=[];
+    for(const [a,b] of getPairs(d.teams,d.round)){const r=simMatch(a,b,sig,dn);d.lastRes.push(r);allResults[sig][dn][d.round].push(r);}
     sortD(d.teams);
   }
-  d.done=true;renderSidebar();renderStandings();setBusy(false);
+  d.done=true;renderSidebar();renderStandings();busy=false;setBusy(false);
   checkAllDone();
   notif(`${sig} ${dn} concluída!`,`Campeão: ${d.teams[0].name}`);
 }
 
-// ── NEXT SEASON ──
+// ─── NEXT SEASON ───
 function doNextSeason(){
   // Save history
-  const campMap={},promoMap={},rebMap={};
+  const campMap={},promoMap={},rebMap={},regChamp=reg.winner||null;
   for(const e of RAW.estados){
     const sig=e.sigla;campMap[sig]={};promoMap[sig]={};rebMap[sig]={};
-    for(const dn of DIV_NAMES){
+    for(const dn of DIVS){
       const d=stateData[sig][dn];
       campMap[sig][dn]=d.teams[0]?.name;
-      promoMap[sig][dn]=d.teams.slice(0,DIV_PROMO[dn]).map(t=>t.name);
-      rebMap[sig][dn]=DIV_REB[dn]?d.teams.slice(d.teams.length-DIV_REB[dn]).map(t=>t.name):[];
+      // who got promoted (go UP): top DIV_PROMO[dn] teams (except A1 which sends nobody up)
+      promoMap[sig][dn]=DIV_PROMO[dn]>0?d.teams.slice(0,DIV_PROMO[dn]).map(t=>t.name):[];
+      // who got relegated (go DOWN): bottom DIV_REB[dn]
+      rebMap[sig][dn]=DIV_REB[dn]>0?d.teams.slice(d.teams.length-DIV_REB[dn]).map(t=>t.name):[];
     }
   }
-  historico.push({season,campMap,promoMap,rebMap});
+  historico.push({season,campMap,promoMap,rebMap,regChamp});
 
-  // Setup regional participants from this season
+  // Setup regional for next season
   const spT=stateData["SP"]["A1"].teams;
   const rjT=stateData["RJ"]["A1"].teams;
-  regional={
-    available:true,prevSeason:season,
-    participants:{sp1:spT[0].name,sp2:spT[1].name,rj1:rjT[0].name,rj2:rjT[1].name},
-    matchQueue:[],played:[],done:false
-  };
-  buildRegionalQueue();
+  reg={available:true,prevSeason:season,
+    parts:{sp1:spT[0].name,sp2:spT[1].name,rj1:rjT[0].name,rj2:rjT[1].name},
+    queue:[],played:[],done:false,winner:null};
+  buildRegQueue();
 
-  // Rebuild divisions with correct promotion/relegation
-  // Logic: for each state, collect names in order per div, apply reb/promo
+  // Rebuild divisions with CORRECT promotion/relegation
+  // For each state: new lineup per div
   for(const e of RAW.estados){
     const sig=e.sigla;
-    // Current standings per div
-    const standings={};
-    for(const dn of DIV_NAMES) standings[dn]=[...stateData[sig][dn].teams.map(t=>t.name)];
-    
+    // snapshot current standings
+    const snap={};
+    for(const dn of DIVS)snap[dn]=[...stateData[sig][dn].teams.map(t=>t.name)];
+
     const newDivs={};
-    for(let i=0;i<DIV_NAMES.length;i++){
-      const dn=DIV_NAMES[i];
-      const rebN=DIV_REB[dn];
-      const promoN=DIV_PROMO[dn]; // teams moving up FROM this div
-      
-      // Survivors: remove relegated (bottom rebN) and promoted (top promoN, but only for A2,B1,B2)
-      const all=standings[dn];
-      const relegated=rebN>0?all.slice(all.length-rebN):[];
-      const promoted=i>0?all.slice(0,promoN):[];// A1 has no promotion upward
-      
-      // Survivors stay in same div
-      let survivors=[...all];
-      if(rebN>0) survivors=survivors.slice(0,all.length-rebN);
-      if(i>0) survivors=survivors.slice(promoN); // remove promoted
-      
-      newDivs[dn]=survivors;
+    for(let i=0;i<DIVS.length;i++){
+      const dn=DIVS[i];
+      const all=snap[dn];
+      const rebN=DIV_REB[dn];     // go down
+      const promoN=DIV_PROMO[dn]; // go up
+
+      // Survivors = remove top promoN (go up) and bottom rebN (go down)
+      const survivors=all.slice(promoN, all.length-rebN>promoN?all.length-rebN:all.length);
+      newDivs[dn]=[...survivors];
     }
-    
-    // Now add promoted (from lower div going up) and relegated (from upper div going down)
-    for(let i=0;i<DIV_NAMES.length;i++){
-      const dn=DIV_NAMES[i];
-      // Add relegated from div above (if exists)
+
+    // Now inject relegated (from above) and promoted (from below)
+    for(let i=0;i<DIVS.length;i++){
+      const dn=DIVS[i];
+      // Add relegated FROM div above
       if(i>0){
-        const aboveDn=DIV_NAMES[i-1];
+        const aboveDn=DIVS[i-1];
         const rebFromAbove=DIV_REB[aboveDn];
-        if(rebFromAbove>0){
-          const relegated=standings[aboveDn].slice(standings[aboveDn].length-rebFromAbove);
-          newDivs[dn]=[...newDivs[dn],...relegated];
-        }
+        if(rebFromAbove>0)newDivs[dn].push(...snap[aboveDn].slice(snap[aboveDn].length-rebFromAbove));
       }
-      // Add promoted from div below (if exists)
-      if(i<DIV_NAMES.length-1){
-        const belowDn=DIV_NAMES[i+1];
+      // Add promoted FROM div below
+      if(i<DIVS.length-1){
+        const belowDn=DIVS[i+1];
         const promoFromBelow=DIV_PROMO[belowDn];
-        if(promoFromBelow>0){
-          const promoted=standings[belowDn].slice(0,promoFromBelow);
-          newDivs[dn]=[...newDivs[dn],...promoted];
-        }
+        if(promoFromBelow>0)newDivs[dn].push(...snap[belowDn].slice(0,promoFromBelow));
       }
     }
-    
-    // Verify sizes
-    for(const dn of DIV_NAMES){
-      const expected=DIV_SIZES[dn];
-      if(newDivs[dn].length!==expected){
-        console.warn(`${sig} ${dn}: expected ${expected}, got ${newDivs[dn].length}`,newDivs[dn]);
-      }
+
+    // Verify and log sizes
+    for(const dn of DIVS){
+      const exp=DIV_SIZES[dn];
+      if(newDivs[dn].length!==exp)console.error(`${sig} ${dn}: expected ${exp}, got ${newDivs[dn].length}`,newDivs[dn]);
     }
-    
-    // Re-init state with new team order
-    artStats[sig]={}; allResults[sig]={};
-    for(const dn of DIV_NAMES){
-      stateData[sig][dn]={
-        teams:newDivs[dn].map(mkT),
-        round:0,maxRounds:nRounds(DIV_SIZES[dn]),
-        queue:[],lastRes:[],done:false
-      };
-      artStats[sig][dn]={};
-      allResults[sig][dn]={};
+
+    // Rebuild stateData and artStats
+    artStats[sig]={};allResults[sig]={};
+    for(const dn of DIVS){
+      stateData[sig][dn]={teams:newDivs[dn].map(mkT),round:0,maxR:2*(DIV_SIZES[dn]-1),queue:[],lastRes:[],done:false};
+      artStats[sig][dn]={};allResults[sig][dn]={};
     }
   }
+
+  // Re-assign players randomly for new season
+  assignPlayers();
 
   season++;
   setNextBtn(false);
-  renderSidebar();renderStandings();renderHistorico();updPills();
+  renderSidebar();
+  if(curContent==="standings")renderStandings();
+  renderHistorico();updPills();
   notif(`Temporada ${season} iniciada!`,`Regional ${season-1} disponível`);
 }
 
-// ── REGIONAL ──
-function buildRegionalQueue(){
-  const p=regional.participants;
-  // Semi 1: SP1 vs RJ2 (ida: SP1 home, volta: RJ2 home)
-  // Semi 2: RJ1 vs SP2 (ida: RJ1 home, volta: SP2 home)
-  // Final: winner1 vs winner2
-  regional.matchQueue=[
-    {phase:"Semifinal 1 — Ida",home:p.sp1,away:p.rj2,sig:null,isReg:true,semi:1,leg:1},
-    {phase:"Semifinal 1 — Volta",home:p.rj2,away:p.sp1,sig:null,isReg:true,semi:1,leg:2},
-    {phase:"Semifinal 2 — Ida",home:p.rj1,away:p.sp2,sig:null,isReg:true,semi:2,leg:1},
-    {phase:"Semifinal 2 — Volta",home:p.sp2,away:p.rj1,sig:null,isReg:true,semi:2,leg:2},
-    // Final TBD — will be added after semis
-  ];
+// ─── REGIONAL ───
+function buildRegQueue(){
+  const p=reg.parts;
+  reg.queue=[
+    {phase:"Semifinal 1 — Ida",home:p.sp1,away:p.rj2,semi:1,leg:1},
+    {phase:"Semifinal 1 — Volta",home:p.rj2,away:p.sp1,semi:1,leg:2},
+    {phase:"Semifinal 2 — Ida",home:p.rj1,away:p.sp2,semi:2,leg:1},
+    {phase:"Semifinal 2 — Volta",home:p.sp2,away:p.rj1,semi:2,leg:2},
+  ];// Final added after semis
 }
 
-function simRegMatch(home,away){
+function simRegRaw(home,away){
   const total=Math.floor(Math.random()*5);
   const mins=Array.from({length:total},()=>Math.floor(Math.random()*90)+1).sort((a,b)=>a-b);
-  let gh=0,ga=0,goals=[];
-  for(const min of mins){if(Math.random()<0.5)gh++;else ga++;goals.push({min,side:gh>ga?"home":"away"});}
-  // re-calculate properly
-  gh=0;ga=0;goals=[];
-  for(let i=0;i<total;i++){
-    const min=mins[i],isH=Math.random()<0.5;
-    if(isH)gh++;else ga++;
-    goals.push({min,side:isH?"home":"away"});
-  }
+  let gh=0,ga=0;const goals=[];
+  for(const min of mins){const isH=Math.random()<0.5;if(isH)gh++;else ga++;goals.push({min,side:isH?"home":"away",team:isH?home:away,nick:null});}
   return{home,away,gh,ga,goals};
 }
 
-function doRegAction(type){
-  if(!regional.available){notif("Regional","Conclua a temporada primeiro.");return;}
-  if(regional.done){notif("Regional","Regional já encerrado.");return;}
-  if(regBusy)return;
-  
-  if(type==="match") doRegNextMatch();
-  else if(type==="grid"||type==="direto"||type==="temp") doRegAllInstant();
-}
-
-function doRegNextMatch(){
-  if(!regional.matchQueue.length){
-    if(tryBuildFinal()) doRegNextMatch();
-    return;
+function tryInjectFinal(){
+  const s1=reg.played.filter(m=>m.semi===1);
+  const s2=reg.played.filter(m=>m.semi===2);
+  if(s1.length===2&&s2.length===2&&!reg.played.find(m=>m.semi===0)&&!reg.queue.find(m=>m.semi===0)){
+    const s1h=s1[0].gh+s1[1].ga,s1a=s1[0].ga+s1[1].gh;
+    const f1=s1h>s1a?reg.parts.sp1:s1a>s1h?reg.parts.rj2:Math.random()<0.5?reg.parts.sp1:reg.parts.rj2;
+    const s2h=s2[0].gh+s2[1].ga,s2a=s2[0].ga+s2[1].gh;
+    const f2=s2h>s2a?reg.parts.rj1:s2a>s2h?reg.parts.sp2:Math.random()<0.5?reg.parts.rj1:reg.parts.sp2;
+    reg.queue.push({phase:"Final",home:f1,away:f2,semi:0,leg:0});
   }
-  regBusy=true;setBusy(true);
-  const item={...regional.matchQueue[0]};
-  regional.matchQueue.shift();
-  const result=simRegMatch(item.home,item.away);
-  const played={...item,gh:result.gh,ga:result.ga};
-  regional.played.push(played);
-  
-  // play ticker
-  const fakeSig="SP",fakeDn="A1";
-  const fakeHome={name:item.home};const fakeAway={name:item.away};
-  hideTicker();hideGrid();
-  const el=document.getElementById("ticker");el.classList.add("on");
-  document.getElementById("t-div").textContent=`Regional ${regional.prevSeason} — ${item.phase}`;
-  document.getElementById("t-round").textContent=item.phase;
-  document.getElementById("t-home").textContent=item.home;
-  document.getElementById("t-away").textContent=item.away;
-  document.getElementById("t-score").textContent="0 × 0";
-  document.getElementById("t-feed").innerHTML="";
-  document.getElementById("t-fill").style.width="0%";
-  let elapsed=0,gh=0,ga=0;const goals=[...result.goals];
-  clearInterval(tickIv);
-  tickIv=setInterval(()=>{
-    elapsed++;
-    document.getElementById("t-clock").textContent=String(elapsed).padStart(2,"0")+"'";
-    document.getElementById("t-fill").style.width=(elapsed/90*100)+"%";
-    while(goals.length&&goals[0].min<=elapsed){
-      const g=goals.shift();
-      if(g.side==="home")gh++;else ga++;
-      document.getElementById("t-score").textContent=`${gh} × ${ga}`;
-      const feed=document.getElementById("t-feed");
-      const ev=document.createElement("div");ev.className="gev";
-      const teamName=g.side==="home"?item.home:item.away;
-      ev.innerHTML=`<span class="gmin">${g.min}'</span><span>⚽</span><span style="color:var(--t2)">${teamName}</span>`;
-      feed.prepend(ev);
-    }
-    if(elapsed>=90){
-      clearInterval(tickIv);tickIv=null;
-      regBusy=false;setBusy(false);
-      tryBuildFinal();
-      checkRegDone();
-      if(curContent==="regional")renderRegional();
-    }
-  },tickSpd);
-}
-
-function tryBuildFinal(){
-  // Check if both semis are done and final not yet queued
-  const semi1=regional.played.filter(m=>m.semi===1);
-  const semi2=regional.played.filter(m=>m.semi===2);
-  const finalPlayed=regional.played.find(m=>m.phase==="Final");
-  const finalQueued=regional.matchQueue.find(m=>m.phase==="Final");
-  if(semi1.length===2&&semi2.length===2&&!finalPlayed&&!finalQueued){
-    // determine finalists
-    const s1_agg_h=semi1[0].gh+semi1[1].ga,s1_agg_a=semi1[0].ga+semi1[1].gh;
-    const fin1=s1_agg_h>s1_agg_a?regional.participants.sp1:s1_agg_a>s1_agg_h?regional.participants.rj2:Math.random()<0.5?regional.participants.sp1:regional.participants.rj2;
-    const s2_agg_h=semi2[0].gh+semi2[1].ga,s2_agg_a=semi2[0].ga+semi2[1].gh;
-    const fin2=s2_agg_h>s2_agg_a?regional.participants.rj1:s2_agg_a>s2_agg_h?regional.participants.sp2:Math.random()<0.5?regional.participants.rj1:regional.participants.sp2;
-    regional.matchQueue.push({phase:"Final",home:fin1,away:fin2,isReg:true,semi:0,leg:0});
-    return true;
-  }
-  return false;
 }
 
 function checkRegDone(){
-  const finalPlayed=regional.played.find(m=>m.phase==="Final");
-  if(finalPlayed){
-    regional.done=true;
-    regional.winner=finalPlayed.gh>finalPlayed.ga?finalPlayed.home:finalPlayed.ga>finalPlayed.gh?finalPlayed.away:Math.random()<0.5?finalPlayed.home:finalPlayed.away;
-    notif("🏆 Campeão Regional!",regional.winner);
+  const fin=reg.played.find(m=>m.semi===0);
+  if(fin&&!reg.done){
+    reg.done=true;
+    reg.winner=fin.gh>fin.ga?fin.home:fin.ga>fin.gh?fin.away:Math.random()<0.5?fin.home:fin.away;
+    notif("🏆 Campeão Regional!",reg.winner);
+    // Check if leagues are also done
+    if(allLeagueDone())setNextBtn(true);
   }
 }
 
-function doRegAllInstant(){
-  if(!regional.available||regional.done)return;
-  // play all remaining instantly
+function doRegAction(type){
+  if(!reg.available){notif("Regional","Conclua a temporada primeiro.");return;}
+  if(reg.done)return;
+  if(type==="temp"){notif("Regional","Use Próximo jogo ou Resultado direto.");return;}
+  if(type==="match"||type==="grid")doRegNextMatch();// grid = same as next match in regional
+  else if(type==="direto")doRegDireto();
+}
+
+function doRegNextMatch(){
+  tryInjectFinal();
+  if(!reg.queue.length)return;
+  regBusy=true;busy=true;setBusy(true);
+  const item=reg.queue.shift();
+  const result=simRegRaw(item.home,item.away);
+  reg.played.push({...item,gh:result.gh,ga:result.ga});
+  runTicker(item.home,item.away,`Regional ${reg.prevSeason}`,item.phase,result.goals,()=>{
+    tryInjectFinal();checkRegDone();
+    regBusy=false;busy=false;setBusy(false);
+    if(curContent==="regional")renderRegional();
+  });
+}
+
+function doRegDireto(){
+  tryInjectFinal();
+  if(!reg.queue.length)return;
   hideTicker();hideGrid();
-  while(regional.matchQueue.length){
-    const item=regional.matchQueue.shift();
-    const result=simRegMatch(item.home,item.away);
-    regional.played.push({...item,gh:result.gh,ga:result.ga});
-    tryBuildFinal();
-  }
-  checkRegDone();
-  renderRegional();
+  // Simulate only NEXT match (ida/volta/final one at a time)
+  const item=reg.queue.shift();
+  const result=simRegRaw(item.home,item.away);
+  reg.played.push({...item,gh:result.gh,ga:result.ga});
+  tryInjectFinal();checkRegDone();
+  if(curContent==="regional")renderRegional();
 }
 
-// ── RENDER SIDEBAR ──
+// ─── SIDEBAR ───
 function renderSidebar(){
-  let html="<div class='sec-lbl'>Divisões</div>";
+  let html="";
   if(curState==="REG"){
-    html+="<div class='nav-item' style='color:var(--pu)'>Copa Regional</div>";
-  } else {
-    const e=RAW.estados.find(x=>x.sigla===curState);
-    if(e) for(const dn of DIV_NAMES){
+    html="<div class='nav-item active' style='color:var(--pu);border-color:var(--pu)'>🏆 Copa Regional</div>";
+  }else{
+    html="<div class='sec-lbl'>Divisões</div>";
+    for(const dn of DIVS){
       const d=stateData[curState]?.[dn];
       const active=(curContent==="standings"&&curDiv===dn)?"active":"";
-      const badge=d?.done?"✓":`${d?.round||0}/${d?.maxRounds||0}`;
+      const badge=d?.done?"✓":`${d?.round||0}/${d?.maxR||0}`;
       html+=`<div class="nav-item ${active}" onclick="switchDiv('${dn}')">
         <span class="dot" style="background:${DIV_COLOR[dn]}"></span>${dn}
-        <span class="rbadge">${badge}</span>
-      </div>`;
+        <span class="rbadge">${badge}</span></div>`;
     }
   }
   document.getElementById("sidebar-divs").innerHTML=html;
-  // highlight static nav items
-  ["results","art","hist"].forEach(id=>{
-    const el=document.getElementById("nav-"+id);
-    if(el) el.classList.toggle("active",curContent===id||(id==="art"&&curContent==="artilharia")||(id==="hist"&&curContent==="historico"));
-  });
   document.getElementById("nav-results").classList.toggle("active",curContent==="results");
   document.getElementById("nav-art").classList.toggle("active",curContent==="artilharia");
   document.getElementById("nav-hist").classList.toggle("active",curContent==="historico");
 }
 
-// ── SHOW CONTENT ──
+// ─── SHOW CONTENT ───
 function showContent(type){
   curContent=type;
   ["standings","results","artilharia","historico","regional"].forEach(v=>{
     document.getElementById("view-"+v).classList.toggle("vh",v!==type);
   });
-  // Hide ticker/grid when not in standings
-  if(type!=="standings"&&type!=="regional"){hideTicker();hideGrid();}
-  // Buttons only active for standings or regional
-  const simActive=type==="standings"||type==="regional";
-  ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>document.getElementById(id).disabled=!simActive||busy);
+  const inSim=type==="standings"||type==="regional";
+  if(!inSim){hideTicker();hideGrid();}
+  // Button states
+  const tempBtn=document.getElementById("btn-temp");
+  ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>{
+    document.getElementById(id).disabled=!inSim||busy;
+  });
+  if(type==="regional")tempBtn.disabled=true;
+  // Update btn labels for regional context
+  document.getElementById("btn-match").textContent=type==="regional"?"▶ Próximo jogo":"▶ Próximo jogo";
+  document.getElementById("btn-grid").textContent=type==="regional"?"⊞ Próx. confronto (Brasfoot)":"⊞ Simular rodada";
+  document.getElementById("btn-direto").textContent=type==="regional"?"⚡ Resultado direto":"⚡ Resultado direto";
+  document.getElementById("btn-temp").textContent="⏭ Simular temporada";
+
   renderSidebar();
-  if(type==="standings") renderStandings();
-  if(type==="results") renderResults();
-  if(type==="artilharia") renderArtilharia();
-  if(type==="historico") renderHistorico();
-  if(type==="regional") renderRegional();
+  if(type==="standings")renderStandings();
+  if(type==="results")renderResults();
+  if(type==="artilharia")renderArtilharia();
+  if(type==="historico")renderHistorico();
+  if(type==="regional")renderRegional();
   updPills();
 }
 
 function switchDiv(dn){curDiv=dn;showContent("standings");}
 function switchState(sig){
   curState=sig;
-  if(sig==="REG"){showContent("regional");}
-  else{curDiv=DIV_NAMES[0];showContent("standings");}
   document.querySelectorAll(".state-tab").forEach(el=>el.classList.remove("active"));
   document.getElementById("stab-"+(sig==="REG"?"REG":sig)).classList.add("active");
+  if(sig==="REG")showContent("regional");
+  else{curDiv="A1";showContent("standings");}
 }
 
-// ── RENDER STANDINGS ──
+// ─── RENDER STANDINGS ───
 function renderStandings(){
   if(curContent!=="standings")return;
-  const sig=curState,dn=curDiv;
-  const d=stateData[sig]?.[dn];
+  const sig=curState,dn=curDiv,d=stateData[sig]?.[dn];
   if(!d){document.getElementById("view-standings").innerHTML="";return;}
   const teams=d.teams;
-  const rebN=DIV_REB[dn],promoUp=dn==="A1"?0:DIV_PROMO[dn];
-  const isA1=dn==="A1";
-  
-  // Next round fixtures
-  const nxtRnd=d.round+1;
-  const nxtPairs=nxtRnd<=d.maxRounds?getPairs(teams,nxtRnd):[];
-
-  let legend=``;
-  if(isA1) legend+=`<div class="leg-item"><div class="leg-dot" style="background:var(--pu)"></div>Regional (top 2)</div>`;
-  if(!isA1) legend+=`<div class="leg-item"><div class="leg-dot" style="background:var(--gn)"></div>Acesso</div>`;
-  if(rebN) legend+=`<div class="leg-item"><div class="leg-dot" style="background:var(--rd)"></div>Rebaixamento</div>`;
-
+  const rebN=DIV_REB[dn],promoN=DIV_PROMO[dn],isA1=dn==="A1";
+  const nxtR=d.round+1,nxtPairs=nxtR<=d.maxR?getPairs(teams,nxtR):[];
+  let leg="";
+  if(isA1)leg+=`<div class="leg-item"><div class="leg-dot" style="background:var(--pu)"></div>Regional (top 2)</div>`;
+  if(!isA1&&promoN)leg+=`<div class="leg-item"><div class="leg-dot" style="background:var(--gn)"></div>Acesso (top ${promoN})</div>`;
+  if(rebN)leg+=`<div class="leg-item"><div class="leg-dot" style="background:var(--rd)"></div>Rebaixamento (${rebN})</div>`;
   const rows=teams.map((t,i)=>{
     const pos=i+1;
-    let rowCls="",barCls="bn";
-    if(isA1&&pos<=2){rowCls="rpu";barCls="bpu";}
-    else if(!isA1&&promoUp&&pos<=promoUp){rowCls="rp";barCls="bp";}
-    else if(rebN&&pos>teams.length-rebN){rowCls="rr";barCls="br";}
+    let rc="",bc="bn";
+    if(isA1&&pos<=2){rc="rpu";bc="bpu";}
+    else if(!isA1&&promoN&&pos<=promoN){rc="rp";bc="bp";}
+    else if(rebN&&pos>teams.length-rebN){rc="rr";bc="br";}
     const sgc=t.sg>0?"sgp":t.sg<0?"sgn":"";
-    return`<tr class="${rowCls}"><td class="posc ${barCls}">${pos}</td><td class="nc">${t.name}</td>
+    return`<tr class="${rc}"><td class="posc ${bc}">${pos}</td><td class="nc">${t.name}</td>
       <td class="ptsc">${t.pts}</td><td>${t.j}</td><td>${t.v}</td><td>${t.e}</td><td>${t.d}</td>
       <td>${t.gp}</td><td>${t.gc}</td><td class="${sgc}">${t.sg>0?"+":""}${t.sg}</td></tr>`;
   }).join("");
-
-  const fixList=nxtPairs.length
+  const fixHTML=nxtPairs.length
     ?nxtPairs.map(([a,b])=>`<div class="fix-item"><span class="fix-home">${a.name}</span><span class="fix-vs">×</span><span class="fix-away">${b.name}</span></div>`).join("")
     :"<div class='empty'>—</div>";
-
   document.getElementById("view-standings").innerHTML=`
     <div class="slay">
       <div>
-        <div class="div-hdr"><div class="div-dot-lg" style="background:${DIV_COLOR[dn]}"></div><div class="div-title">${RAW.estados.find(e=>e.sigla===sig)?.nome} — Série ${dn}</div></div>
-        <div class="leg">${legend}</div>
+        <div class="div-hdr"><div class="div-dot-lg" style="background:${DIV_COLOR[dn]}"></div>
+        <div class="div-title">${RAW.estados.find(e=>e.sigla===sig)?.nome||sig} — Série ${dn}</div></div>
+        <div class="leg">${leg}</div>
         <div class="tbl-wrap"><table>
           <thead><tr><th class="pc">#</th><th class="nc">Cidade</th><th>Pts</th><th>J</th><th>V</th><th>E</th><th>D</th><th>GP</th><th>GC</th><th>SG</th></tr></thead>
           <tbody>${rows}</tbody>
@@ -931,192 +839,166 @@ function renderStandings(){
       </div>
       <div>
         <div class="fix-panel">
-          <div class="fix-hdr">Próximos jogos <span class="fix-round">${nxtRnd<=d.maxRounds?"· Rodada "+nxtRnd:"· Temporada encerrada"}</span></div>
-          <div class="fix-list">${fixList}</div>
+          <div class="fix-hdr"><span class="fix-hdr-title">Próximos jogos</span><span class="fix-hdr-round">${nxtR<=d.maxR?"Rodada "+nxtR:"Encerrado"}</span></div>
+          <div class="fix-list">${fixHTML}</div>
         </div>
       </div>
     </div>`;
 }
 
-// ── RENDER RESULTS ──
+// ─── RENDER RESULTS ───
+let resSig="SP",resDn="A1",resRnd=null;
 function renderResults(){
-  // Build filter options
-  const divOpts=DIV_NAMES.map(dn=>`<option value="${dn}">${dn}</option>`).join("");
-  // Get max round for selected state/div
-  const savedDiv=curDiv;
-  let html=`<div class="filter-bar">
-    <span class="filter-label">Estado:</span>
-    <select class="filter-select" id="res-sig" onchange="renderResults()">
-      ${RAW.estados.map(e=>`<option value="${e.sigla}"${e.sigla===curState?" selected":""}>${e.nome}</option>`).join("")}
-    </select>
-    <span class="filter-label">Divisão:</span>
-    <select class="filter-select" id="res-dn" onchange="renderResults()">${divOpts}</select>
-    <span class="filter-label">Rodada:</span>
-    <select class="filter-select" id="res-rnd" onchange="renderResultsFiltered()"><option value="">— Selecione —</option></select>
-  </div><div id="res-body"></div>`;
-  document.getElementById("view-results").innerHTML=html;
-  // set defaults and populate rounds
-  populateResRounds();
+  const sigOpts=RAW.estados.map(e=>`<option value="${e.sigla}"${e.sigla===resSig?" selected":""}>${e.nome}</option>`).join("");
+  const dnOpts=DIVS.map(dn=>`<option value="${dn}"${dn===resDn?" selected":""}>${dn}</option>`).join("");
+  // Build round options for current resSig/resDn
+  const rounds=Object.keys(allResults[resSig]?.[resDn]||{}).filter(r=>allResults[resSig][resDn][r]?.length).map(Number).sort((a,b)=>a-b);
+  const latestRnd=resRnd&&rounds.includes(resRnd)?resRnd:(rounds[rounds.length-1]||null);
+  resRnd=latestRnd;
+  const rndOpts=`<option value="">— Rodada —</option>`+rounds.map(r=>`<option value="${r}"${r===latestRnd?" selected":""}>${r}</option>`).join("");
+  document.getElementById("view-results").innerHTML=`
+    <div class="filter-bar">
+      <span class="filter-lbl">Estado:</span>
+      <select class="fsel" id="rs-sig" onchange="resChangeSig(this.value)">${sigOpts}</select>
+      <span class="filter-lbl">Divisão:</span>
+      <select class="fsel" id="rs-dn" onchange="resChangeDn(this.value)">${dnOpts}</select>
+      <span class="filter-lbl">Rodada:</span>
+      <select class="fsel" id="rs-rnd" onchange="resChangeRnd(this.value)">${rndOpts}</select>
+    </div>
+    <div id="res-body">${latestRnd?renderResBody(resSig,resDn,latestRnd):"<div class='empty'>Selecione uma rodada.</div>"}</div>`;
 }
 
-function populateResRounds(){
-  const sigEl=document.getElementById("res-sig");
-  const dnEl=document.getElementById("res-dn");
-  const rndEl=document.getElementById("res-rnd");
-  if(!sigEl||!dnEl||!rndEl)return;
-  const sig=sigEl.value,dn=dnEl.value;
-  const rounds=Object.keys(allResults[sig]?.[dn]||{}).filter(r=>allResults[sig][dn][r]?.length>0).map(Number).sort((a,b)=>a-b);
-  const lastRnd=rounds[rounds.length-1]||"";
-  rndEl.innerHTML=`<option value="">— Selecione —</option>`+rounds.map(r=>`<option value="${r}"${r===lastRnd?" selected":""}>${r}</option>`).join("");
-  if(lastRnd) renderResultsFiltered();
-  else document.getElementById("res-body").innerHTML=`<div class="empty">Selecione uma rodada para ver os resultados.</div>`;
-}
+function resChangeSig(v){resSig=v;resRnd=null;renderResults();}
+function resChangeDn(v){resDn=v;resRnd=null;renderResults();}
+function resChangeRnd(v){resRnd=v?parseInt(v):null;document.getElementById("res-body").innerHTML=resRnd?renderResBody(resSig,resDn,resRnd):"<div class='empty'>Selecione uma rodada.</div>";}
 
-function renderResultsFiltered(){
-  const sig=document.getElementById("res-sig")?.value;
-  const dn=document.getElementById("res-dn")?.value;
-  const rnd=parseInt(document.getElementById("res-rnd")?.value);
-  const body=document.getElementById("res-body");
-  if(!sig||!dn||!rnd){body.innerHTML=`<div class="empty">Selecione uma rodada.</div>`;return;}
+function renderResBody(sig,dn,rnd){
   const results=(allResults[sig]?.[dn]?.[rnd])||[];
-  if(!results.length){body.innerHTML=`<div class="empty">Nenhum resultado para esta rodada.</div>`;return;}
-  let html=`<div class="res-dlbl">${dn} — Rodada ${rnd}</div><div class="res-grid">`;
+  if(!results.length)return"<div class='empty'>Sem resultados.</div>";
+  let html=`<div style="font-size:10px;font-weight:600;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px">${dn} — Rodada ${rnd}</div><div class="res-grid">`;
   for(const r of results){
     const hw=r.gh>r.ga,aw=r.ga>r.gh;
-    html+=`<div class="rc"><div class="rc-row">
-      <span class="rc-n ${hw?"rc-w":""}">${r.home}</span>
-      <span class="rc-sc">${r.gh}×${r.ga}</span>
-      <span class="rc-n aw ${aw?"rc-w":""}">${r.away}</span>
-    </div></div>`;
+    html+=`<div class="rc"><div class="rc-row"><span class="rc-n ${hw?"rc-w":""}">${r.home}</span><span class="rc-sc">${r.gh}×${r.ga}</span><span class="rc-n aw ${aw?"rc-w":""}">${r.away}</span></div></div>`;
   }
-  html+="</div>";
-  body.innerHTML=html;
+  return html+"</div>";
 }
 
-// ── ARTILHARIA ──
+// ─── ARTILHARIA ───
 let artDiv="A1";
 function renderArtilharia(){
-  const tabs=DIV_NAMES.map(dn=>`<button class="art-ftab${dn===artDiv?" on":""}" onclick="artDiv='${dn}';renderArtilharia()">${dn}</button>`).join("");
+  const tabs=DIVS.map(dn=>`<button class="art-ftab${dn===artDiv?" on":""}" onclick="artDiv='${dn}';renderArtilharia()">${dn}</button>`).join("");
   let gols=[],assists=[];
   for(const e of RAW.estados){
     const sig=e.sigla;
     for(const[team,players]of Object.entries(artStats[sig]?.[artDiv]||{})){
-      for(const[nick,stats]of Object.entries(players)){
-        const nome=stats.nome||nick;
-        if(stats.gols>0) gols.push({nick,nome,team,sig,val:stats.gols});
-        if(stats.assist>0) assists.push({nick,nome,team,sig,val:stats.assist});
+      for(const[nick,st]of Object.entries(players)){
+        const nome=st.nome||nick;
+        if(st.gols>0)gols.push({nick,nome,team,sig,val:st.gols});
+        if(st.assist>0)assists.push({nick,nome,team,sig,val:st.assist});
       }
     }
   }
   gols.sort((a,b)=>b.val-a.val);assists.sort((a,b)=>b.val-a.val);
-  const top=15;
-  const mkList=(arr,valCls)=>arr.slice(0,top).map((x,i)=>`
-    <div class="art-row">
-      <span class="art-pos">${i+1}</span>
-      <div class="art-info"><div class="art-nick">${x.nick}</div><div class="art-sub">${x.nome} · ${x.team} (${x.sig})</div></div>
-      <span class="art-val ${valCls}">${x.val}</span>
-    </div>`).join("");
+  const mk=(arr,vc)=>arr.slice(0,15).map((x,i)=>`<div class="art-row"><span class="art-pos">${i+1}</span>
+    <div class="art-info"><div class="art-nick">${x.nick}</div><div class="art-sub">${x.nome} · ${x.team} (${x.sig})</div></div>
+    <span class="art-val ${vc}">${x.val}</span></div>`).join("");
   document.getElementById("view-artilharia").innerHTML=`
     <div class="div-title" style="margin-bottom:12px">Artilharia & Assistências</div>
     <div class="art-filter">${tabs}</div>
     <div class="art-grid">
-      <div class="art-card"><div class="art-hdr">⚽ Artileiros — ${artDiv}</div>${gols.length?mkList(gols,""):"<div class='empty'>Nenhum gol ainda.</div>"}</div>
-      <div class="art-card"><div class="art-hdr">🎯 Assistências — ${artDiv}</div>${assists.length?mkList(assists,"gn"):"<div class='empty'>Nenhuma assistência ainda.</div>"}</div>
+      <div class="art-card"><div class="art-hdr">⚽ Artileiros — ${artDiv}</div>${gols.length?mk(gols,""):"<div class='empty'>Nenhum gol.</div>"}</div>
+      <div class="art-card"><div class="art-hdr">🎯 Assistências — ${artDiv}</div>${assists.length?mk(assists,"gn"):"<div class='empty'>Nenhuma assistência.</div>"}</div>
     </div>`;
 }
 
-// ── HISTORICO ──
+// ─── HISTORICO ───
 function renderHistorico(){
   const c=document.getElementById("view-historico");
   if(!historico.length){c.innerHTML="<div class='empty'>Nenhuma temporada concluída.</div>";return;}
   c.innerHTML=[...historico].reverse().map(h=>`
     <div class="hist-card">
       <div class="hist-hdr">Temporada ${h.season}</div>
-      ${RAW.estados.map(e=>DIV_NAMES.map(dn=>`
-        <div class="hist-row">
-          <span class="hist-lbl">Campeão ${e.sigla} ${dn}</span>
-          <span class="hist-val gd">${h.campMap[e.sigla]?.[dn]||"—"}</span>
-        </div>`).join("")).join("")}
+      ${h.regChamp?`<div class="hist-row"><span class="hist-lbl">🏆 Campeão Regional</span><span class="hist-val pu">${h.regChamp}</span></div>`:""}
+      ${RAW.estados.map(e=>{
+        const sig=e.sigla;
+        return`<div class="hist-sec">${e.nome}</div>`+DIVS.map(dn=>{
+          const camp=h.campMap[sig]?.[dn]||"—";
+          const promo=(h.promoMap[sig]?.[dn]||[]).join(", ")||"—";
+          const reb=(h.rebMap[sig]?.[dn]||[]).join(", ")||"—";
+          return`<div class="hist-row"><span class="hist-lbl">Campeão ${dn}</span><span class="hist-val gd">${camp}</span></div>`
+            +(h.promoMap[sig]?.[dn]?.length?`<div class="hist-row"><span class="hist-lbl">↑ Subiram de ${dn}</span><span class="hist-val gn">${promo}</span></div>`:"")
+            +(h.rebMap[sig]?.[dn]?.length?`<div class="hist-row"><span class="hist-lbl">↓ Caíram de ${dn}</span><span class="hist-val rd">${reb}</span></div>`:"");
+        }).join("");
+      }).join("")}
     </div>`).join("");
 }
 
-// ── REGIONAL ──
+// ─── REGIONAL RENDER ───
 function renderRegional(){
   const el=document.getElementById("view-regional");
   let html=`<div class="div-title" style="color:var(--pu);margin-bottom:12px">🏆 Copa Regional SP × RJ</div>`;
-  if(!regional.available){
-    html+=`<div class="reg-info-box">O Regional usa os 2 primeiros da A1 de cada estado ao fim da temporada. Conclua a temporada atual para desbloquear.</div>`;
-  } else {
-    const p=regional.participants;
-    html+=`<div class="reg-info-box">Temporada <strong>${regional.prevSeason}</strong> &nbsp;·&nbsp; 
-      SP: <strong style="color:var(--gd)">${p.sp1}</strong> e <strong style="color:var(--gd)">${p.sp2}</strong> &nbsp;·&nbsp; 
+  if(!reg.available){
+    html+=`<div class="reg-info-box">O Regional usa os 2 primeiros da A1 de cada estado ao fim da temporada.<br>Conclua toda a temporada estadual para avançar e desbloquear.</div>`;
+  }else{
+    const p=reg.parts;
+    html+=`<div class="reg-info-box">
+      Temporada <strong>${reg.prevSeason}</strong><br>
+      SP: <strong style="color:var(--gd)">${p.sp1}</strong> e <strong style="color:var(--gd)">${p.sp2}</strong> &nbsp;·&nbsp;
       RJ: <strong style="color:var(--bl)">${p.rj1}</strong> e <strong style="color:var(--bl)">${p.rj2}</strong><br>
-      <span style="color:var(--t3);font-size:11px">Semis: ${p.sp1} × ${p.rj2} &nbsp;|&nbsp; ${p.rj1} × ${p.sp2} &nbsp;·&nbsp; Final: jogo único</span>
+      <span style="color:var(--t3);font-size:11px">Semi 1: ${p.sp1} × ${p.rj2} · Semi 2: ${p.rj1} × ${p.sp2} · Final: jogo único</span>
     </div>`;
-    
-    if(!regional.played.length){
-      html+=`<div class="empty" style="margin-top:8px">Use os botões laterais para simular o Regional.</div>`;
-    } else {
+    if(!reg.played.length){
+      html+=`<div class="empty">Use os botões laterais para simular o Regional.</div>`;
+    }else{
       html+=`<div class="reg-matches">`;
-      for(const m of regional.played){
-        const winHome=m.gh>m.ga,winAway=m.ga>m.gh;
-        html+=`<div class="reg-match">
-          <div class="reg-match-hdr">${m.phase}</div>
-          <div class="reg-match-body">
-            <span class="reg-tm r${winHome?" winner":""}">${m.home}</span>
+      for(const m of reg.played){
+        const wh=m.gh>m.ga,wa=m.ga>m.gh;
+        html+=`<div class="reg-match"><div class="reg-mhdr">${m.phase}</div>
+          <div class="reg-mbody">
+            <span class="reg-tm r${wh?" win":""}">${m.home}</span>
             <span class="reg-sc">${m.gh} × ${m.ga}</span>
-            <span class="reg-tm${winAway?" winner":""}">${m.away}</span>
+            <span class="reg-tm${wa?" win":""}">${m.away}</span>
           </div>`;
-        if(m.phase.includes("Volta")){
-          // show aggregate
-          const semi=m.semi;
-          const played=regional.played.filter(x=>x.semi===semi);
-          if(played.length===2){
-            const agg_h=played[0].gh+played[1].ga,agg_a=played[0].ga+played[1].gh;
-            const winner=agg_h>agg_a?played[0].home:agg_a>agg_h?played[0].away:"Pênaltis";
-            html+=`<div class="reg-agg">Agg: ${agg_h} × ${agg_a} &nbsp;·&nbsp; Classificado: <strong style="color:var(--gd)">${winner}</strong></div>`;
+        if(m.leg===2&&m.semi>0){
+          const semi=reg.played.filter(x=>x.semi===m.semi);
+          if(semi.length===2){
+            const ah=semi[0].gh+semi[1].ga,aa=semi[0].ga+semi[1].gh;
+            const fw=ah>aa?semi[0].home:aa>ah?semi[0].away:"Pênaltis";
+            html+=`<div class="reg-agg">Agregado: ${ah} × ${aa} · Classificado: <strong style="color:var(--gd)">${fw}</strong></div>`;
           }
         }
-        if(m.phase==="Final"){
-          const winner=m.gh>m.ga?m.home:m.ga>m.gh?m.away:"Pênaltis (sorteio)";
-          html+=`<div class="reg-winner-banner">🏆 Campeão Regional: ${winner}</div>`;
+        if(m.semi===0){
+          const w=m.gh>m.ga?m.home:m.ga>m.gh?m.away:"Pênaltis";
+          html+=`<div class="reg-winner">🏆 Campeão Regional: ${w}</div>`;
         }
         html+="</div>";
       }
       html+="</div>";
-      if(!regional.done&&regional.matchQueue.length){
-        html+=`<div style="font-size:12px;color:var(--t3);margin-top:10px">Próximo: <strong style="color:var(--t2)">${regional.matchQueue[0]?.phase||""}</strong></div>`;
+      if(!reg.done&&reg.queue.length){
+        html+=`<div class="reg-next">Próximo: <strong style="color:var(--t2)">${reg.queue[0].phase}</strong></div>`;
       }
     }
   }
   el.innerHTML=html;
 }
 
-// ── UTILS ──
+// ─── UTILS ───
 function updPills(){
   document.getElementById("season-pill").textContent=`Temporada ${season}`;
-  if(curState!=="REG"&&curContent==="standings"){
+  if(curContent==="standings"&&curState!=="REG"){
     const d=stateData[curState]?.[curDiv];
-    document.getElementById("round-pill").textContent=d?`${curState} ${curDiv} · ${d.round}/${d.maxRounds}`:"—";
-    document.getElementById("rnd-hint").innerHTML=`Rodada <strong>${d?.round||0}</strong> / ${d?.maxRounds||0}`;
-  } else {
+    document.getElementById("round-pill").textContent=d?`${curState} ${curDiv} · ${d.round}/${d.maxR}`:"—";
+    document.getElementById("rnd-hint").innerHTML=`Rodada <strong>${d?.round||0}</strong> / ${d?.maxR||0}`;
+  }else{
     document.getElementById("round-pill").textContent="—";
     document.getElementById("rnd-hint").textContent="—";
   }
 }
-
-function setSpd(ms){
-  tickSpd=ms;
-  document.querySelectorAll(".spd").forEach((b,i)=>b.classList.toggle("on",[80,35,12,2][i]===ms));
-}
-
+function setSpd(ms){tickSpd=ms;document.querySelectorAll(".spd").forEach((b,i)=>b.classList.toggle("on",[80,35,12,2][i]===ms));}
 function notif(title,body){
   const el=document.createElement("div");el.className="notif";
   el.innerHTML=`<div class="notif-title">${title}</div><div style="color:var(--t2);font-size:11px">${body}</div>`;
   document.body.appendChild(el);setTimeout(()=>el.remove(),4000);
 }
-
 initAll();
-</script>
-</body>
-</html>
+</script></body></html>
