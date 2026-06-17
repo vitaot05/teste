@@ -182,17 +182,26 @@ tbody td.posc{color:var(--t3);font-weight:600;padding:5px 3px;}
 .art-val.gn{color:var(--gn);}
 
 /* ── HISTORICO ── */
-.hist-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;margin-bottom:12px;}
-.hist-hdr{background:var(--s2);padding:8px 12px;font-size:12px;font-weight:600;color:var(--t2);border-bottom:1px solid var(--b1);}
-.hist-sec{padding:5px 12px 2px;font-size:10px;font-weight:600;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--b1);}
-.hist-row{display:flex;justify-content:space-between;padding:5px 12px;border-bottom:1px solid var(--b1);font-size:11px;gap:8px;}
-.hist-row:last-child{border-bottom:none;}
+details.hist-card{background:var(--s1);border:1px solid var(--b1);border-radius:var(--rl);overflow:hidden;margin-bottom:12px;}
+details.hist-card[open] summary.hist-hdr{border-bottom:1px solid var(--b1);}
+summary.hist-hdr{background:var(--s2);padding:10px 12px;font-size:13px;font-weight:600;color:var(--t2);display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;}
+summary.hist-hdr::-webkit-details-marker{display:none;}
+summary.hist-hdr::after{content:'▼';font-size:10px;color:var(--t3);transition:transform 0.2s;}
+details.hist-card[open] summary.hist-hdr::after{transform:rotate(180deg);}
+.hist-body{padding:8px 0;}
+.hist-sec{padding:5px 12px 2px;font-size:11px;font-weight:700;color:var(--t1);letter-spacing:.03em;text-transform:uppercase;}
+.hist-row{display:flex;justify-content:space-between;padding:5px 12px;font-size:11px;gap:8px;}
 .hist-lbl{color:var(--t3);flex-shrink:0;}
 .hist-val{color:var(--t1);text-align:right;word-break:break-word;}
 .hist-val.gd{color:var(--gd);font-weight:600;}
 .hist-val.gn{color:var(--gn);}
 .hist-val.rd{color:var(--rd);}
 .hist-val.pu{color:var(--pu);font-weight:600;}
+.mini-tbl{width:100%;border-collapse:collapse;margin-bottom:4px;font-size:11px;}
+.mini-tbl th,.mini-tbl td{padding:3px 5px;text-align:left;border-bottom:1px solid var(--b1);}
+.mini-tbl th{color:var(--t3);font-weight:600;}
+.mini-tbl td.pts{text-align:right;font-weight:700;color:var(--gd);}
+.mini-tbl tr:last-child td{border-bottom:none;}
 
 /* ── REGIONAL BRACKET ── */
 .reg-info-box{font-size:12px;color:var(--t2);padding:10px 14px;background:var(--s2);border-radius:var(--r);margin-bottom:14px;line-height:1.7;}
@@ -698,19 +707,37 @@ function doTemp(){
 // ── NEXT SEASON ──
 function doNextSeason(){
   const campMap={},promoMap={},rebMap={},regChamp=reg.winner||null;
+  const histStandings = {}; const histStats = {};
+  
   for(const e of RAW.estados){
     const sig=e.sigla;campMap[sig]={};promoMap[sig]={};rebMap[sig]={};
+    histStandings[sig]={}; histStats[sig]={};
     for(const dn of DIVS){
       const d=stateData[sig][dn];
       campMap[sig][dn]=d.teams[0]?.name;
       promoMap[sig][dn]=DIV_PROMO[dn]>0?d.teams.slice(0,DIV_PROMO[dn]).map(t=>t.name):[];
       rebMap[sig][dn]=DIV_REB[dn]>0?d.teams.slice(d.teams.length-DIV_REB[dn]).map(t=>t.name):[];
+      
+      histStandings[sig][dn]=d.teams.map(t=>({name:t.name,pts:t.pts,sg:t.sg}));
+      let g=[], a=[];
+      for(const[t,pl]of Object.entries(artStats[sig]?.[dn]||{})){
+        for(const[nick,st]of Object.entries(pl)){
+          if(st.gols>0)g.push({nick,team:t,val:st.gols});
+          if(st.assist>0)a.push({nick,team:t,val:st.assist});
+        }
+      }
+      g.sort((x,y)=>y.val-x.val); a.sort((x,y)=>y.val-x.val);
+      histStats[sig][dn]={gols:g.slice(0,3),assists:a.slice(0,3)};
     }
   }
   
   const classifSP = stateData["SP"]["A1"].teams.slice(0, 2).map(t => t.name).join(", ");
   const classifRJ = stateData["RJ"]["A1"].teams.slice(0, 2).map(t => t.name).join(", ");
-  historico.push({season,campMap,promoMap,rebMap,regChamp,classifSP,classifRJ});
+  
+  historico.push({
+    season,campMap,promoMap,rebMap,regChamp,classifSP,classifRJ,
+    standings:histStandings, stats:histStats
+  });
 
   const spT=stateData["SP"]["A1"].teams;
   const rjT=stateData["RJ"]["A1"].teams;
@@ -1031,12 +1058,12 @@ function showContent(type){
   if(!inSim){hideTicker();hideGrid();}
   ["btn-match","btn-grid","btn-direto","btn-temp"].forEach(id=>{document.getElementById(id).disabled=!inSim||busy;});
   if(type==="regional"){
-      document.getElementById("btn-match").classList.add("vh");
-      document.getElementById("btn-grid").textContent="⊞ Próx. jogo (Brasfoot)";
+      document.getElementById("btn-match").classList.remove("vh");
+      document.getElementById("btn-grid").classList.add("vh");
       document.getElementById("btn-temp").disabled=true;
   } else {
       document.getElementById("btn-match").classList.remove("vh");
-      document.getElementById("btn-grid").textContent="⊞ Simular rodada";
+      document.getElementById("btn-grid").classList.remove("vh");
   }
   document.getElementById("btn-direto").textContent="⚡ Resultado direto";
   document.getElementById("btn-temp").textContent="⏭ Simular temporada";
@@ -1065,7 +1092,23 @@ function renderStandings(){
   const sig=curState,dn=curDiv,d=stateData[sig]?.[dn];
   if(!d){document.getElementById("view-standings").innerHTML="";return;}
   const teams=d.teams,rebN=DIV_REB[dn],promoN=DIV_PROMO[dn],isA1=dn==="A1";
-  const nxtR=d.round+1,nxtP=nxtR<=d.maxR?getPairs(teams,nxtR):[];
+  
+  let fixLabel = "";
+  let fixList = [];
+  if (d.queue.length > 0) {
+      fixLabel = "Rodada " + d.round;
+      fixList = d.queue;
+  } else {
+      const nxtR = d.round + 1;
+      if (nxtR <= d.maxR) {
+          fixLabel = "Rodada " + nxtR;
+          fixList = getPairs(teams, nxtR).map(([a,b]) => ({ home: a, away: b }));
+      } else {
+          fixLabel = "Encerrado";
+      }
+  }
+  const fixH = fixList.length ? fixList.map(it => `<div class="fix-item"><span class="fix-home">${it.home.name}</span><span class="fix-vs">×</span><span class="fix-away">${it.away.name}</span></div>`).join("") : "<div class='empty'>—</div>";
+
   let leg="";
   if(isA1)leg+=`<div class="leg-item"><div class="leg-dot" style="background:var(--pu)"></div>Regional (top 2)</div>`;
   if(!isA1&&promoN)leg+=`<div class="leg-item"><div class="leg-dot" style="background:var(--gn)"></div>Acesso (top ${promoN})</div>`;
@@ -1080,7 +1123,7 @@ function renderStandings(){
       <td class="ptsc">${t.pts}</td><td>${t.j}</td><td>${t.v}</td><td>${t.e}</td><td>${t.d}</td>
       <td>${t.gp}</td><td>${t.gc}</td><td class="${sgc}">${t.sg>0?"+":""}${t.sg}</td></tr>`;
   }).join("");
-  const fixH=nxtP.length?nxtP.map(([a,b])=>`<div class="fix-item"><span class="fix-home">${a.name}</span><span class="fix-vs">×</span><span class="fix-away">${b.name}</span></div>`).join(""):"<div class='empty'>—</div>";
+  
   const eName=RAW.estados.find(e=>e.sigla===sig)?.nome||sig;
   document.getElementById("view-standings").innerHTML=`
     <div class="slay">
@@ -1093,7 +1136,7 @@ function renderStandings(){
       </div>
       <div>
         <div class="fix-panel">
-          <div class="fix-hdr"><span class="fix-hdr-title">Próximos jogos</span><span class="fix-hdr-round">${nxtR<=d.maxR?"Rodada "+nxtR:"Encerrado"}</span></div>
+          <div class="fix-hdr"><span class="fix-hdr-title">Próximos jogos</span><span class="fix-hdr-round">${fixLabel}</span></div>
           <div class="fix-list">${fixH}</div>
         </div>
       </div>
@@ -1172,25 +1215,54 @@ function renderHistorico(){
   const c=document.getElementById("view-historico");
   if(!historico.length){c.innerHTML="<div class='empty'>Nenhuma temporada concluída.</div>";return;}
   c.innerHTML=[...historico].reverse().map(h=>`
-    <div class="hist-card">
-      <div class="hist-hdr">Temporada ${h.season}</div>
-      ${h.regChamp?`<div class="hist-row"><span class="hist-lbl">🏆 Campeão Regional</span><span class="hist-val pu">${h.regChamp}</span></div>`:""}
-      ${RAW.estados.map(e=>{const sig=e.sigla;
-        return`<div class="hist-sec">${e.nome}</div>`+DIVS.map(dn=>{
+    <details class="hist-card">
+      <summary class="hist-hdr">Temporada ${h.season}</summary>
+      <div class="hist-body">
+      ${h.regChamp?`
+        <div class="hist-sec" style="color:var(--pu)">🏆 Regional</div>
+        <div class="hist-row"><span class="hist-lbl">Campeão</span><span class="hist-val pu">${h.regChamp}</span></div>
+        <div class="hist-row"><span class="hist-lbl">Classificados SP</span><span class="hist-val">${h.classifSP}</span></div>
+        <div class="hist-row"><span class="hist-lbl">Classificados RJ</span><span class="hist-val">${h.classifRJ}</span></div>
+      `:""}
+      
+      ${RAW.estados.map(e=>{
+        const sig=e.sigla;
+        return `<div class="hist-sec" style="margin-top:10px">${e.nome}</div>` + DIVS.map(dn=>{
           const camp=h.campMap[sig]?.[dn]||"—";
           const promo=(h.promoMap[sig]?.[dn]||[]).join(", ")||null;
           const reb=(h.rebMap[sig]?.[dn]||[]).join(", ")||null;
-          let extras = "";
-          if (dn === "A1") {
-             extras = `<div class="hist-row"><span class="hist-lbl">Classificados (Regional)</span><span class="hist-val pu">${sig === "SP" ? h.classifSP : h.classifRJ}</span></div>`;
-          }
-          return`<div class="hist-row"><span class="hist-lbl">Campeão ${dn}</span><span class="hist-val gd">${camp}</span></div>`
-            + extras
-            +(promo?`<div class="hist-row"><span class="hist-lbl">↑ Subiram de ${dn}</span><span class="hist-val gn">${promo}</span></div>`:"")
-            +(reb?`<div class="hist-row"><span class="hist-lbl">↓ Caíram de ${dn}</span><span class="hist-val rd">${reb}</span></div>`:"");
+          const sts = h.standings?.[sig]?.[dn] || [];
+          const art = h.stats?.[sig]?.[dn]?.gols || [];
+          const ass = h.stats?.[sig]?.[dn]?.assists || [];
+
+          return `<div style="background:var(--s2);padding:8px;margin:6px 12px;border-radius:6px;border:1px solid var(--b1)">
+            <div style="font-size:11px;font-weight:700;color:${DIV_COLOR[dn]};margin-bottom:6px;display:flex;justify-content:space-between">
+               <span>Série ${dn}</span>
+               <span style="color:var(--gd)">🏆 ${camp}</span>
+            </div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap">
+              <div style="flex:1;min-width:140px">
+                 <table class="mini-tbl">
+                   <tr><th>Pos</th><th>Time</th><th style="text-align:right">Pts</th></tr>
+                   ${sts.slice(0,DIV_PROMO[dn]||1).map((t,i)=>`<tr style="color:var(--gn)"><td>${i+1}º</td><td>${t.name}</td><td class="pts">${t.pts}</td></tr>`).join("")}
+                   ${sts.length>0 ? `<tr><td colspan="3" style="text-align:center;color:var(--t3);font-size:10px;padding:1px">...</td></tr>` : ""}
+                   ${DIV_REB[dn]>0 ? sts.slice(-DIV_REB[dn]).map((t,i)=>`<tr style="color:var(--rd)"><td>${sts.length-DIV_REB[dn]+i+1}º</td><td>${t.name}</td><td class="pts">${t.pts}</td></tr>`).join("") : ""}
+                 </table>
+                 ${promo?`<div style="font-size:9px;color:var(--gn);margin-top:4px">↑ ${promo}</div>`:""}
+                 ${reb?`<div style="font-size:9px;color:var(--rd);margin-top:2px">↓ ${reb}</div>`:""}
+              </div>
+              <div style="flex:1;font-size:10px;min-width:140px">
+                 ${art.length?`<div style="color:var(--t3);margin-bottom:2px">⚽ Artilheiros</div>
+                 ${art.map(x=>`<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--b1);padding-bottom:2px;margin-bottom:2px"><span>${x.nick} <span style="font-size:8px;color:var(--t3)">(${x.team})</span></span><span style="color:var(--gd);font-weight:600">${x.val}</span></div>`).join("")}`:""}
+                 ${ass.length?`<div style="color:var(--t3);margin-top:6px;margin-bottom:2px">🎯 Assistências</div>
+                 ${ass.map(x=>`<div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--b1);padding-bottom:2px;margin-bottom:2px"><span>${x.nick} <span style="font-size:8px;color:var(--t3)">(${x.team})</span></span><span style="color:var(--gn);font-weight:600">${x.val}</span></div>`).join("")}`:""}
+              </div>
+            </div>
+          </div>`;
         }).join("");
       }).join("")}
-    </div>`).join("");
+      </div>
+    </details>`).join("");
 }
 
 // ── REGIONAL RENDER ──
@@ -1211,8 +1283,9 @@ function renderRegional(){
     if(!reg.played.length && !reg.queue.length){
       html+=`<div class="empty">Use os botões laterais para simular o Regional.</div>`;
     }else{
-      const getM = (semi, leg) => reg.played.find(m => m.semi === semi && m.leg === leg);
-      const getFinal = () => reg.played.find(m => m.semi === 0);
+      const getQ = (semi, leg) => reg.queue.find(m => m.semi === semi && m.leg === leg);
+      const getM = (semi, leg) => reg.played.find(m => m.semi === semi && m.leg === leg) || getQ(semi, leg);
+      const getFinal = () => reg.played.find(m => m.semi === 0) || reg.queue.find(m => m.semi === 0);
       
       const s11 = getM(1, 1), s12 = getM(1, 2);
       const s21 = getM(2, 1), s22 = getM(2, 2);
@@ -1220,17 +1293,20 @@ function renderRegional(){
       
       const renderBox = (m1, m2) => {
          if(!m1) return `<div class="bracket-match"><div style="color:var(--t3)">Aguardando...</div></div>`;
-         let resStr = `${m1.home} <strong>${m1.gh}×${m1.ga}</strong> ${m1.away}`;
+         let res1 = m1.gh !== undefined ? `<strong>${m1.gh}×${m1.ga}</strong>` : `×`;
+         let resStr = `${m1.home} ${res1} ${m1.away}`;
          if(m2) {
-            resStr += `<br>${m2.home} <strong>${m2.gh}×${m2.ga}</strong> ${m2.away}`;
+            let res2 = m2.gh !== undefined ? `<strong>${m2.gh}×${m2.ga}</strong>` : `×`;
+            resStr += `<br>${m2.home} ${res2} ${m2.away}`;
             if(m2.penalties) resStr += `<br><span style="color:var(--gd);display:block;margin-top:4px">Pênaltis: ${m2.penalties.home}×${m2.penalties.away}</span>`;
          }
          return `<div class="bracket-match">${resStr}</div>`;
       };
       
       const renderFinal = (fin) => {
-         if(!fin) return `<div class="bracket-match"><div style="color:var(--t3)">Final</div></div>`;
-         let resStr = `<span style="color:var(--gd)">${fin.home}</span> <strong>${fin.gh}×${fin.ga}</strong> <span style="color:var(--gd)">${fin.away}</span>`;
+         if(!fin) return `<div class="bracket-match"><div style="color:var(--t3)">Aguardando Final</div></div>`;
+         let res = fin.gh !== undefined ? `<strong>${fin.gh}×${fin.ga}</strong>` : `×`;
+         let resStr = `<span style="color:var(--gd)">${fin.home}</span> ${res} <span style="color:var(--gd)">${fin.away}</span>`;
          if(fin.penalties) resStr += `<br><span style="color:var(--gd);display:block;margin-top:4px">Pênaltis: ${fin.penalties.home}×${fin.penalties.away}</span>`;
          return `<div class="bracket-match" style="border-color:var(--gd)">${resStr}</div>`;
       };
